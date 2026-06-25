@@ -72,7 +72,7 @@ export function Navbar() {
               </NavigationMenu.Link>
             </NavigationMenu.Item>
 
-            <NavigationMenu.Item>
+            <NavigationMenu.Item className="relative">
               <NavigationMenu.Trigger className={triggerClass}>
                 Services
                 <ChevronDown
@@ -80,7 +80,7 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="grid w-[42rem] grid-cols-3 gap-6 p-6">
                   {serviceGroups.map((group) => (
                     <div key={group.label}>
@@ -114,7 +114,7 @@ export function Navbar() {
               </NavigationMenu.Content>
             </NavigationMenu.Item>
 
-            <NavigationMenu.Item>
+            <NavigationMenu.Item className="relative">
               <NavigationMenu.Trigger className={triggerClass}>
                 Specialties
                 <ChevronDown
@@ -122,7 +122,7 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="grid w-[34rem] grid-cols-2 gap-2 p-5">
                   {specialtyLinks.map((item) => (
                     <NavigationMenu.Link asChild key={item.href}>
@@ -143,7 +143,7 @@ export function Navbar() {
               </NavigationMenu.Content>
             </NavigationMenu.Item>
 
-            <NavigationMenu.Item>
+            <NavigationMenu.Item className="relative">
               <NavigationMenu.Trigger className={triggerClass}>
                 Resources
                 <ChevronDown
@@ -151,7 +151,7 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="w-[20rem] p-3">
                   {resourceLinks.map((item) => (
                     <NavigationMenu.Link asChild key={item.href}>
@@ -180,10 +180,6 @@ export function Navbar() {
               </NavigationMenu.Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>
-
-          <div className="absolute left-1/2 top-full flex -translate-x-1/2 justify-center pt-3">
-            <NavigationMenu.Viewport className="h-[var(--radix-navigation-menu-viewport-height)] w-[var(--radix-navigation-menu-viewport-width)] origin-top overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] transition-[width,height] duration-200 data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in" />
-          </div>
         </NavigationMenu.Root>
 
         <div className="flex items-center gap-2">
