@@ -1,0 +1,301 @@
+"use client";
+
+import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import { ChevronDown, Menu } from "lucide-react";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "./theme-toggle";
+import { Logo } from "./logo";
+import { resourceLinks, serviceGroups, specialtyLinks } from "@/lib/nav";
+
+const triggerClass =
+  "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-foreground";
+
+function navLinkClass(active: boolean) {
+  return cn(
+    "inline-flex h-9 items-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+    active ? "text-foreground" : "text-foreground/80",
+  );
+}
+
+function useScrolled() {
+  const [scrolled, setScrolled] = React.useState(false);
+  React.useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return scrolled;
+}
+
+export function Navbar() {
+  const scrolled = useScrolled();
+  const pathname = usePathname();
+  const [open, setOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- close the mobile menu when the route changes
+    setOpen(false);
+  }, [pathname]);
+
+  return (
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full border-b transition-colors duration-300",
+        scrolled
+          ? "border-border bg-background/80 backdrop-blur-xl"
+          : "border-transparent bg-background/60 backdrop-blur-sm",
+      )}
+    >
+      <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
+        <Logo />
+
+        <NavigationMenu.Root className="relative hidden lg:flex" delayDuration={80}>
+          <NavigationMenu.List className="flex items-center gap-0.5">
+            <NavigationMenu.Item>
+              <NavigationMenu.Link asChild>
+                <Link href="/about" className={navLinkClass(pathname === "/about")}>
+                  About
+                </Link>
+              </NavigationMenu.Link>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger className={triggerClass}>
+                Services
+                <ChevronDown
+                  className="size-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
+                  aria-hidden="true"
+                />
+              </NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+                <div className="grid w-[42rem] grid-cols-3 gap-6 p-6">
+                  {serviceGroups.map((group) => (
+                    <div key={group.label}>
+                      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                        {group.label}
+                      </p>
+                      <ul className="space-y-1">
+                        {group.items.map((item) => (
+                          <li key={item.href}>
+                            <NavigationMenu.Link asChild>
+                              <Link
+                                href={item.href}
+                                className="block rounded-lg p-2.5 transition-colors hover:bg-surface"
+                              >
+                                <span className="block text-sm font-medium text-foreground">
+                                  {item.label}
+                                </span>
+                                {item.description ? (
+                                  <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                    {item.description}
+                                  </span>
+                                ) : null}
+                              </Link>
+                            </NavigationMenu.Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger className={triggerClass}>
+                Specialties
+                <ChevronDown
+                  className="size-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
+                  aria-hidden="true"
+                />
+              </NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+                <div className="grid w-[34rem] grid-cols-2 gap-2 p-5">
+                  {specialtyLinks.map((item) => (
+                    <NavigationMenu.Link asChild key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="block rounded-lg p-3 transition-colors hover:bg-surface"
+                      >
+                        <span className="block text-sm font-medium text-foreground">
+                          {item.label}
+                        </span>
+                        <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                          {item.description}
+                        </span>
+                      </Link>
+                    </NavigationMenu.Link>
+                  ))}
+                </div>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger className={triggerClass}>
+                Resources
+                <ChevronDown
+                  className="size-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
+                  aria-hidden="true"
+                />
+              </NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute left-0 top-0 w-full data-[motion=from-end]:animate-fade-in data-[motion=from-start]:animate-fade-in">
+                <div className="w-[20rem] p-3">
+                  {resourceLinks.map((item) => (
+                    <NavigationMenu.Link asChild key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="block rounded-lg p-3 transition-colors hover:bg-surface"
+                      >
+                        <span className="block text-sm font-medium text-foreground">
+                          {item.label}
+                        </span>
+                        <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                          {item.description}
+                        </span>
+                      </Link>
+                    </NavigationMenu.Link>
+                  ))}
+                </div>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Link asChild>
+                <Link href="/life-at-sas" className={navLinkClass(pathname === "/life-at-sas")}>
+                  Life at SAS
+                </Link>
+              </NavigationMenu.Link>
+            </NavigationMenu.Item>
+          </NavigationMenu.List>
+
+          <div className="absolute left-1/2 top-full flex -translate-x-1/2 justify-center pt-3">
+            <NavigationMenu.Viewport className="h-[var(--radix-navigation-menu-viewport-height)] w-[var(--radix-navigation-menu-viewport-width)] origin-top overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] transition-[width,height] duration-200 data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in" />
+          </div>
+        </NavigationMenu.Root>
+
+        <div className="flex items-center gap-2">
+          <ThemeToggle className="hidden sm:grid" />
+          <Button asChild size="sm" className="hidden sm:inline-flex">
+            <Link href="/contact">Get in touch</Link>
+          </Button>
+
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button
+                type="button"
+                aria-label="Open menu"
+                className="grid size-10 place-items-center rounded-lg border border-border text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
+              >
+                <Menu className="size-5" aria-hidden="true" />
+              </button>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetTitle className="sr-only">Navigation menu</SheetTitle>
+              <Logo />
+              <nav className="-mx-1 flex-1 overflow-y-auto px-1">
+                <Link
+                  href="/about"
+                  className="block border-b border-border py-3.5 text-base font-medium"
+                >
+                  About
+                </Link>
+                <Accordion type="multiple">
+                  <AccordionItem value="services">
+                    <AccordionTrigger>Services</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4">
+                        {serviceGroups.map((group) => (
+                          <div key={group.label}>
+                            <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                              {group.label}
+                            </p>
+                            <ul className="space-y-0.5">
+                              {group.items.map((item) => (
+                                <li key={item.href}>
+                                  <Link
+                                    href={item.href}
+                                    className="block rounded-md py-1.5 text-sm text-foreground/90 hover:text-primary"
+                                  >
+                                    {item.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="specialties">
+                    <AccordionTrigger>Specialties</AccordionTrigger>
+                    <AccordionContent>
+                      <ul className="space-y-0.5">
+                        {specialtyLinks.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              className="block rounded-md py-1.5 text-sm text-foreground/90 hover:text-primary"
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="resources">
+                    <AccordionTrigger>Resources</AccordionTrigger>
+                    <AccordionContent>
+                      <ul className="space-y-0.5">
+                        {resourceLinks.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              className="block rounded-md py-1.5 text-sm text-foreground/90 hover:text-primary"
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+                <Link
+                  href="/life-at-sas"
+                  className="block border-b border-border py-3.5 text-base font-medium"
+                >
+                  Life at SAS
+                </Link>
+                <Link href="/contact" className="block py-3.5 text-base font-medium">
+                  Contact
+                </Link>
+              </nav>
+              <div className="flex items-center justify-between gap-3 border-t border-border pt-4">
+                <ThemeToggle />
+                <SheetClose asChild>
+                  <Button asChild className="flex-1">
+                    <Link href="/contact">Get in touch</Link>
+                  </Button>
+                </SheetClose>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </div>
+    </header>
+  );
+}
