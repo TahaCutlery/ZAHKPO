@@ -1,0 +1,497 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#content"
+      - banner [ref=e5]:
+        - generic [ref=e6]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "Ireland" [ref=e15] [cursor=pointer]:
+                - /url: https://saskpo.co.uk/ireland/
+                - img [ref=e17]
+                - generic [ref=e22]: Ireland
+            - listitem [ref=e23]:
+              - link "UK" [ref=e24] [cursor=pointer]:
+                - /url: https://saskpo.co.uk/
+                - img [ref=e26]
+                - generic [ref=e31]: UK
+            - listitem [ref=e32]:
+              - link "USA" [ref=e33] [cursor=pointer]:
+                - /url: https://saskpo.co.uk/usa/
+                - img [ref=e35]
+                - generic [ref=e41]: USA
+          - generic [ref=e43]:
+            - link [ref=e47] [cursor=pointer]:
+              - /url: https://saskpo.co.uk/
+            - navigation [ref=e51]:
+              - text: 
+              - list [ref=e53]:
+                - listitem [ref=e54]:
+                  - link "About Us" [ref=e55] [cursor=pointer]:
+                    - /url: https://saskpo.co.uk/about-us-global-accounts-outsourcing-for-accountancy-firms/
+                - listitem [ref=e56]:
+                  - generic [ref=e57] [cursor=pointer]:
+                    - text: Services
+                    - generic [ref=e58]: 
+                - listitem [ref=e59]:
+                  - generic [ref=e60] [cursor=pointer]:
+                    - text: Specialties
+                    - generic [ref=e61]: 
+                - listitem [ref=e62]:
+                  - generic [ref=e63] [cursor=pointer]:
+                    - text: Resources
+                    - generic [ref=e64]: 
+                - listitem [ref=e65]:
+                  - link "Life at SAS" [ref=e66] [cursor=pointer]:
+                    - /url: https://saskpo.co.uk/life-at-sas/
+                - listitem [ref=e67]:
+                  - link "Contact Us" [ref=e68] [cursor=pointer]:
+                    - /url: https://saskpo.co.uk/contact-us/
+            - generic [ref=e69]:
+              - link "+44204 615 6780" [ref=e73] [cursor=pointer]:
+                - /url: tel:+44204%20615%206780
+                - generic [ref=e74]:
+                  - generic [ref=e77]: 
+                  - heading "+44204 615 6780" [level=3] [ref=e79]
+              - link "Get In Touch" [ref=e84] [cursor=pointer]:
+                - /url: https://saskpo.co.uk/contact-us/
+    - main [ref=e85]:
+      - generic [ref=e86]:
+        - region "Slides" [ref=e91]:
+          - generic [ref=e92]:
+            - group "1 / 2" [ref=e93]:
+              - img [ref=e94]
+              - generic [ref=e96]:
+                - generic [ref=e97]: "\"Precision in Accounting, Confidence in Compliance\""
+                - generic [ref=e98]: SAS KPO Services supports firms across the UK, USA, and Ireland with dependable accounting and KPO solutions that meet global standards and keep your business compliant.
+                - link "Contact Us" [ref=e99] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+            - group "2 / 2" [ref=e100]:
+              - img [ref=e101]
+              - generic [ref=e103]:
+                - generic [ref=e104]: "\"Behind Every Strong Business Is Strong Accounting\""
+                - generic [ref=e105]: We deliver secure, accurate, and cost-effective accounting and KPO services for companies and firms across the UK, USA, and Ireland so you can focus on what matters most.
+                - link "Contact Us" [ref=e106] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+            - group "1 / 2" [ref=e107]:
+              - img [ref=e108]
+              - generic [ref=e110]:
+                - generic [ref=e111]: "\"Precision in Accounting, Confidence in Compliance\""
+                - generic [ref=e112]: SAS KPO Services supports firms across the UK, USA, and Ireland with dependable accounting and KPO solutions that meet global standards and keep your business compliant.
+                - link "Contact Us" [ref=e113] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+            - group "2 / 2" [ref=e114]:
+              - img [ref=e115]
+              - generic [ref=e117]:
+                - generic [ref=e118]: "\"Behind Every Strong Business Is Strong Accounting\""
+                - generic [ref=e119]: We deliver secure, accurate, and cost-effective accounting and KPO services for companies and firms across the UK, USA, and Ireland so you can focus on what matters most.
+                - link "Contact Us" [ref=e120] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+            - group "1 / 2" [ref=e121]:
+              - img [ref=e122]
+              - generic [ref=e124]:
+                - generic [ref=e125]: "\"Precision in Accounting, Confidence in Compliance\""
+                - generic [ref=e126]: SAS KPO Services supports firms across the UK, USA, and Ireland with dependable accounting and KPO solutions that meet global standards and keep your business compliant.
+                - link "Contact Us" [ref=e127] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+            - group "2 / 2" [ref=e128]:
+              - img [ref=e129]
+              - generic [ref=e131]:
+                - generic [ref=e132]: "\"Behind Every Strong Business Is Strong Accounting\""
+                - generic [ref=e133]: We deliver secure, accurate, and cost-effective accounting and KPO services for companies and firms across the UK, USA, and Ireland so you can focus on what matters most.
+                - link "Contact Us" [ref=e134] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+          - button "Previous slide" [ref=e135] [cursor=pointer]:
+            - img [ref=e136]
+          - button "Next slide" [ref=e138] [cursor=pointer]:
+            - img [ref=e139]
+        - iframe [ref=e155]
+        - generic [ref=e162]:
+          - generic [ref=e163]:
+            - group "3 / 5" [ref=e164]:
+              - generic [ref=e166]:
+                - strong [ref=e168]: Accountancy Practice, London (UK)
+                - generic [ref=e169]:
+                  - list [ref=e170]:
+                    - listitem [ref=e171]:
+                      - generic:
+                        - img
+                    - listitem [ref=e172]:
+                      - generic:
+                        - img
+                    - listitem [ref=e173]:
+                      - generic:
+                        - img
+                    - listitem [ref=e174]:
+                      - generic:
+                        - img
+                    - listitem [ref=e175]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e176]: SAS understood our systems and working style very quickly, which made a big difference during the busy 31st January deadline. Their professional and dependable support helped us deliver work on time without stress. With SAS handling our workload efficiently, we now feel confident taking on new clients and growing our practice.
+            - group "4 / 5" [ref=e177]:
+              - generic [ref=e179]:
+                - strong [ref=e181]: Accountancy Practice, Royston (UK)
+                - generic [ref=e182]:
+                  - list [ref=e183]:
+                    - listitem [ref=e184]:
+                      - generic:
+                        - img
+                    - listitem [ref=e185]:
+                      - generic:
+                        - img
+                    - listitem [ref=e186]:
+                      - generic:
+                        - img
+                    - listitem [ref=e187]:
+                      - generic:
+                        - img
+                    - listitem [ref=e188]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e189]: The quality of work we receive from SAS is excellent and ready for client meetings straight away. Abhishek is friendly, easy to approach, and provides a truly personal service with clear communication. We are very happy with the reliable support and would confidently recommend SAS to other accountancy practices.
+            - group "5 / 5" [ref=e190]:
+              - generic [ref=e192]:
+                - strong [ref=e194]: Accountancy Practice, Coventry (UK)
+                - generic [ref=e195]:
+                  - list [ref=e196]:
+                    - listitem [ref=e197]:
+                      - generic:
+                        - img
+                    - listitem [ref=e198]:
+                      - generic:
+                        - img
+                    - listitem [ref=e199]:
+                      - generic:
+                        - img
+                    - listitem [ref=e200]:
+                      - generic:
+                        - img
+                    - listitem [ref=e201]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e202]: After working with several outsourcing firms, SAS KPO truly stands out. The team is skilled, proactive, and a pleasure to work with. We’re very satisfied with their support and would happily recommend SAS KPO to other accountancy practices.
+            - group "1 / 5" [ref=e203]:
+              - generic [ref=e205]:
+                - strong [ref=e207]: Accountancy Practice, London (UK)
+                - generic [ref=e208]:
+                  - list [ref=e209]:
+                    - listitem [ref=e210]:
+                      - generic:
+                        - img
+                    - listitem [ref=e211]:
+                      - generic:
+                        - img
+                    - listitem [ref=e212]:
+                      - generic:
+                        - img
+                    - listitem [ref=e213]:
+                      - generic:
+                        - img
+                    - listitem [ref=e214]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e215]: Working with the SAS team over the past 10 months has been a great experience. They are reliable, proactive, and always ready to go the extra mile to meet deadlines. SAS has become a trusted partner for our outsourcing needs, and we truly value the quality and consistency of their work.
+            - group "2 / 5" [ref=e216]:
+              - generic [ref=e218]:
+                - strong [ref=e220]: Accountancy Practice, Birmingham (UK)
+                - generic [ref=e221]:
+                  - list [ref=e222]:
+                    - listitem [ref=e223]:
+                      - generic:
+                        - img
+                    - listitem [ref=e224]:
+                      - generic:
+                        - img
+                    - listitem [ref=e225]:
+                      - generic:
+                        - img
+                    - listitem [ref=e226]:
+                      - generic:
+                        - img
+                    - listitem [ref=e227]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e228]: Even in a short time, working with SAS has been a very positive experience. Their team has supported our growth by handling key accounting and bookkeeping tasks smoothly. They are responsive, flexible, and easy to work with, especially when our needs change. We’re very happy with the partnership so far.
+            - group "3 / 5" [ref=e229]:
+              - generic [ref=e231]:
+                - strong [ref=e233]: Accountancy Practice, London (UK)
+                - generic [ref=e234]:
+                  - list [ref=e235]:
+                    - listitem [ref=e236]:
+                      - generic:
+                        - img
+                    - listitem [ref=e237]:
+                      - generic:
+                        - img
+                    - listitem [ref=e238]:
+                      - generic:
+                        - img
+                    - listitem [ref=e239]:
+                      - generic:
+                        - img
+                    - listitem [ref=e240]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e241]: SAS understood our systems and working style very quickly, which made a big difference during the busy 31st January deadline. Their professional and dependable support helped us deliver work on time without stress. With SAS handling our workload efficiently, we now feel confident taking on new clients and growing our practice.
+            - group "4 / 5" [ref=e242]:
+              - generic [ref=e244]:
+                - strong [ref=e246]: Accountancy Practice, Royston (UK)
+                - generic [ref=e247]:
+                  - list [ref=e248]:
+                    - listitem [ref=e249]:
+                      - generic:
+                        - img
+                    - listitem [ref=e250]:
+                      - generic:
+                        - img
+                    - listitem [ref=e251]:
+                      - generic:
+                        - img
+                    - listitem [ref=e252]:
+                      - generic:
+                        - img
+                    - listitem [ref=e253]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e254]: The quality of work we receive from SAS is excellent and ready for client meetings straight away. Abhishek is friendly, easy to approach, and provides a truly personal service with clear communication. We are very happy with the reliable support and would confidently recommend SAS to other accountancy practices.
+            - group "5 / 5" [ref=e255]:
+              - generic [ref=e257]:
+                - strong [ref=e259]: Accountancy Practice, Coventry (UK)
+                - generic [ref=e260]:
+                  - list [ref=e261]:
+                    - listitem [ref=e262]:
+                      - generic:
+                        - img
+                    - listitem [ref=e263]:
+                      - generic:
+                        - img
+                    - listitem [ref=e264]:
+                      - generic:
+                        - img
+                    - listitem [ref=e265]:
+                      - generic:
+                        - img
+                    - listitem [ref=e266]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e267]: After working with several outsourcing firms, SAS KPO truly stands out. The team is skilled, proactive, and a pleasure to work with. We’re very satisfied with their support and would happily recommend SAS KPO to other accountancy practices.
+            - group "1 / 5" [ref=e268]:
+              - generic [ref=e270]:
+                - strong [ref=e272]: Accountancy Practice, London (UK)
+                - generic [ref=e273]:
+                  - list [ref=e274]:
+                    - listitem [ref=e275]:
+                      - generic:
+                        - img
+                    - listitem [ref=e276]:
+                      - generic:
+                        - img
+                    - listitem [ref=e277]:
+                      - generic:
+                        - img
+                    - listitem [ref=e278]:
+                      - generic:
+                        - img
+                    - listitem [ref=e279]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e280]: Working with the SAS team over the past 10 months has been a great experience. They are reliable, proactive, and always ready to go the extra mile to meet deadlines. SAS has become a trusted partner for our outsourcing needs, and we truly value the quality and consistency of their work.
+            - group "2 / 5" [ref=e281]:
+              - generic [ref=e283]:
+                - strong [ref=e285]: Accountancy Practice, Birmingham (UK)
+                - generic [ref=e286]:
+                  - list [ref=e287]:
+                    - listitem [ref=e288]:
+                      - generic:
+                        - img
+                    - listitem [ref=e289]:
+                      - generic:
+                        - img
+                    - listitem [ref=e290]:
+                      - generic:
+                        - img
+                    - listitem [ref=e291]:
+                      - generic:
+                        - img
+                    - listitem [ref=e292]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e293]: Even in a short time, working with SAS has been a very positive experience. Their team has supported our growth by handling key accounting and bookkeeping tasks smoothly. They are responsive, flexible, and easy to work with, especially when our needs change. We’re very happy with the partnership so far.
+            - group "3 / 5" [ref=e294]:
+              - generic [ref=e296]:
+                - strong [ref=e298]: Accountancy Practice, London (UK)
+                - generic [ref=e299]:
+                  - list [ref=e300]:
+                    - listitem [ref=e301]:
+                      - generic:
+                        - img
+                    - listitem [ref=e302]:
+                      - generic:
+                        - img
+                    - listitem [ref=e303]:
+                      - generic:
+                        - img
+                    - listitem [ref=e304]:
+                      - generic:
+                        - img
+                    - listitem [ref=e305]:
+                      - generic:
+                        - img
+                  - paragraph [ref=e306]: SAS understood our systems and working style very quickly, which made a big difference during the busy 31st January deadline. Their professional and dependable support helped us deliver work on time without stress. With SAS handling our workload efficiently, we now feel confident taking on new clients and growing our practice.
+          - generic [ref=e307]:
+            - button "Go to slide 1" [ref=e308] [cursor=pointer]
+            - button "Go to slide 2" [ref=e309] [cursor=pointer]
+            - button "Go to slide 3" [ref=e310] [cursor=pointer]
+            - button "Go to slide 4" [ref=e311] [cursor=pointer]
+            - button "Go to slide 5" [ref=e312] [cursor=pointer]
+        - generic [ref=e321]:
+          - heading "Trusted Accounting Outsourcing Partner" [level=3] [ref=e326]
+          - generic [ref=e328]:
+            - generic [ref=e334]: +
+            - paragraph [ref=e339]: Projects Successfully Completed
+          - generic [ref=e341]:
+            - generic [ref=e347]: +
+            - paragraph [ref=e352]: Satisfied UK clients
+          - generic [ref=e354]:
+            - generic [ref=e360]: +
+            - paragraph [ref=e365]: Qualified accounting professionals
+        - generic [ref=e377]:
+          - group "5 / 9" [ref=e378]:
+            - 'generic "Title #3" [ref=e380]'
+          - group "6 / 9" [ref=e382]:
+            - 'generic "Title #2" [ref=e384]'
+          - group "7 / 9" [ref=e386]:
+            - 'generic "Title #3" [ref=e388]'
+          - group "8 / 9" [ref=e390]:
+            - 'generic "Title #3" [ref=e392]'
+          - group "9 / 9" [ref=e394]:
+            - 'generic "Title #3" [ref=e396]'
+          - group "1 / 9" [ref=e398]:
+            - 'generic "Title #1" [ref=e400]'
+          - group "2 / 9" [ref=e402]:
+            - 'generic "Title #2" [ref=e404]'
+          - group "3 / 9" [ref=e406]:
+            - 'generic "Title #3" [ref=e408]'
+          - group "4 / 9" [ref=e410]:
+            - 'generic "Title #3" [ref=e412]'
+          - group "5 / 9" [ref=e414]:
+            - 'generic "Title #3" [ref=e416]'
+          - group "6 / 9" [ref=e418]:
+            - 'generic "Title #2" [ref=e420]'
+          - group "7 / 9" [ref=e422]:
+            - 'generic "Title #3" [ref=e424]'
+          - group "8 / 9" [ref=e426]:
+            - 'generic "Title #3" [ref=e428]'
+          - group "9 / 9" [ref=e430]:
+            - 'generic "Title #3" [ref=e432]'
+          - group "1 / 9" [ref=e434]:
+            - 'generic "Title #1" [ref=e436]'
+          - group "2 / 9" [ref=e438]:
+            - 'generic "Title #2" [ref=e440]'
+          - group "3 / 9" [ref=e442]:
+            - 'generic "Title #3" [ref=e444]'
+          - group "4 / 9" [ref=e446]:
+            - 'generic "Title #3" [ref=e448]'
+          - group "5 / 9" [ref=e450]:
+            - 'generic "Title #3" [ref=e452]'
+      - generic:
+        - list
+    - contentinfo [ref=e454]:
+      - generic [ref=e458]:
+        - generic [ref=e459]:
+          - generic [ref=e460]:
+            - link [ref=e463] [cursor=pointer]:
+              - /url: https://wpmet.com/plugin/elementskit/templates/advisory/
+            - paragraph [ref=e469]: SAS KPO is an independent outsourcing provider. We are not affiliated with any brand, and the images and logos displayed on this website are solely for informational purposes.
+            - list [ref=e473]:
+              - listitem [ref=e474]:
+                - link "Facebook" [ref=e475] [cursor=pointer]:
+                  - /url: https://www.facebook.com/p/SAS-KPO-Services-61556891825789/
+                  - generic [ref=e476]: 
+              - listitem [ref=e477]:
+                - link "Facebook" [ref=e478] [cursor=pointer]:
+                  - /url: https://www.instagram.com/saskposervices/
+                  - img [ref=e479]
+              - listitem [ref=e481]:
+                - link "Facebook" [ref=e482] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/sas-kpo/
+                  - img [ref=e483]
+              - listitem [ref=e485]:
+                - link "Facebook" [ref=e486] [cursor=pointer]:
+                  - /url: https://x.com/kpo_sas
+                  - generic [ref=e487]: 
+          - generic [ref=e488]:
+            - heading "Quick Links" [level=2] [ref=e493]
+            - list [ref=e496]:
+              - listitem [ref=e497]:
+                - link "Home" [ref=e498] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/
+                  - generic [ref=e499]: Home
+              - listitem [ref=e500]:
+                - link "About Us" [ref=e501] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/about-us/
+                  - generic [ref=e502]: About Us
+              - listitem [ref=e503]:
+                - link "Life at SAS" [ref=e504] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/life-at-sas/
+                  - generic [ref=e505]: Life at SAS
+              - listitem [ref=e506]:
+                - link "Contact Us" [ref=e507] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/contact-us/
+                  - generic [ref=e508]: Contact Us
+          - generic [ref=e509]:
+            - heading "Specialties" [level=2] [ref=e514]
+            - list [ref=e517]:
+              - listitem [ref=e518]:
+                - link "Cloud accounting" [ref=e519] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/cloud-accounting/
+                  - generic [ref=e520]: Cloud accounting
+              - listitem [ref=e521]:
+                - link "MTD" [ref=e522] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/mtd/
+                  - generic [ref=e523]: MTD
+              - listitem [ref=e524]:
+                - link "AI Accounting" [ref=e525] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/ai-accounting/
+                  - generic [ref=e526]: AI Accounting
+              - listitem [ref=e527]:
+                - link "Marketing Services" [ref=e528] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/marketing-services/
+                  - generic [ref=e529]: Marketing Services
+          - generic [ref=e530]:
+            - heading "Resources" [level=2] [ref=e535]
+            - list [ref=e538]:
+              - listitem [ref=e539]:
+                - link "Blogs" [ref=e540] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/blog/
+                  - generic [ref=e541]: Blogs
+              - listitem [ref=e542]:
+                - link "FAQ" [ref=e543] [cursor=pointer]:
+                  - /url: https://saskpo.co.uk/faq/
+                  - generic [ref=e544]: FAQ
+          - generic [ref=e545]:
+            - heading "Get In Touch" [level=2] [ref=e550]
+            - list [ref=e553]:
+              - listitem [ref=e554]:
+                - link "sales@saskpo.co.uk" [ref=e555] [cursor=pointer]:
+                  - /url: http://mailto
+                  - generic [ref=e557]: 
+                  - generic [ref=e558]: sales@saskpo.co.uk
+              - listitem [ref=e559]:
+                - link "+44204 615 6780" [ref=e560] [cursor=pointer]:
+                  - /url: tel:+44%2020461-56780
+                  - img [ref=e562]
+                  - generic [ref=e564]: +44204 615 6780
+              - listitem [ref=e565]:
+                - link "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ" [ref=e566] [cursor=pointer]:
+                  - /url: https://share.google/H7umQ9ipePnd6DSus
+                  - img [ref=e568]
+                  - generic [ref=e570]: 71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ
+        - generic [ref=e571]:
+          - heading "© 2026, Business Theme. All Right Reserved" [level=2] [ref=e576]
+          - link "Privacy Policy" [ref=e581] [cursor=pointer]:
+            - /url: https://saskpo.co.uk/privacy-policy/
+            - heading "Privacy Policy" [level=2] [ref=e582]
+  - generic [ref=e583]: desktop

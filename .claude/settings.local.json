@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_navigate",
+      "Bash(pnpm create *)",
+      "Bash(echo \"=== SCAFFOLD EXIT: $? ===\")",
+      "Bash(set -eo pipefail)",
+      "Bash(rm -rf /tmp/saskpo-web)",
+      "Read(//tmp/**)",
+      "Bash(rsync -a --exclude='.git' /tmp/saskpo-web/ ./)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm add *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,2\\)\\)\")"
+    ]
+  }
+}
