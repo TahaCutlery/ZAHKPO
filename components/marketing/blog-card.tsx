@@ -22,7 +22,7 @@ export function BlogCard({ post, featured = false }: { post: BlogMeta; featured?
       >
         <div
           className={cn(
-            "relative flex items-end bg-[linear-gradient(120deg,var(--color-primary),var(--color-primary-strong))] p-5",
+            "relative flex items-end bg-[linear-gradient(120deg,var(--primary),var(--primary-strong))] p-5",
             featured ? "md:w-2/5" : "h-32",
           )}
         >

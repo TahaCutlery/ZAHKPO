@@ -21,7 +21,18 @@
       "Bash(echo \"TSC_EXIT=$?\")",
       "Bash(./node_modules/.bin/eslint .)",
       "Bash(echo \"ESLINT_EXIT=$?\")",
-      "mcp__playwright__browser_console_messages"
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_evaluate",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pnpm lint *)",
+      "Bash(echo \"LINT_EXIT=$?\")",
+      "Bash(pnpm build *)",
+      "Bash(echo \"BUILD_EXIT=$?\")",
+      "Bash(curl -sf --retry 60 --retry-delay 1 --retry-connrefused -o /dev/null http://localhost:3000/)",
+      "mcp__playwright__browser_click"
     ]
   }
 }

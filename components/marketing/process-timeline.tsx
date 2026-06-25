@@ -7,7 +7,7 @@ export function ProcessTimeline({ steps, className }: { steps: ProcessStep[]; cl
       {steps.map((step, i) => (
         <li key={step.title} className="flex gap-4">
           <div className="flex flex-col items-center">
-            <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[linear-gradient(120deg,var(--color-primary),var(--color-primary-strong))] text-sm font-semibold text-primary-foreground">
+            <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[linear-gradient(120deg,var(--primary),var(--primary-strong))] text-sm font-semibold text-primary-foreground">
               {i + 1}
             </span>
             {i < steps.length - 1 ? (

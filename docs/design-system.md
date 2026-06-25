@@ -1,6 +1,6 @@
 # Design System — "Ledger" (SAS KPO redesign)
 
-**Direction:** Trust-fintech, light-first. Premium, precise, calm. Generous whitespace, crisp typographic hierarchy, restrained purposeful motion. Inspired by Stripe, Clerk, Linear, Vercel — not cloned from the source site.
+**Direction:** Deep Teal & Amber — warm, premium and light-first (with a full dark mode). A deep teal brand with an amber/gold accent on a soft warm-neutral base. Sophisticated and editorial: generous whitespace, crisp typographic hierarchy, restrained purposeful motion. (Selected from a 4-way preview; replaces the original trust-fintech blue.)
 
 **Principles**
 1. Trust first — clarity, evidence (stats, security badges), no clutter.

@@ -11,7 +11,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-[linear-gradient(120deg,var(--color-primary),var(--color-primary-strong))] text-primary-foreground shadow-[var(--shadow-md)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-glow)]",
+          "bg-[linear-gradient(120deg,var(--primary),var(--primary-strong))] text-primary-foreground shadow-[var(--shadow-md)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-glow)]",
         secondary:
           "border border-border bg-surface text-foreground hover:-translate-y-0.5 hover:bg-surface-2",
         outline: "border border-border bg-transparent text-foreground hover:bg-surface",

@@ -6,24 +6,24 @@
 :root {
   color-scheme: light;
 
-  --background: #ffffff;
-  --surface: #f8fafc;
-  --surface-2: #f1f5f9;
-  --foreground: #0a0f1e;
-  --muted: #f1f5f9;
-  --muted-foreground: #51607a;
-  --border: #e6eaf2;
-  --input: #d9e0ed;
+  --background: #fbfaf8;
+  --surface: #f4f1ea;
+  --surface-2: #ece7dd;
+  --foreground: #1a1a17;
+  --muted: #f2eee7;
+  --muted-foreground: #5c574e;
+  --border: #e7e1d6;
+  --input: #ddd5c8;
   --card: #ffffff;
-  --card-foreground: #0a0f1e;
-  --primary: #2563eb;
-  --primary-strong: #4f46e5;
+  --card-foreground: #1a1a17;
+  --primary: #0f766e;
+  --primary-strong: #0d9488;
   --primary-foreground: #ffffff;
-  --accent: #06b6d4;
-  --accent-foreground: #062a33;
-  --ring: #2563eb;
+  --accent: #d97706;
+  --accent-foreground: #432004;
+  --ring: #0f766e;
   --success: #059669;
-  --warning: #d97706;
+  --warning: #b45309;
   --danger: #dc2626;
 
   --radius: 0.75rem;
@@ -32,22 +32,22 @@
 .dark {
   color-scheme: dark;
 
-  --background: #0a0f1e;
-  --surface: #0f172a;
-  --surface-2: #131c30;
-  --foreground: #f8fafc;
-  --muted: #111c30;
-  --muted-foreground: #94a3b8;
-  --border: rgba(255, 255, 255, 0.08);
-  --input: rgba(255, 255, 255, 0.14);
-  --card: #0f172a;
-  --card-foreground: #f8fafc;
-  --primary: #3b82f6;
-  --primary-strong: #6366f1;
-  --primary-foreground: #ffffff;
-  --accent: #22d3ee;
-  --accent-foreground: #04212b;
-  --ring: #3b82f6;
+  --background: #0c1413;
+  --surface: #111c19;
+  --surface-2: #17231f;
+  --foreground: #eaf0ed;
+  --muted: #14201c;
+  --muted-foreground: #9bafa8;
+  --border: rgba(255, 255, 255, 0.09);
+  --input: rgba(255, 255, 255, 0.15);
+  --card: #111c19;
+  --card-foreground: #eaf0ed;
+  --primary: #14b8a6;
+  --primary-strong: #0d9488;
+  --primary-foreground: #04241f;
+  --accent: #f59e0b;
+  --accent-foreground: #2a1a02;
+  --ring: #2dd4bf;
 }
 
 @theme inline {
@@ -82,7 +82,7 @@
   --shadow-soft: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
   --shadow-md: 0 4px 16px -4px rgba(16, 24, 40, 0.1);
   --shadow-lg: 0 12px 32px -8px rgba(16, 24, 40, 0.14);
-  --shadow-glow: 0 8px 40px -12px rgba(37, 99, 235, 0.45);
+  --shadow-glow: 0 8px 40px -12px rgba(13, 148, 136, 0.42);
 
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 
@@ -181,7 +181,7 @@
     text-rendering: optimizeLegibility;
   }
   ::selection {
-    background-color: color-mix(in oklab, var(--color-primary) 24%, transparent);
+    background-color: color-mix(in oklab, var(--primary) 24%, transparent);
   }
 }
 
@@ -206,7 +206,7 @@
 
 @layer utilities {
   .text-gradient {
-    background-image: linear-gradient(120deg, var(--color-primary), var(--color-primary-strong));
+    background-image: linear-gradient(120deg, var(--primary), var(--primary-strong));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

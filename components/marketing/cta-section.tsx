@@ -21,7 +21,7 @@ export function CTASection({
   return (
     <section className="py-20 md:py-24">
       <Container>
-        <div className="relative overflow-hidden rounded-3xl bg-[linear-gradient(120deg,var(--color-primary),var(--color-primary-strong))] px-6 py-14 text-center text-primary-foreground md:px-16 md:py-20">
+        <div className="relative overflow-hidden rounded-3xl bg-[linear-gradient(120deg,var(--primary),var(--primary-strong))] px-6 py-14 text-center text-primary-foreground md:px-16 md:py-20">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-dotted opacity-20" />
           <div className="relative mx-auto max-w-2xl">
             <h2 className="text-balance text-3xl font-semibold tracking-tight md:text-4xl">{title}</h2>

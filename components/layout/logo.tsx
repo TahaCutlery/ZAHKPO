@@ -12,7 +12,7 @@ export function Logo({ className }: { className?: string }) {
         className,
       )}
     >
-      <span className="grid size-9 place-items-center rounded-xl bg-[linear-gradient(120deg,var(--color-primary),var(--color-primary-strong))] text-primary-foreground shadow-[var(--shadow-soft)] transition-transform duration-300 ease-out-quint group-hover:-translate-y-0.5">
+      <span className="grid size-9 place-items-center rounded-xl bg-[linear-gradient(120deg,var(--primary),var(--primary-strong))] text-primary-foreground shadow-[var(--shadow-soft)] transition-transform duration-300 ease-out-quint group-hover:-translate-y-0.5">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
             d="M4 5.5h16M4 12h10M4 18.5h7"
