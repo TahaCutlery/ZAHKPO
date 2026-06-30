@@ -6,22 +6,26 @@
 :root {
   color-scheme: light;
 
-  --background: #fbfaf8;
-  --surface: #f4f1ea;
-  --surface-2: #ece7dd;
-  --foreground: #1a1a17;
-  --muted: #f2eee7;
-  --muted-foreground: #5c574e;
-  --border: #e7e1d6;
-  --input: #ddd5c8;
+  /* Brand constants sampled from the LedgerBridge logo */
+  --brand-navy: #031833;
+  --brand-gold: #f8d509;
+
+  --background: #f7f9fc;
+  --surface: #eef2f8;
+  --surface-2: #e3e9f2;
+  --foreground: #0a1a33;
+  --muted: #eef2f8;
+  --muted-foreground: #51607a;
+  --border: #dce3ee;
+  --input: #cbd5e3;
   --card: #ffffff;
-  --card-foreground: #1a1a17;
-  --primary: #0f766e;
-  --primary-strong: #0d9488;
+  --card-foreground: #0a1a33;
+  --primary: #0f2c57;
+  --primary-strong: #1d4a8a;
   --primary-foreground: #ffffff;
-  --accent: #d97706;
-  --accent-foreground: #432004;
-  --ring: #0f766e;
+  --accent: #f5c100;
+  --accent-foreground: #2a2000;
+  --ring: #1d4a8a;
   --success: #059669;
   --warning: #b45309;
   --danger: #dc2626;
@@ -32,22 +36,25 @@
 .dark {
   color-scheme: dark;
 
-  --background: #0c1413;
-  --surface: #111c19;
-  --surface-2: #17231f;
-  --foreground: #eaf0ed;
-  --muted: #14201c;
-  --muted-foreground: #9bafa8;
-  --border: rgba(255, 255, 255, 0.09);
-  --input: rgba(255, 255, 255, 0.15);
-  --card: #111c19;
-  --card-foreground: #eaf0ed;
-  --primary: #14b8a6;
-  --primary-strong: #0d9488;
-  --primary-foreground: #04241f;
-  --accent: #f59e0b;
-  --accent-foreground: #2a1a02;
-  --ring: #2dd4bf;
+  --brand-navy: #031833;
+  --brand-gold: #f8d509;
+
+  --background: #051a37;
+  --surface: #0a2243;
+  --surface-2: #0f2c52;
+  --foreground: #e9eef7;
+  --muted: #0a2243;
+  --muted-foreground: #9fb1cc;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.16);
+  --card: #0a2243;
+  --card-foreground: #e9eef7;
+  --primary: #4f8cf0;
+  --primary-strong: #2f66cc;
+  --primary-foreground: #04122b;
+  --accent: #f8d509;
+  --accent-foreground: #1c1600;
+  --ring: #6f9cf0;
 }
 
 @theme inline {
@@ -82,7 +89,7 @@
   --shadow-soft: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
   --shadow-md: 0 4px 16px -4px rgba(16, 24, 40, 0.1);
   --shadow-lg: 0 12px 32px -8px rgba(16, 24, 40, 0.14);
-  --shadow-glow: 0 8px 40px -12px rgba(13, 148, 136, 0.42);
+  --shadow-glow: 0 8px 40px -12px rgba(29, 74, 138, 0.42);
 
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 

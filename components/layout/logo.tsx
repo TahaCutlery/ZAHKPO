@@ -1,11 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
 /**
- * LedgerBridge wordmark + monogram. The mark is a crisp vector "LB" — amber L,
- * white B — on the teal brand gradient, so it stays sharp at any size and in
- * both themes (no raster scaling).
+ * LedgerBridge lockup — the LB monogram (gold L, white B on deep navy) from the
+ * brand artwork, plus the wordmark. The mark is rendered from a high-res source
+ * so it stays crisp at display size in both themes.
  */
 export function Logo({ className }: { className?: string }) {
   return (
@@ -17,17 +18,14 @@ export function Logo({ className }: { className?: string }) {
         className,
       )}
     >
-      <span
-        aria-hidden="true"
-        className="relative grid size-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-[linear-gradient(135deg,var(--primary-strong),var(--primary))] shadow-[var(--shadow-soft)] ring-1 ring-inset ring-white/15 transition-transform duration-300 ease-out-quint group-hover:-translate-y-0.5"
-      >
-        {/* soft top highlight for a little depth */}
-        <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/20 to-transparent" />
-        <span className="relative text-[1.1rem] font-extrabold leading-none tracking-[-0.06em]">
-          <span className="text-[var(--accent)]">L</span>
-          <span className="text-white">B</span>
-        </span>
-      </span>
+      <Image
+        src="/logo-mark.png"
+        alt=""
+        width={40}
+        height={40}
+        priority
+        className="size-10 shrink-0 rounded-xl shadow-[var(--shadow-soft)] ring-1 ring-inset ring-white/10 transition-transform duration-300 ease-out-quint group-hover:-translate-y-0.5"
+      />
       <span className="flex flex-col leading-none">
         <span className="text-[1.05rem] font-bold tracking-tight text-foreground">
           Ledger<span className="text-primary">Bridge</span>
