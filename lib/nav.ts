@@ -12,8 +12,13 @@ export interface MegaGroup {
 /** Services grouped for the mega menu and the /services hub. */
 export const serviceGroups: MegaGroup[] = [
   {
-    label: "Accounting",
+    label: "Core Finance & Accounting",
     items: [
+      {
+        label: "Bookkeeping",
+        href: "/services/bookkeeping",
+        description: "Reconciliations, AP/AR and ledger upkeep.",
+      },
       {
         label: "Year-End Accounts",
         href: "/services/year-end-accounts",
@@ -24,10 +29,15 @@ export const serviceGroups: MegaGroup[] = [
         href: "/services/management-accounts",
         description: "Monthly insight, variance analysis and forecasts.",
       },
+    ],
+  },
+  {
+    label: "Compliance",
+    items: [
       {
-        label: "Bookkeeping",
-        href: "/services/bookkeeping",
-        description: "Accurate reconciliations and ledger upkeep.",
+        label: "VAT Returns",
+        href: "/services/vat-returns",
+        description: "MTD-compliant quarterly VAT, reviewed and filed.",
       },
       {
         label: "Payroll",
@@ -40,19 +50,9 @@ export const serviceGroups: MegaGroup[] = [
         description: "Construction Industry Scheme, penalty-free.",
       },
       {
-        label: "iXBRL Tagging",
-        href: "/services/ixbrl-tagging",
-        description: "HMRC-ready, machine-readable accounts.",
-      },
-    ],
-  },
-  {
-    label: "Tax",
-    items: [
-      {
-        label: "VAT Returns",
-        href: "/services/vat-returns",
-        description: "MTD-compliant quarterly VAT, reviewed and filed.",
+        label: "Corporation Tax",
+        href: "/services/corporation-tax",
+        description: "CT600 computations, risk-checked and filed.",
       },
       {
         label: "Personal Tax",
@@ -60,9 +60,29 @@ export const serviceGroups: MegaGroup[] = [
         description: "Self-Assessment without the January crunch.",
       },
       {
-        label: "Corporation Tax",
-        href: "/services/corporation-tax",
-        description: "CT600 computations, risk-checked and filed.",
+        label: "iXBRL Tagging",
+        href: "/services/ixbrl-tagging",
+        description: "HMRC-ready, machine-readable accounts.",
+      },
+    ],
+  },
+  {
+    label: "CFO & Advisory",
+    items: [
+      {
+        label: "CFO & Advisory",
+        href: "/services/cfo-advisory",
+        description: "Virtual CFO, forecasting and KPI reporting.",
+      },
+    ],
+  },
+  {
+    label: "Audit Support",
+    items: [
+      {
+        label: "Audit Support",
+        href: "/services/audit-support",
+        description: "Working papers, lead schedules and file prep.",
       },
     ],
   },
@@ -88,6 +108,18 @@ export const serviceGroups: MegaGroup[] = [
   },
 ];
 
+/**
+ * Balanced columns for the desktop Services mega menu. Compliance is the tallest
+ * group, so the short CFO & Advisory and Audit Support groups share a column to
+ * keep the panel height even and prevent overflow.
+ */
+export const serviceMenuColumns: MegaGroup[][] = [
+  serviceGroups.filter((g) => g.label === "Core Finance & Accounting"),
+  serviceGroups.filter((g) => g.label === "Compliance"),
+  serviceGroups.filter((g) => g.label === "CFO & Advisory" || g.label === "Audit Support"),
+  serviceGroups.filter((g) => g.label === "Company Secretarial"),
+];
+
 export const specialtyLinks: NavLink[] = [
   {
     label: "Cloud Accounting",
@@ -105,9 +137,9 @@ export const specialtyLinks: NavLink[] = [
     description: "Automation with human quality control.",
   },
   {
-    label: "Marketing Services",
+    label: "Digital Marketing",
     href: "/specialties/marketing-services",
-    description: "Growth marketing built for accountants.",
+    description: "Branding, content and lead generation.",
   },
 ];
 
@@ -120,7 +152,7 @@ export const primaryNav: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Specialties", href: "/specialties" },
-  { label: "Life at SAS", href: "/life-at-sas" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -128,12 +160,12 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
   {
     title: "Services",
     links: [
-      { label: "Year-End Accounts", href: "/services/year-end-accounts" },
-      { label: "Management Accounts", href: "/services/management-accounts" },
       { label: "Bookkeeping", href: "/services/bookkeeping" },
-      { label: "Payroll", href: "/services/payroll" },
+      { label: "Year-End Accounts", href: "/services/year-end-accounts" },
       { label: "VAT Returns", href: "/services/vat-returns" },
-      { label: "Corporation Tax", href: "/services/corporation-tax" },
+      { label: "Payroll", href: "/services/payroll" },
+      { label: "CFO & Advisory", href: "/services/cfo-advisory" },
+      { label: "Audit Support", href: "/services/audit-support" },
     ],
   },
   {
@@ -144,7 +176,7 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
     title: "Company",
     links: [
       { label: "About", href: "/about" },
-      { label: "Life at SAS", href: "/life-at-sas" },
+      { label: "Careers", href: "/careers" },
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },
       { label: "Contact", href: "/contact" },

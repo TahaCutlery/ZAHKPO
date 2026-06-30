@@ -11,11 +11,11 @@ import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact SAS KPO Services",
+  title: "Contact LedgerBridge",
   description:
-    "Talk to SAS KPO Services about outsourcing your accounting. Call +44 204 615 6780, email sales@saskpo.co.uk, or send us a message — we reply fast.",
+    "Talk to LedgerBridge about outsourcing your accounting. Call +91 88899 84419, email info@theledgerbridge.com, or send us a message — we reply fast.",
   path: "/contact",
-  keywords: ["contact SAS KPO", "accounting outsourcing enquiry", "book a call"],
+  keywords: ["contact LedgerBridge", "accounting outsourcing enquiry", "book a call"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Contact" }];
@@ -29,8 +29,8 @@ export default function ContactPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Contact"
-        title="Let's talk about your back office"
-        description="Tell us what's on your plate and we'll show you how SAS KPO can help. We typically reply within one business day."
+        title="Let's grow together"
+        description="Tell us what's on your plate and we'll show you how LedgerBridge can help. We typically reply within one business day."
         crumbs={crumbs}
       />
 
@@ -59,6 +59,7 @@ export default function ContactPage() {
                   <span>
                     <span className="block text-xs text-muted-foreground">Call us</span>
                     <span className="font-medium">{contact.phone}</span>
+                    <span className="block font-medium">{contact.phoneAlt}</span>
                   </span>
                 </a>
                 <a
@@ -92,16 +93,18 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Follow us
-                </h3>
-                <SocialLinks className="mt-3" />
-              </div>
+              {siteConfig.social.length > 0 ? (
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                    Follow us
+                  </h3>
+                  <SocialLinks className="mt-3" />
+                </div>
+              ) : null}
 
               <iframe
-                title="SAS KPO London office location"
-                src="https://www.google.com/maps?q=71-75%20Shelton%20Street%2C%20Covent%20Garden%2C%20London%20WC2H%209JQ&output=embed"
+                title="LedgerBridge head office location"
+                src="https://www.google.com/maps?q=New%20Radhavallabh%20Market%2C%20Khargone%2C%20Madhya%20Pradesh%20451001%2C%20India&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-56 w-full rounded-2xl border border-border"

@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/specialties",
     "/blog",
     "/faq",
-    "/life-at-sas",
+    "/careers",
     "/contact",
     "/privacy",
   ];

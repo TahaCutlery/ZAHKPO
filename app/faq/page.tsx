@@ -12,7 +12,7 @@ import { faqCategories, faqs } from "@/content/faqs";
 export const metadata: Metadata = buildMetadata({
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about outsourcing your accounting to SAS KPO — security, scope, pricing model, international support and more.",
+    "Answers to common questions about outsourcing your accounting to LedgerBridge — security, scope, pricing model, technology and more.",
   path: "/faq",
   keywords: ["accounting outsourcing FAQ", "is outsourcing safe", "outsourcing questions"],
 });

@@ -13,7 +13,7 @@ import { blogCategories, posts } from "@/content/blog";
 export const metadata: Metadata = buildMetadata({
   title: "Blog & Insights",
   description:
-    "Practical guidance on outsourcing, compliance, cloud and tax from the SAS KPO team — written for accountancy firms and the businesses they serve.",
+    "Practical guidance on outsourcing, compliance, cloud and tax from the LedgerBridge team — written for UK accountancy firms and the businesses they serve.",
   path: "/blog",
   keywords: ["accounting blog", "outsourcing insights", "tax compliance articles"],
 });

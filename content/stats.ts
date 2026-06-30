@@ -1,8 +1,9 @@
 import type { Stat } from "@/types/content";
 
+// Outcomes from our work helping a UK accounting firm clear its backlog (see case study).
 export const stats: Stat[] = [
-  { value: 5, suffix: "+", label: "Years partnering with firms" },
-  { value: 3, label: "Countries served — UK, US & Ireland" },
-  { value: 2, label: "Levels of quality review on every job" },
-  { value: 0, label: "Data breaches since 2021" },
+  { value: 100, suffix: "%", label: "On-time VAT submissions" },
+  { value: 0, label: "Penalty instances" },
+  { value: 35, suffix: "%", label: "Reduction in processing time" },
+  { value: 1, label: "Tree planted per new engagement" },
 ];

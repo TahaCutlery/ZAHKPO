@@ -43,24 +43,24 @@ export function HomeHero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-3.5 py-1.5 text-sm text-muted-foreground backdrop-blur"
           >
             <span className="size-1.5 rounded-full bg-success" aria-hidden="true" />
-            Trusted by firms across the UK, US &amp; Ireland
+            The trusted outsourcing partner for UK accounting firms
           </motion.span>
 
           <motion.h1
             variants={reduce ? undefined : item}
             className="mt-6 max-w-4xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
           >
-            The outsourced back office <span className="text-gradient">accountancy firms</span> rely
-            on
+            The outsourced back office <span className="text-gradient">UK accounting firms</span>{" "}
+            rely on
           </motion.h1>
 
           <motion.p
             variants={reduce ? undefined : item}
             className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground"
           >
-            Bookkeeping, tax, payroll, year-end and company secretarial work — handled by qualified
-            people on secure systems, delivered on time. So your team can focus on advising clients
-            and growing the practice.
+            Bookkeeping, year-end, tax, payroll, audit support and CFO advisory — handled by skilled
+            people on secure systems, delivered on time. People first, process driven, technology
+            enabled, so your team can focus on growing the practice.
           </motion.p>
 
           <motion.div
@@ -83,13 +83,13 @@ export function HomeHero() {
             className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground"
           >
             <li className="inline-flex items-center gap-2">
-              <ShieldCheck className="size-4 text-primary" aria-hidden="true" /> ISO-grade security
+              <ShieldCheck className="size-4 text-primary" aria-hidden="true" /> GDPR-aligned security
             </li>
             <li className="inline-flex items-center gap-2">
-              <Award className="size-4 text-primary" aria-hidden="true" /> ACCA-qualified team
+              <Award className="size-4 text-primary" aria-hidden="true" /> CA &amp; ACCA-qualified founders
             </li>
             <li className="inline-flex items-center gap-2">
-              <Clock className="size-4 text-primary" aria-hidden="true" /> On-time, every time
+              <Clock className="size-4 text-primary" aria-hidden="true" /> SOP-driven, on-time delivery
             </li>
           </motion.ul>
         </motion.div>

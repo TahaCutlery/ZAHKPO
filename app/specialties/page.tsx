@@ -13,9 +13,9 @@ import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { specialties } from "@/content/specialties";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Specialties: Cloud, MTD, AI & Marketing",
+  title: "Specialties: Cloud, MTD, AI & Digital Marketing",
   description:
-    "Beyond compliance — cloud accounting migration, Making Tax Digital, AI-assisted automation and digital marketing that help your practice modernise and grow.",
+    "Beyond compliance — cloud accounting migration, Making Tax Digital, AI-assisted automation and digital marketing that help your UK practice modernise and grow.",
   path: "/specialties",
   keywords: ["cloud accounting", "making tax digital", "AI accounting", "accountancy marketing"],
 });

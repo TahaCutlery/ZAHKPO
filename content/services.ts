@@ -1,15 +1,18 @@
 import {
   BookOpen,
+  Briefcase,
   Building2,
   CheckCircle2,
   ClipboardCheck,
   ClipboardList,
   Clock,
   FileCode,
+  FileSearch,
   Gauge,
   HardHat,
   LineChart,
   Lock,
+  PieChart,
   PoundSterling,
   ReceiptText,
   Rocket,
@@ -27,14 +30,14 @@ export const services: Service[] = [
   {
     slug: "year-end-accounts",
     title: "Year-End Accounts",
-    category: "Accounting",
+    category: "Core Finance & Accounting",
     icon: ClipboardCheck,
     summary: "FRS-compliant statutory accounts, prepared and filed to deadline.",
     metaTitle: "Year-End Accounts Outsourcing",
     metaDescription:
       "FRS-compliant year-end accounts prepared by qualified accountants — working papers, draft accounts, iXBRL and filing support, delivered to deadline.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Core Finance & Accounting",
       heading: "Year-end accounts, off your desk and on time",
       subheading:
         "Hand us the trial balance and we hand back clean, FRS-compliant statutory accounts — fully reviewed, iXBRL-ready and filed before the deadline.",
@@ -70,14 +73,14 @@ export const services: Service[] = [
   {
     slug: "management-accounts",
     title: "Management Accounts",
-    category: "Accounting",
+    category: "Core Finance & Accounting",
     icon: LineChart,
     summary: "Monthly insight, variance analysis and forecasts that drive decisions.",
     metaTitle: "Management Accounts Outsourcing",
     metaDescription:
       "Monthly and quarterly management accounts with variance analysis, cash-flow monitoring and custom MIS — turn financial data into decisions clients can act on.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Core Finance & Accounting",
       heading: "Numbers your clients can actually act on",
       subheading:
         "Timely monthly and quarterly management accounts — with the analysis that turns a set of figures into a clear story about the business.",
@@ -111,14 +114,14 @@ export const services: Service[] = [
   {
     slug: "bookkeeping",
     title: "Bookkeeping",
-    category: "Accounting",
+    category: "Core Finance & Accounting",
     icon: BookOpen,
     summary: "Accurate reconciliations and ledger upkeep, ready for reporting.",
     metaTitle: "Bookkeeping Outsourcing",
     metaDescription:
-      "Accurate, compliant bookkeeping for UK, US and Irish firms — reconciliations, AP/AR, ledger upkeep and reporting. Take on more clients without adding overhead.",
+      "Accurate, compliant bookkeeping for UK accounting firms — reconciliations, AP/AR, ledger upkeep, fixed asset registers and reporting. Take on more clients without adding overhead.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Core Finance & Accounting",
       heading: "Clean books, every month, without the headcount",
       subheading:
         "Reliable day-to-day bookkeeping that keeps ledgers accurate and reporting-ready — so month-end and year-end run smoothly.",
@@ -128,8 +131,8 @@ export const services: Service[] = [
       { title: "Accounts payable", description: "Purchase invoices captured, coded and ready to pay." },
       { title: "Accounts receivable", description: "Sales invoicing and receipts tracked and matched." },
       { title: "General ledger upkeep", description: "Coded transactions and a tidy, trustworthy ledger." },
+      { title: "Fixed asset register", description: "Asset registers maintained with depreciation kept current." },
       { title: "P&L and balance sheet", description: "Period statements prepared from clean underlying data." },
-      { title: "Multi-jurisdiction", description: "Records kept to UK, US and Irish conventions." },
     ],
     benefits: [
       { title: "Fewer month-end surprises", description: "Issues are caught early, not at year-end.", icon: CheckCircle2 },
@@ -146,14 +149,14 @@ export const services: Service[] = [
   {
     slug: "payroll",
     title: "Payroll",
-    category: "Accounting",
+    category: "Compliance",
     icon: Wallet,
     summary: "Fully managed, compliant payroll — accurate and on schedule.",
     metaTitle: "Payroll Outsourcing",
     metaDescription:
       "Fully managed payroll — salary processing, statutory deductions, pensions and reporting — handled securely and on schedule, with a dedicated point of contact.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Compliance",
       heading: "Payroll that runs like clockwork",
       subheading:
         "Accurate salary processing, statutory deductions and pension handling — delivered securely, on time, with a named contact who knows your account.",
@@ -187,14 +190,14 @@ export const services: Service[] = [
   {
     slug: "cis-returns",
     title: "CIS Returns",
-    category: "Accounting",
+    category: "Compliance",
     icon: HardHat,
     summary: "Construction Industry Scheme returns, accurate and penalty-free.",
     metaTitle: "CIS Returns Outsourcing",
     metaDescription:
       "Construction Industry Scheme returns made simple — monthly calculations, deduction verification and HMRC-aligned submissions that keep contractors penalty-free.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Compliance",
       heading: "CIS compliance without the monthly stress",
       subheading:
         "Monthly CIS returns calculated, verified and submitted in line with HMRC rules — so contractors stay compliant and penalty-free.",
@@ -221,14 +224,14 @@ export const services: Service[] = [
   {
     slug: "ixbrl-tagging",
     title: "iXBRL Tagging",
-    category: "Accounting",
+    category: "Compliance",
     icon: FileCode,
     summary: "HMRC-ready, machine-readable accounts with validated tagging.",
     metaTitle: "iXBRL Tagging Outsourcing",
     metaDescription:
       "Convert financial statements into HMRC-compliant, machine-readable iXBRL with automated validation and careful review — faster filing, fewer errors.",
     hero: {
-      eyebrow: "Accounting",
+      eyebrow: "Compliance",
       heading: "Turn statements into clean, compliant iXBRL",
       subheading:
         "Accurate iXBRL tagging that meets HMRC requirements — converted, validated and reviewed so submissions go through first time.",
@@ -251,14 +254,14 @@ export const services: Service[] = [
   {
     slug: "vat-returns",
     title: "VAT Returns",
-    category: "Tax",
+    category: "Compliance",
     icon: ReceiptText,
     summary: "MTD-compliant quarterly VAT, reviewed and filed on time.",
     metaTitle: "VAT Returns Outsourcing",
     metaDescription:
       "Quarterly VAT prepared, reviewed and filed under Making Tax Digital — accurate input/output calculations, error checks and advisory support. Never miss a deadline.",
     hero: {
-      eyebrow: "Tax",
+      eyebrow: "Compliance",
       heading: "Quarterly VAT, prepared and filed under MTD",
       subheading:
         "Input and output VAT calculated, reviewed and submitted to HMRC under Making Tax Digital — accurate every quarter, never late.",
@@ -292,14 +295,14 @@ export const services: Service[] = [
   {
     slug: "personal-tax",
     title: "Personal Tax",
-    category: "Tax",
+    category: "Compliance",
     icon: UserCheck,
     summary: "Self-Assessment without the January crunch.",
     metaTitle: "Personal Tax Returns Outsourcing",
     metaDescription:
       "Self-Assessment prepared and reviewed by UK & Ireland tax specialists — kill the January crunch, hit every deadline and free your team for advisory work.",
     hero: {
-      eyebrow: "Tax",
+      eyebrow: "Compliance",
       heading: "Self-Assessment season, minus the crunch",
       subheading:
         "Accurate personal tax returns prepared and reviewed ahead of deadline — so the January rush stops dominating your practice.",
@@ -326,14 +329,14 @@ export const services: Service[] = [
   {
     slug: "corporation-tax",
     title: "Corporation Tax",
-    category: "Tax",
+    category: "Compliance",
     icon: Building2,
     summary: "CT600 computations, risk-checked and filed on time.",
     metaTitle: "Corporation Tax Outsourcing",
     metaDescription:
       "CT600 computations and corporation tax returns prepared, risk-checked and filed on time by specialists — compliance and confidence without peak-season strain.",
     hero: {
-      eyebrow: "Tax",
+      eyebrow: "Compliance",
       heading: "Corporation tax, computed and filed with confidence",
       subheading:
         "CT600 computations and returns prepared, risk-checked and submitted on time — current with the rules, light on your team.",
@@ -445,6 +448,81 @@ export const services: Service[] = [
     ],
     related: ["business-setup", "tax-registrations", "corporation-tax"],
   },
+  {
+    slug: "cfo-advisory",
+    title: "CFO & Advisory",
+    category: "CFO & Advisory",
+    icon: Briefcase,
+    summary: "Virtual CFO support, forecasting and KPI reporting that drive decisions.",
+    metaTitle: "Virtual CFO & Advisory Services",
+    metaDescription:
+      "Virtual CFO support for UK firms and their clients — budgeting, cash-flow forecasting, financial modelling, KPI dashboards and business performance reviews that turn numbers into decisions.",
+    hero: {
+      eyebrow: "CFO & Advisory",
+      heading: "Senior financial insight, on demand",
+      subheading:
+        "Give your clients CFO-level thinking without the CFO salary — budgeting, forecasting, financial modelling and KPI reporting that turn the numbers into a clear plan.",
+    },
+    deliverables: [
+      { title: "Virtual CFO", description: "Strategic financial oversight and a senior sounding board for key decisions." },
+      { title: "Budgeting & forecasting", description: "Forward-looking budgets and rolling forecasts that support planning." },
+      { title: "Cash-flow forecasting", description: "Rolling visibility of cash position and short-term runway." },
+      { title: "Financial modelling", description: "Scenario models for growth, funding and investment decisions." },
+      { title: "KPI dashboard reporting", description: "The metrics that matter, presented clearly and on schedule." },
+      { title: "Business performance reviews", description: "Regular reviews that surface what's working and what needs attention." },
+    ],
+    process: [
+      { title: "Understand", description: "We learn the business, its goals and the decisions ahead." },
+      { title: "Model", description: "Budgets, forecasts and scenarios are built from clean data." },
+      { title: "Report", description: "KPI dashboards and reviews are delivered on a fixed cadence." },
+      { title: "Advise", description: "We translate the numbers into clear, actionable recommendations." },
+    ],
+    benefits: [
+      { title: "CFO insight, lower cost", description: "Senior advisory capacity without a full-time hire.", icon: PoundSterling },
+      { title: "Decision-ready numbers", description: "Forecasts and KPIs you can act on with confidence.", icon: LineChart },
+      { title: "Forward visibility", description: "See cash and performance before issues arise.", icon: TrendingUp },
+      { title: "Stronger client relationships", description: "Offer advisory value that deepens client trust.", icon: Briefcase },
+    ],
+    faqs: [
+      { question: "Is this a fully outsourced CFO?", answer: "It's flexible — from periodic advisory and reporting through to a virtual CFO acting as an ongoing senior financial partner for your client." },
+      { question: "Can you build dashboards in our tools?", answer: "Yes. We build KPI dashboards and reports using Power BI, Excel and Power Query, tailored to the metrics each client cares about." },
+    ],
+    related: ["management-accounts", "year-end-accounts", "audit-support"],
+  },
+  {
+    slug: "audit-support",
+    title: "Audit Support",
+    category: "Audit Support",
+    icon: FileSearch,
+    summary: "Working papers, lead schedules and audit file preparation, done right.",
+    metaTitle: "Audit Support Services",
+    metaDescription:
+      "Outsourced audit support for UK firms — audit working papers, lead schedules, sampling support, audit file preparation and financial statement drafting, prepared to your standards.",
+    hero: {
+      eyebrow: "Audit Support",
+      heading: "Audit-ready files, prepared off your desk",
+      subheading:
+        "Free your audit team from the heavy preparation work — working papers, lead schedules, sampling and file build handled accurately, so they can focus on judgement and review.",
+    },
+    deliverables: [
+      { title: "Audit working papers", description: "Structured, referenced working papers prepared to your file standards." },
+      { title: "Lead schedules", description: "Lead schedules built and tied back to the trial balance." },
+      { title: "Sampling support", description: "Sample selection and testing support documented clearly." },
+      { title: "Audit file preparation", description: "Complete audit files assembled and ready for review." },
+      { title: "Financial statement drafting", description: "Statutory financial statements drafted to the correct standard." },
+    ],
+    benefits: [
+      { title: "Capacity for busy season", description: "Extra hands through the audit peak, without hiring.", icon: Gauge },
+      { title: "Reviewer-ready files", description: "Clean, referenced files that speed up review.", icon: CheckCircle2 },
+      { title: "Consistent quality", description: "SOP-driven preparation and multi-level checks.", icon: ShieldCheck },
+      { title: "Senior time freed", description: "Your auditors focus on judgement, not assembly.", icon: PieChart },
+    ],
+    faqs: [
+      { question: "Do you perform the audit?", answer: "No — we provide preparation and support work under your firm's direction and methodology. Audit opinion, review and sign-off remain entirely with you." },
+      { question: "Can you work to our audit file structure?", answer: "Yes. We follow your templates, referencing and methodology so files slot straight into your review process." },
+    ],
+    related: ["year-end-accounts", "cfo-advisory", "corporation-tax"],
+  },
 ];
 
 export const servicesBySlug = Object.fromEntries(services.map((s) => [s.slug, s]));
@@ -453,4 +531,10 @@ export function getService(slug: string): Service | undefined {
   return servicesBySlug[slug];
 }
 
-export const serviceCategories = ["Accounting", "Tax", "Company Secretarial"] as const;
+export const serviceCategories = [
+  "Core Finance & Accounting",
+  "Compliance",
+  "CFO & Advisory",
+  "Audit Support",
+  "Company Secretarial",
+] as const;

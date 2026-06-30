@@ -1,6 +1,11 @@
 import type { LucideIcon } from "lucide-react";
 
-export type ServiceCategory = "Accounting" | "Tax" | "Company Secretarial";
+export type ServiceCategory =
+  | "Core Finance & Accounting"
+  | "Compliance"
+  | "CFO & Advisory"
+  | "Audit Support"
+  | "Company Secretarial";
 
 export interface Deliverable {
   title: string;

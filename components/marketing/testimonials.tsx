@@ -10,7 +10,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const multiple = items.length > 1;
   return (
     <Carousel
-      ariaLabel="What people say about SAS KPO"
+      ariaLabel="What people say about LedgerBridge"
       slideClassName="sm:basis-full"
       showArrows={multiple}
       showDots={multiple}

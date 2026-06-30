@@ -17,7 +17,7 @@ import {
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
-import { resourceLinks, serviceGroups, specialtyLinks } from "@/lib/nav";
+import { resourceLinks, serviceGroups, serviceMenuColumns, specialtyLinks } from "@/lib/nav";
 
 const triggerClass =
   "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-foreground";
@@ -81,33 +81,37 @@ export function Navbar() {
                 />
               </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
-                <div className="grid w-[42rem] grid-cols-3 gap-6 p-6">
-                  {serviceGroups.map((group) => (
-                    <div key={group.label}>
-                      <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                        {group.label}
-                      </p>
-                      <ul className="space-y-1">
-                        {group.items.map((item) => (
-                          <li key={item.href}>
-                            <NavigationMenu.Link asChild>
-                              <Link
-                                href={item.href}
-                                className="block rounded-lg p-2.5 transition-colors hover:bg-surface"
-                              >
-                                <span className="block text-sm font-medium text-foreground">
-                                  {item.label}
-                                </span>
-                                {item.description ? (
-                                  <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
-                                    {item.description}
-                                  </span>
-                                ) : null}
-                              </Link>
-                            </NavigationMenu.Link>
-                          </li>
-                        ))}
-                      </ul>
+                <div className="grid max-h-[calc(100vh-6rem)] w-[52rem] grid-cols-4 gap-x-6 gap-y-6 overflow-y-auto p-6">
+                  {serviceMenuColumns.map((column, i) => (
+                    <div key={i} className="space-y-6">
+                      {column.map((group) => (
+                        <div key={group.label}>
+                          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                            {group.label}
+                          </p>
+                          <ul className="space-y-1">
+                            {group.items.map((item) => (
+                              <li key={item.href}>
+                                <NavigationMenu.Link asChild>
+                                  <Link
+                                    href={item.href}
+                                    className="block rounded-lg p-2.5 transition-colors hover:bg-surface"
+                                  >
+                                    <span className="block text-sm font-medium text-foreground">
+                                      {item.label}
+                                    </span>
+                                    {item.description ? (
+                                      <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                        {item.description}
+                                      </span>
+                                    ) : null}
+                                  </Link>
+                                </NavigationMenu.Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </div>
@@ -174,8 +178,8 @@ export function Navbar() {
 
             <NavigationMenu.Item>
               <NavigationMenu.Link asChild>
-                <Link href="/life-at-sas" className={navLinkClass(pathname === "/life-at-sas")}>
-                  Life at SAS
+                <Link href="/careers" className={navLinkClass(pathname === "/careers")}>
+                  Careers
                 </Link>
               </NavigationMenu.Link>
             </NavigationMenu.Item>
@@ -271,10 +275,10 @@ export function Navbar() {
                   </AccordionItem>
                 </Accordion>
                 <Link
-                  href="/life-at-sas"
+                  href="/careers"
                   className="block border-b border-border py-3.5 text-base font-medium"
                 >
-                  Life at SAS
+                  Careers
                 </Link>
                 <Link href="/contact" className="block py-3.5 text-base font-medium">
                   Contact

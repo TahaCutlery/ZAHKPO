@@ -19,8 +19,8 @@ export function Footer() {
           <div className="flex flex-col gap-6">
             <Logo />
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
-              The outsourced back office for accountancy firms across the UK, USA and Ireland.
-              Qualified people, secure systems, work delivered on time.
+              The trusted outsourcing partner for UK accounting firms. Skilled people, SOP-driven
+              processes, modern technology — work delivered accurately and on time.
             </p>
             <NewsletterForm />
             <SocialLinks />

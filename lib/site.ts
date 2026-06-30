@@ -1,34 +1,32 @@
 export const siteConfig = {
-  name: "SAS KPO Services",
-  shortName: "SAS KPO",
-  legalName: "SAS KPO Services",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://saskpo.co.uk",
-  founded: 2021,
-  tagline: "Precision in accounting. Confidence in compliance.",
+  name: "LedgerBridge",
+  shortName: "LedgerBridge",
+  legalName: "Zah Professional Services Private Limited",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.theledgerbridge.com",
+  founded: 2025,
+  tagline: "Growth Beyond Limits",
   description:
-    "SAS KPO Services is the outsourced back office for UK, US and Irish accountancy firms — bookkeeping, tax, payroll, year-end and company secretarial work, delivered accurately and on time.",
+    "LedgerBridge is a technology-driven KPO and trusted outsourcing partner for UK accounting firms — bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   contact: {
-    phone: "+44 204 615 6780",
-    phoneHref: "+442046156780",
-    email: "sales@saskpo.co.uk",
-    careersEmail: "hr@saskpo.co.uk",
+    phone: "+91 88899 84419",
+    phoneHref: "+918889984419",
+    phoneAlt: "+91 79999 83500",
+    phoneAltHref: "+917999983500",
+    email: "info@theledgerbridge.com",
+    careersEmail: "info@theledgerbridge.com",
     ukOffice: {
-      label: "London (HQ)",
-      lines: ["71–75 Shelton Street", "Covent Garden", "London WC2H 9JQ", "United Kingdom"],
+      label: "Head Office",
+      lines: [
+        "GF 178, New Radhavallabh Market",
+        "Khargone",
+        "Madhya Pradesh 451001",
+        "India",
+      ],
     },
-    deliveryOffices: [
-      { label: "Ahmedabad", lines: ["1021 Gala Empire, Thaltej", "Gujarat 380054, India"] },
-      { label: "Jamnagar", lines: ["Pancheshwar Tower", "Gujarat 361001, India"] },
-      { label: "Mandsaur", lines: ["Madhya Pradesh 458001, India"] },
-    ],
+    deliveryOffices: [] as { label: string; lines: string[] }[],
   },
-  social: [
-    { platform: "LinkedIn", url: "https://www.linkedin.com/company/sas-kpo/" },
-    { platform: "Facebook", url: "https://www.facebook.com/p/SAS-KPO-Services-61556891825789/" },
-    { platform: "Instagram", url: "https://www.instagram.com/saskposervices/" },
-    { platform: "X", url: "https://x.com/kpo_sas" },
-  ],
-  markets: ["United Kingdom", "United States", "Ireland"],
+  social: [] as { platform: "LinkedIn" | "Facebook" | "Instagram" | "X"; url: string }[],
+  markets: ["United Kingdom"],
 } as const;
 
 export type SiteConfig = typeof siteConfig;

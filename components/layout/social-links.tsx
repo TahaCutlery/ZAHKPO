@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/site";
 
-type Platform = (typeof siteConfig.social)[number]["platform"];
+type Platform = "LinkedIn" | "Facebook" | "Instagram" | "X";
 
 function Icon({ platform }: { platform: Platform }) {
   const common = { viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": true as const };
@@ -35,6 +35,7 @@ function Icon({ platform }: { platform: Platform }) {
 }
 
 export function SocialLinks({ className }: { className?: string }) {
+  if (siteConfig.social.length === 0) return null;
   return (
     <ul className={cn("flex items-center gap-2", className)}>
       {siteConfig.social.map((s) => (
@@ -43,7 +44,7 @@ export function SocialLinks({ className }: { className?: string }) {
             href={s.url}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`SAS KPO on ${s.platform}`}
+            aria-label={`${siteConfig.name} on ${s.platform}`}
             className="grid size-9 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <Icon platform={s.platform} />

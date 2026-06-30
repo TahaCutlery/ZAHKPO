@@ -1,14 +1,20 @@
 import type { Testimonial } from "@/types/content";
 
 /**
- * Real, sourced testimonial from the SAS KPO team. Add more (client or team)
- * here and the Testimonials carousel will pick them up automatically.
+ * Founder voices on what LedgerBridge is building. Add client or team
+ * testimonials here and the Testimonials carousel will pick them up.
  */
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Three and a half years in and the time has flown. The environment is genuinely positive and supportive — I've learned an enormous amount and grown alongside a brilliant team.",
-    author: "Mohit Thanna",
-    role: "Accounts Manager",
+      "We take ownership of your operational workload, so you can focus on growing your practice and building stronger client relationships.",
+    author: "Husain Sangam",
+    role: "Co-Founder & Director",
+  },
+  {
+    quote:
+      "We're building a trusted, process-driven and technology-enabled outsourcing partner for accounting firms worldwide.",
+    author: "Mustafa Bag",
+    role: "Co-Founder & Director",
   },
 ];

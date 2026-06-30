@@ -10,7 +10,7 @@ import { posts } from "@/content/blog";
 
 export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description: "Search the SAS KPO Services website for services, specialties and articles.",
+  description: "Search the LedgerBridge website for services, specialties and articles.",
   path: "/search",
   noindex: true,
 });
@@ -37,7 +37,7 @@ const index: SearchDoc[] = [
   { title: "About", description: "Our story, values and security.", href: "/about", type: "Page" },
   { title: "Contact", description: "Get in touch with the team.", href: "/contact", type: "Page" },
   { title: "FAQ", description: "Common questions about outsourcing.", href: "/faq", type: "Page" },
-  { title: "Life at SAS", description: "Careers and culture at SAS KPO.", href: "/life-at-sas", type: "Page" },
+  { title: "Careers", description: "Careers and culture at LedgerBridge.", href: "/careers", type: "Page" },
 ];
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Search" }];

@@ -46,14 +46,16 @@ export function organizationSchema() {
     email: contact.email,
     telephone: contact.phone,
     foundingDate: String(siteConfig.founded),
+    legalName: siteConfig.legalName,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "71–75 Shelton Street, Covent Garden",
-      addressLocality: "London",
-      postalCode: "WC2H 9JQ",
-      addressCountry: "GB",
+      streetAddress: "GF 178, New Radhavallabh Market",
+      addressLocality: "Khargone",
+      addressRegion: "Madhya Pradesh",
+      postalCode: "451001",
+      addressCountry: "IN",
     },
-    areaServed: ["GB", "US", "IE"],
+    areaServed: ["GB"],
     sameAs: siteConfig.social.map((s) => s.url),
   };
 }
@@ -88,7 +90,7 @@ export function serviceSchema({
     description,
     serviceType: name,
     provider: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
-    areaServed: ["GB", "US", "IE"],
+    areaServed: ["GB"],
     url: `${siteConfig.url}${path}`,
   };
 }

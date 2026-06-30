@@ -14,7 +14,7 @@ interface CTASectionProps {
 
 export function CTASection({
   title = "Add capacity without adding headcount",
-  description = "Tell us what's on your plate. We'll show you exactly how SAS KPO can take it on — accurately, securely and on time.",
+  description = "Tell us what's on your plate. We'll show you exactly how LedgerBridge can take it on — accurately, securely and on time.",
   primaryLabel = "Get in touch",
   primaryHref = "/contact",
 }: CTASectionProps) {

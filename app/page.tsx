@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Gauge, PoundSterling, ShieldCheck, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2, Gauge, ListChecks, PoundSterling, ShieldCheck, TrendingUp } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -17,14 +17,15 @@ import { servicesBySlug } from "@/content/services";
 import { specialties } from "@/content/specialties";
 import { stats } from "@/content/stats";
 import { securityFeatures } from "@/content/about";
+import { caseStudy, challenges } from "@/content/home";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Accounting Outsourcing for Accountancy Firms",
+  title: "Accounting Outsourcing for UK Accounting Firms",
   description:
-    "SAS KPO Services is the outsourced back office for UK, US & Irish accountancy firms — bookkeeping, tax, payroll, year-end and company secretarial work, delivered accurately and on time.",
+    "LedgerBridge is a technology-driven KPO and the outsourced back office for UK accounting firms — bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   path: "/",
   keywords: [
-    "accounting outsourcing",
+    "accounting outsourcing UK",
     "accountancy firm outsourcing",
     "bookkeeping outsourcing",
     "white label accounting",
@@ -32,12 +33,12 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const featuredServices = [
-  "year-end-accounts",
   "bookkeeping",
-  "payroll",
-  "vat-returns",
-  "corporation-tax",
+  "year-end-accounts",
   "management-accounts",
+  "vat-returns",
+  "cfo-advisory",
+  "audit-support",
 ].map((slug) => servicesBySlug[slug]);
 
 const whyPoints = [
@@ -52,9 +53,9 @@ const whyPoints = [
     description: "Senior accounting talent at a fraction of the cost of building it in-house.",
   },
   {
-    icon: ShieldCheck,
-    title: "Compliant & secure",
-    description: "Two-level review and ISO-grade security on every job you hand over.",
+    icon: ListChecks,
+    title: "SOP-driven & secure",
+    description: "Standardised processes, multi-level review and GDPR-aligned security on every job.",
   },
   {
     icon: TrendingUp,
@@ -78,7 +79,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="What we do"
               title="One partner for the whole back office"
-              description="From day-to-day bookkeeping to year-end and company secretarial work — pick the services you need and add them seamlessly to your practice."
+              description="From day-to-day bookkeeping to year-end, audit support and CFO advisory — pick the services you need and add them seamlessly to your practice."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -109,14 +110,26 @@ export default function HomePage() {
         <Container>
           <Reveal>
             <SectionHeading
-              eyebrow="Why firms choose SAS KPO"
-              title="The numbers behind a dependable partner"
-              description="Founded in 2021 and trusted across three countries — with a security record we're proud of."
+              eyebrow="Challenges we understand"
+              title="Your challenges, our solutions"
+              description="UK firms face the same pressures again and again. Here's how LedgerBridge helps with each one."
             />
           </Reveal>
-          <Reveal delay={0.05} className="mt-12">
-            <StatStrip stats={stats} />
-          </Reveal>
+          <Stagger className="mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {challenges.map((c) => (
+              <StaggerItem key={c.challenge}>
+                <Card className="h-full p-5">
+                  <p className="text-sm font-medium text-muted-foreground line-through decoration-border">
+                    {c.challenge}
+                  </p>
+                  <p className="mt-2 flex items-start gap-2 text-sm font-semibold text-foreground">
+                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                    {c.solution}
+                  </p>
+                </Card>
+              </StaggerItem>
+            ))}
+          </Stagger>
         </Container>
       </Section>
 
@@ -148,9 +161,54 @@ export default function HomePage() {
         <Container>
           <Reveal>
             <SectionHeading
+              eyebrow="Case study"
+              title="Helping a UK firm clear its backlog"
+              description={caseStudy.client}
+            />
+          </Reveal>
+          <div className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
+            <Reveal>
+              <Card className="h-full p-6">
+                <h3 className="font-semibold text-foreground">The challenges</h3>
+                <ul className="mt-4 space-y-2.5">
+                  {caseStudy.challenges.map((item) => (
+                    <li key={item} className="text-sm leading-relaxed text-muted-foreground">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <Card className="h-full p-6">
+                <h3 className="font-semibold text-foreground">Our approach</h3>
+                <ul className="mt-4 space-y-2.5">
+                  {caseStudy.approach.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
+                    >
+                      <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Reveal>
+          </div>
+          <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl">
+            <StatStrip stats={caseStudy.results} />
+          </Reveal>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Reveal>
+            <SectionHeading
               eyebrow="Specialties"
               title="Beyond compliance"
-              description="Modernise and grow with cloud migration, Making Tax Digital, AI-assisted automation and marketing built for accountants."
+              description="Modernise and grow with cloud migration, Making Tax Digital, AI-assisted automation and digital marketing built for accountants."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -168,7 +226,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="border-t border-border bg-surface">
         <Container>
           <Reveal>
             <SectionHeading
@@ -177,7 +235,7 @@ export default function HomePage() {
               description="Security isn't a feature — it's the foundation. Here's how we keep every file you share safe."
             />
           </Reveal>
-          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {securityFeatures.map((f) => (
               <StaggerItem key={f.title}>
                 <Card className="h-full p-6">

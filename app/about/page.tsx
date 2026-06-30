@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Eye, Leaf, Target } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,15 +13,25 @@ import { CTASection } from "@/components/marketing/cta-section";
 import { IconTile } from "@/components/marketing/icon-tile";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
-import { aboutValues, differentiators, securityFeatures, timeline } from "@/content/about";
+import {
+  aboutValues,
+  differentiators,
+  mission,
+  securityFeatures,
+  sustainability,
+  timeline,
+  vision,
+  whoWeAre,
+} from "@/content/about";
+import { founders, foundersImage } from "@/content/team";
 import { stats } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About SAS KPO Services",
+  title: "About LedgerBridge",
   description:
-    "Founded in 2021, SAS KPO Services helps accountancy firms scale with ACCA-qualified talent, ISO-grade security and a true partnership model across the UK, USA and Ireland.",
+    "Founded in 2025, LedgerBridge (Zah Professional Services Pvt Ltd) helps UK accounting firms scale with skilled professionals, SOP-driven processes, modern technology and GDPR-aligned security.",
   path: "/about",
-  keywords: ["about SAS KPO", "accounting outsourcing partner", "ACCA qualified team"],
+  keywords: ["about LedgerBridge", "accounting outsourcing partner UK", "KPO for accountants"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "About" }];
@@ -31,8 +42,8 @@ export default function AboutPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="About"
-        title="The back office accountancy firms count on"
-        description="We started in 2021 with a simple belief: firms do their best work when the routine compliance load is handled by people they can trust. That's still what drives us."
+        title="The back office UK accounting firms count on"
+        description="LedgerBridge is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
       >
         <Button asChild size="lg">
@@ -46,11 +57,9 @@ export default function AboutPage() {
       <Section>
         <Container>
           <Reveal className="mx-auto max-w-2xl text-center">
-            <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
-              SAS KPO Services is an outsourced accounting partner for practices across the UK, USA
-              and Ireland. We work as a quiet extension of your team — accurate, responsive and
-              security-first — so you can spend your time where it matters most: advising clients and
-              growing the firm.
+            <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{whoWeAre}</p>
+            <p className="mt-6 text-sm font-medium uppercase tracking-[0.14em] text-primary">
+              People First · Process Driven · Technology Enabled · Value Focused
             </p>
           </Reveal>
           <Reveal delay={0.05} className="mt-12">
@@ -61,13 +70,80 @@ export default function AboutPage() {
 
       <Section className="border-y border-border bg-surface">
         <Container>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Reveal>
+              <Card className="h-full p-8">
+                <IconTile icon={Eye} />
+                <h2 className="mt-4 text-xl font-semibold tracking-tight text-foreground">
+                  Our vision
+                </h2>
+                <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{vision}</p>
+              </Card>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <Card className="h-full p-8">
+                <IconTile icon={Target} />
+                <h2 className="mt-4 text-xl font-semibold tracking-tight text-foreground">
+                  Our mission
+                </h2>
+                <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{mission}</p>
+              </Card>
+            </Reveal>
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Reveal>
+            <SectionHeading
+              eyebrow="Founders"
+              title="Led by qualified accountants"
+              description="LedgerBridge is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <Reveal>
+              <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
+                <Image
+                  src={foundersImage.src}
+                  alt={foundersImage.alt}
+                  width={768}
+                  height={1024}
+                  className="h-full w-full object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              </div>
+            </Reveal>
+            <Stagger className="grid gap-6">
+              {founders.map((f) => (
+                <StaggerItem key={f.name}>
+                  <Card className="h-full p-6">
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                      <h3 className="text-lg font-semibold text-foreground">{f.name}</h3>
+                      <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                        {f.credential}
+                      </span>
+                    </div>
+                    <p className="text-sm font-medium text-muted-foreground">{f.role}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.bio}</p>
+                  </Card>
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-border bg-surface">
+        <Container>
           <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
             <Reveal>
               <SectionHeading
                 align="left"
                 eyebrow="Our story"
-                title="From two people to a full-service partner"
-                description="Steady, deliberate growth — built on relationships and a reputation for getting the detail right."
+                title="Growth beyond limits"
+                description="A technology-driven KPO, built on relationships and a reputation for getting the detail right."
               />
             </Reveal>
             <Reveal delay={0.05}>
@@ -148,10 +224,10 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Security first"
               title="Built on trust and protection"
-              description="A clean security record since day one, backed by encryption, certified facilities and round-the-clock monitoring."
+              description="Confidentiality, controlled access and GDPR-aligned practices are built into how we work."
             />
           </Reveal>
-          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {securityFeatures.map((f) => (
               <StaggerItem key={f.title}>
                 <Card className="h-full p-6">
@@ -164,6 +240,22 @@ export default function AboutPage() {
               </StaggerItem>
             ))}
           </Stagger>
+        </Container>
+      </Section>
+
+      <Section className="border-t border-border bg-surface">
+        <Container>
+          <Reveal className="mx-auto max-w-2xl text-center">
+            <span className="inline-grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
+              <Leaf className="size-6" aria-hidden="true" />
+            </span>
+            <h2 className="mt-5 text-2xl font-semibold tracking-tight text-foreground">
+              {sustainability.title}
+            </h2>
+            <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
+              {sustainability.description}
+            </p>
+          </Reveal>
         </Container>
       </Section>
 

@@ -60,7 +60,7 @@ export function ServiceDetail({
             <SectionHeading
               align="left"
               eyebrow="What we handle"
-              title={`Everything in ${offering.title.toLowerCase()}, covered`}
+              title={`Everything in ${offering.title}, covered`}
               description="A clear scope of work, delivered to a dependable standard every time."
             />
           </Reveal>
@@ -93,7 +93,7 @@ export function ServiceDetail({
       <Section>
         <Container>
           <Reveal>
-            <SectionHeading eyebrow="Why SAS KPO" title="Built to make your practice stronger" />
+            <SectionHeading eyebrow="Why LedgerBridge" title="Built to make your practice stronger" />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {offering.benefits.map((b) => (

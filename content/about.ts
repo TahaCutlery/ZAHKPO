@@ -1,16 +1,17 @@
 import {
   Award,
-  Building2,
-  Eye,
-  Gauge,
-  HeartHandshake,
-  Lock,
+  FileLock2,
   type LucideIcon,
-  MessageSquare,
-  ServerCog,
+  KeyRound,
+  Leaf,
+  ListChecks,
+  Lock,
+  ScrollText,
   ShieldCheck,
-  Target,
+  Sparkles,
   TrendingUp,
+  UserCog,
+  Users,
 } from "lucide-react";
 
 interface IconItem {
@@ -19,50 +20,71 @@ interface IconItem {
   icon: LucideIcon;
 }
 
+/** LedgerBridge's guiding principle: "People First. Process Driven. Technology Enabled. Value Focused." */
 export const aboutValues: IconItem[] = [
-  { title: "Accuracy first", description: "Every job passes a two-level review. Precision isn't optional in accounting.", icon: Target },
-  { title: "Responsive by default", description: "Proactive communication and quick turnarounds — we work as an extension of your team.", icon: MessageSquare },
-  { title: "Long-term partnership", description: "We invest in understanding your practice, not just clearing a task list.", icon: HeartHandshake },
-  { title: "Quality-driven", description: "Qualified people and structured processes, so the output is consistently dependable.", icon: Award },
+  { title: "People first", description: "Skilled, qualified professionals who work as a genuine extension of your team.", icon: Users },
+  { title: "Process driven", description: "SOP-led delivery and multi-level checks keep quality consistent on every job.", icon: ListChecks },
+  { title: "Technology enabled", description: "Modern cloud tools, automation and AI-driven efficiencies built into how we work.", icon: Sparkles },
+  { title: "Value focused", description: "We take ownership of your operational workload so you can grow your practice.", icon: TrendingUp },
 ];
 
+/** From the profile: "What differentiates us?" */
 export const differentiators: IconItem[] = [
-  { title: "Experienced, qualified team", description: "ACCA-qualified accountants and seasoned specialists across UK, US and Irish work.", icon: Award },
-  { title: "Cost-effective scale", description: "Senior capacity on demand — without the overhead of in-house hiring.", icon: TrendingUp },
-  { title: "Built to flex", description: "Scale up for peak season and back down again, with no fixed cost hangover.", icon: Gauge },
-  { title: "Security as standard", description: "Encrypted systems and ISO-certified facilities protect every file you share.", icon: ShieldCheck },
+  { title: "Proactive approach", description: "We anticipate what your practice needs and move on it before it becomes a problem.", icon: Award },
+  { title: "Quality & consistency guaranteed", description: "Multi-level review on every deliverable keeps accuracy and standards high.", icon: ShieldCheck },
+  { title: "SOP-driven approach", description: "Standardised, documented processes mean dependable, repeatable delivery.", icon: ListChecks },
+  { title: "Helps grow client practice", description: "We handle the back office so you can focus on advice, relationships and growth.", icon: TrendingUp },
 ];
 
+/** Our commitment to data security — straight from the company profile. */
 export const securityFeatures: IconItem[] = [
-  { title: "256-bit encryption", description: "Bank-grade encryption protects data in transit and at rest.", icon: Lock },
-  { title: "ISO-certified facilities", description: "Delivery from secure, certified environments.", icon: Building2 },
-  { title: "24/7 monitoring", description: "Continuous monitoring of systems and access.", icon: Eye },
-  { title: "Zero breaches since 2021", description: "A clean security record across our entire history.", icon: ServerCog },
+  { title: "Confidentiality agreements", description: "All team members and associates are bound by strict NDA and confidentiality agreements.", icon: FileLock2 },
+  { title: "Password protection", description: "Every device and system is password protected, with credentials rotated at regular intervals.", icon: KeyRound },
+  { title: "Secure sharing", description: "Secure cloud-based file sharing with reliable backup and data retention.", icon: Lock },
+  { title: "Access control", description: "Controlled access to client data, with regular team awareness on security best practice.", icon: UserCog },
+  { title: "GDPR aligned", description: "Committed to GDPR-aligned working practices for data privacy and protection.", icon: ShieldCheck },
+  { title: "Tone at the top", description: "Regular security awareness and documented SOPs for how data is handled.", icon: ScrollText },
 ];
+
+export const whoWeAre =
+  "LedgerBridge is a trusted outsourcing partner for UK accounting firms, delivering accurate, scalable and high-quality accounting support. Acting as an extension of our clients' teams, we combine skilled professionals, efficient processes and modern technology to improve turnaround times, maintain quality and support sustainable growth.";
+
+export const vision =
+  "To become the most trusted outsourcing partner for accounting firms by combining skilled professionals, structured processes, modern technology and AI-driven efficiencies — delivering exceptional value while creating a positive impact on businesses, people and the environment.";
+
+export const mission =
+  "To help accounting firms scale efficiently through accurate delivery, SOP-driven operations, continuous process improvement and responsible use of technology and AI. We are committed to reliable support, meaningful business insights, sustainable growth, and contributing to society through initiatives that promote environmental and community well-being.";
+
+export const sustainability = {
+  icon: Leaf,
+  title: "A tree for every engagement",
+  description:
+    "For every new engagement, LedgerBridge plants a tree — supporting environmental sustainability and responsible growth.",
+};
 
 export const timeline: { year: string; title: string; description: string }[] = [
   {
-    year: "2021",
+    year: "2025",
     title: "Founded",
     description:
-      "SAS KPO Services starts as a two-person team with a simple idea: give accountancy firms a back office they can rely on.",
+      "Zah Professional Services Private Limited launches LedgerBridge in Khargone, India — a technology-driven KPO built to give UK accounting firms a back office they can rely on.",
   },
   {
-    year: "The early years",
-    title: "Building the team",
+    year: "Built on experience",
+    title: "Founder-led delivery",
     description:
-      "We grow into a team of qualified accounting professionals and form our first long-term firm partnerships.",
+      "Co-founders Husain Sangam (CA) and Mustafa Bag (ACCA) bring 12+ combined years in UK accounting, audit and compliance to every engagement.",
   },
   {
-    year: "Scaling up",
-    title: "Going multi-region",
+    year: "People · Process · Technology",
+    title: "A structured model",
     description:
-      "Delivery expands across the UK, USA and Ireland, backed by secure, ISO-certified infrastructure and structured quality control.",
+      "SOP-driven operations, multi-level quality checks and modern cloud, automation and AI tools combine to deliver accurate, scalable support.",
   },
   {
-    year: "Today",
-    title: "A full-service partner",
+    year: "Growth beyond limits",
+    title: "Responsible scaling",
     description:
-      "From bookkeeping to company secretarial work — plus cloud, Making Tax Digital, AI-assisted automation and marketing — under one roof.",
+      "From bookkeeping to CFO advisory — plus a commitment to GDPR-aligned security and planting a tree for every new engagement.",
   },
 ];

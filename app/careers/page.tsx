@@ -17,16 +17,16 @@ import { testimonials } from "@/content/testimonials";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Life at SAS — Careers",
+  title: "Careers at LedgerBridge",
   description:
-    "Build an accounting career with global exposure, ACCA support and a collaborative culture. See life at SAS KPO and our current openings.",
-  path: "/life-at-sas",
-  keywords: ["accounting careers", "ACCA jobs", "SAS KPO careers", "bookkeeper jobs"],
+    "Build an accounting career with UK client exposure, ACCA support and a collaborative, process-driven culture. See life at LedgerBridge and our current openings.",
+  path: "/careers",
+  keywords: ["accounting careers", "ACCA jobs", "LedgerBridge careers", "bookkeeper jobs Khargone"],
 });
 
-const crumbs = [{ label: "Home", href: "/" }, { label: "Life at SAS" }];
+const crumbs = [{ label: "Home", href: "/" }, { label: "Careers" }];
 
-export default function LifeAtSasPage() {
+export default function CareersPage() {
   const applyHref = `mailto:${siteConfig.contact.careersEmail}?subject=Career%20application`;
 
   return (
@@ -34,8 +34,8 @@ export default function LifeAtSasPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Careers"
-        title="Build your career with SAS KPO"
-        description="A talent-focused team where you'll work with firms across the UK, US and Ireland, learn modern tools, and grow with people who have your back."
+        title="Build your career with LedgerBridge"
+        description="A talent-focused team where you'll work directly with UK accounting firms, learn modern cloud and AI tools, and grow with people who have your back."
         crumbs={crumbs}
       >
         <Button asChild size="lg">

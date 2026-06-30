@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Thank You",
-  description: "Thanks for getting in touch with SAS KPO Services. We've received your message.",
+  description: "Thanks for getting in touch with LedgerBridge. We've received your message.",
   path: "/thank-you",
   noindex: true,
 });

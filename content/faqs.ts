@@ -7,9 +7,9 @@ export interface Faq {
 export const faqs: Faq[] = [
   {
     category: "Getting started",
-    question: "What does SAS KPO Services actually do?",
+    question: "What does LedgerBridge actually do?",
     answer:
-      "We're the outsourced back office for accountancy firms and businesses. We handle bookkeeping, payroll, tax returns, year-end accounts and company secretarial work so your team can focus on advice, relationships and growth.",
+      "We're a technology-driven KPO and the outsourced back office for UK accounting firms. We handle bookkeeping, year-end accounts, management accounts, VAT, payroll, CIS, corporation tax, audit support, CFO advisory and company secretarial work — so your team can focus on advice, relationships and growth.",
   },
   {
     category: "Getting started",
@@ -19,15 +19,15 @@ export const faqs: Faq[] = [
   },
   {
     category: "Getting started",
-    question: "Can you support firms outside the UK?",
+    question: "Who do you work with?",
     answer:
-      "Yes. We support accountancy firms and businesses across the UK, USA and Ireland, working remotely through secure digital systems and to each region's standards.",
+      "We specialise in supporting UK accounting firms — acting as an extension of their team and working remotely through secure, cloud-based digital systems to UK standards.",
   },
   {
     category: "Security",
     question: "Is it safe to share our financial data with you?",
     answer:
-      "Security is built into everything we do — 256-bit encryption, ISO-certified facilities and 24/7 monitoring, aligned to international data-protection standards. We've maintained a clean record with zero data breaches since 2021.",
+      "Yes. Security is built into how we work: all team members are bound by strict NDAs and confidentiality agreements, devices and systems are password protected with credentials rotated regularly, files are shared and backed up securely in the cloud, and access to client data is controlled. We follow GDPR-aligned practices with documented SOPs for data handling.",
   },
   {
     category: "Services",

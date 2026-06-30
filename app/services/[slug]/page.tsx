@@ -22,7 +22,7 @@ export async function generateMetadata({
     title: service.metaTitle,
     description: service.metaDescription,
     path: `/services/${slug}`,
-    keywords: [service.title.toLowerCase(), "outsourcing", "accountancy firms", "SAS KPO"],
+    keywords: [service.title.toLowerCase(), "outsourcing", "UK accountancy firms", "LedgerBridge"],
   });
 }
 

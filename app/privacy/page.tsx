@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How SAS KPO Services collects, uses and protects your personal data, your rights under UK GDPR, and how to contact us about privacy.",
+    "How LedgerBridge collects, uses and protects your personal data, your rights under UK GDPR, and how to contact us about privacy.",
   path: "/privacy",
   keywords: ["privacy policy", "data protection", "UK GDPR"],
 });
@@ -62,9 +62,10 @@ export default function PrivacyPage() {
             <h2>Data security</h2>
             <p>
               We take reasonable and appropriate measures to protect your personal information,
-              including 256-bit encryption, certified facilities and ongoing monitoring. No method of
-              transmission over the internet is completely secure, but we work hard to protect your
-              data and have maintained a clean record since 2021.
+              including strict confidentiality agreements, password-protected systems, controlled
+              access to client data and secure, cloud-based file sharing with regular backups. No
+              method of transmission over the internet is completely secure, but we work hard to
+              protect your data and follow GDPR-aligned practices throughout.
             </p>
 
             <h2>Your data protection rights</h2>

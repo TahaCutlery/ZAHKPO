@@ -15,16 +15,18 @@ import { serviceCategories, services } from "@/content/services";
 export const metadata: Metadata = buildMetadata({
   title: "Outsourced Accounting Services",
   description:
-    "Explore SAS KPO's full range of outsourced accounting, tax and company secretarial services — built to add capacity to your practice without adding headcount.",
+    "Explore LedgerBridge's full range of outsourced services for UK firms — core accounting, compliance, CFO advisory, audit support and company secretarial — built to add capacity without adding headcount.",
   path: "/services",
-  keywords: ["outsourced accounting services", "tax outsourcing", "company secretarial outsourcing"],
+  keywords: ["outsourced accounting services", "audit support outsourcing", "virtual CFO services"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Services" }];
 
 const categoryCopy: Record<string, string> = {
-  Accounting: "Keep the books accurate and every deadline met.",
-  Tax: "Returns prepared, reviewed and filed on time.",
+  "Core Finance & Accounting": "Keep the books accurate and every report on time.",
+  Compliance: "VAT, payroll, CIS and tax — prepared, reviewed and filed on time.",
+  "CFO & Advisory": "Forecasting, modelling and KPI insight that drive decisions.",
+  "Audit Support": "Working papers and file preparation, ready for your review.",
   "Company Secretarial": "Stay compliant across the whole company lifecycle.",
 };
 
@@ -34,8 +36,8 @@ export default function ServicesPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Services"
-        title="Outsourced accounting, tax & company secretarial"
-        description="Pick the services your practice needs and plug them straight in. Every job is delivered by qualified people, reviewed twice, and handled on secure systems."
+        title="Accounting, compliance, advisory & audit support"
+        description="Pick the services your practice needs and plug them straight in. Every job is delivered by skilled people, SOP-driven, multi-level reviewed and handled on secure systems."
         crumbs={crumbs}
       >
         <Button asChild size="lg">

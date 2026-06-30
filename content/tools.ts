@@ -1,6 +1,16 @@
 /**
- * Accounting platforms and tools the team works across. SAS KPO is a
- * Xero-certified advisor and works in QuickBooks; the wider stack reflects
- * the standard UK/IE practice toolset used in delivery.
+ * The software stack LedgerBridge works across — core bookkeeping platforms,
+ * data-capture & automation tools, and the analytics & AI we use in delivery.
  */
-export const tools: string[] = ["Xero", "QuickBooks", "Sage", "FreeAgent", "Dext", "BrightPay"];
+export const tools: string[] = [
+  "Xero",
+  "QuickBooks",
+  "Sage",
+  "FreeAgent",
+  "Dext",
+  "Hubdoc",
+  "Zapier",
+  "Power BI",
+  "Power Query",
+  "Microsoft Copilot",
+];

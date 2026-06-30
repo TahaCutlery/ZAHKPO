@@ -28,10 +28,10 @@ export default function Body() {
         rather than the other way round.
       </p>
 
-      <h2>2. Look for multi-jurisdiction know-how</h2>
+      <h2>2. Look for UK accounting know-how</h2>
       <p>
-        If you serve clients across the UK, US or Ireland, your bookkeeping partner needs to keep
-        records to the right conventions in each. Mismatched treatment is expensive to unpick later.
+        Your bookkeeping partner needs to keep records to UK conventions and understand VAT, CIS and
+        Companies House requirements. Mismatched treatment is expensive to unpick later.
       </p>
 
       <h2>3. Check security and access</h2>
