@@ -41,7 +41,7 @@ export const securityFeatures: IconItem[] = [
   { title: "Confidentiality agreements", description: "All team members and associates are bound by strict NDA and confidentiality agreements.", icon: FileLock2 },
   { title: "Password protection", description: "Every device and system is password protected, with credentials rotated at regular intervals.", icon: KeyRound },
   { title: "Secure sharing", description: "Secure cloud-based file sharing with reliable backup and data retention.", icon: Lock },
-  { title: "Access control", description: "Controlled access to client data, with regular team awareness on security best practice.", icon: UserCog },
+  { title: "Access control", description: "Controlled access to client data, with regular team awareness of security best practice.", icon: UserCog },
   { title: "GDPR aligned", description: "Committed to GDPR-aligned working practices for data privacy and protection.", icon: ShieldCheck },
   { title: "Tone at the top", description: "Regular security awareness and documented SOPs for how data is handled.", icon: ScrollText },
 ];

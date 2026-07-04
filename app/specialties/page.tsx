@@ -31,10 +31,11 @@ export default function SpecialtiesPage() {
         title="Modernise and grow, beyond the compliance basics"
         description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy firms — the work that moves a practice forward."
         crumbs={crumbs}
+        image={{ src: "/images/boardroom-meeting.jpg" }}
       >
-        <Button asChild size="lg">
+        <Button asChild size="lg" variant="accent">
           <Link href="/contact">
-            Get in touch
+            Book a Discovery Call
             <ArrowRight className="size-4" aria-hidden="true" />
           </Link>
         </Button>

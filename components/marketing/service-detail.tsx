@@ -39,17 +39,18 @@ export function ServiceDetail({
         title={offering.hero.heading}
         description={offering.hero.subheading}
         crumbs={crumbs}
+        image={{ src: "/images/corporate-meeting.jpg" }}
       >
         <Button asChild size="lg">
           <Link href="/contact">
-            Get in touch
+            Book a Discovery Call
             <ArrowRight className="size-4" aria-hidden="true" />
           </Link>
         </Button>
         <Button asChild size="lg" variant="outline">
           <a href={`tel:${siteConfig.contact.phoneHref}`}>
             <Phone className="size-4" aria-hidden="true" />
-            Book a call
+            Call us now
           </a>
         </Button>
       </PageHero>

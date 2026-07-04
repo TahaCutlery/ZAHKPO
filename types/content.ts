@@ -69,6 +69,8 @@ export interface Testimonial {
   author: string;
   role: string;
   company?: string;
+  /** 1–5 star rating shown on review cards */
+  rating?: number;
 }
 
 export interface Tool {

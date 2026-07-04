@@ -10,6 +10,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { PageHero } from "@/components/marketing/page-hero";
 import { StatStrip } from "@/components/marketing/stat-strip";
 import { CTASection } from "@/components/marketing/cta-section";
+import { FounderCard } from "@/components/marketing/founder-card";
 import { IconTile } from "@/components/marketing/icon-tile";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
@@ -23,7 +24,7 @@ import {
   vision,
   whoWeAre,
 } from "@/content/about";
-import { founders, foundersImage } from "@/content/team";
+import { founders } from "@/content/team";
 import { stats } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
@@ -45,8 +46,9 @@ export default function AboutPage() {
         title="The back office UK accounting firms count on"
         description="LedgerBridge is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
+        image={{ src: "/images/office-entrance.jpg" }}
       >
-        <Button asChild size="lg">
+        <Button asChild size="lg" variant="accent">
           <Link href="/contact">
             Work with us
             <ArrowRight className="size-4" aria-hidden="true" />
@@ -102,36 +104,13 @@ export default function AboutPage() {
               description="LedgerBridge is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
             />
           </Reveal>
-          <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <Reveal>
-              <div className="relative overflow-hidden rounded-3xl border border-border bg-surface">
-                <Image
-                  src={foundersImage.src}
-                  alt={foundersImage.alt}
-                  width={768}
-                  height={1024}
-                  className="h-full w-full object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
-              </div>
-            </Reveal>
-            <Stagger className="grid gap-6">
-              {founders.map((f) => (
-                <StaggerItem key={f.name}>
-                  <Card className="h-full p-6">
-                    <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-                      <h3 className="text-lg font-semibold text-foreground">{f.name}</h3>
-                      <span className="text-xs font-semibold uppercase tracking-wider text-primary">
-                        {f.credential}
-                      </span>
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">{f.role}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.bio}</p>
-                  </Card>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
+          <Stagger className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
+            {founders.map((f) => (
+              <StaggerItem key={f.name}>
+                <FounderCard founder={f} />
+              </StaggerItem>
+            ))}
+          </Stagger>
         </Container>
       </Section>
 
@@ -173,6 +152,64 @@ export default function AboutPage() {
               </ol>
             </Reveal>
           </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our office"
+              title="Inside LedgerBridge"
+              description="Our delivery centre in Vadodara — a modern, secure workspace purpose-built for focused, confidential client work."
+            />
+          </Reveal>
+          <Stagger className="mt-12 grid grid-cols-2 auto-rows-[9rem] gap-4 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
+            <StaggerItem className="col-span-2">
+              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/office-entrance.jpg"
+                  alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 66vw"
+                  className="object-cover"
+                />
+              </div>
+            </StaggerItem>
+            <StaggerItem className="row-span-2">
+              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/office-workstations.jpg"
+                  alt="Two team members working side by side at LedgerBridge workstations"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/office-team.jpg"
+                  alt="The LedgerBridge team at work in the open-plan office"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+                <Image
+                  src="/images/office-cabin.jpg"
+                  alt="A LedgerBridge accountant working at a dual-screen desk in a private cabin"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            </StaggerItem>
+          </Stagger>
         </Container>
       </Section>
 

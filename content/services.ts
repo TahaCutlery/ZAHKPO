@@ -317,7 +317,7 @@ export const services: Service[] = [
     benefits: [
       { title: "Beat the rush", description: "Returns delivered early, not at the wire.", icon: Clock },
       { title: "Predictable cost", description: "Turn seasonal overtime into a fixed cost.", icon: PoundSterling },
-      { title: "Scale on demand", description: "Add capacity for season without hiring.", icon: Gauge },
+      { title: "Scale on demand", description: "Add capacity for the season without hiring.", icon: Gauge },
       { title: "Advisory focus", description: "Free seniors for higher-value client work.", icon: TrendingUp },
     ],
     faqs: [

@@ -33,6 +33,7 @@ export default function FaqPage() {
         title="Questions, answered"
         description="Everything firms usually want to know before outsourcing. Can't find what you're after? Get in touch — we're happy to talk it through."
         crumbs={crumbs}
+        image={{ src: "/images/finance-desk.jpg" }}
       />
 
       <Section>

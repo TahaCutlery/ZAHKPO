@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 
 import { Container, Eyebrow } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
@@ -11,27 +12,73 @@ interface PageHeroProps {
   crumbs?: Crumb[];
   children?: React.ReactNode;
   className?: string;
+  /** Optional photographic backdrop; switches the hero to a dark navy treatment. */
+  image?: { src: string };
 }
 
-export function PageHero({ eyebrow, title, description, crumbs, children, className }: PageHeroProps) {
+export function PageHero({
+  eyebrow,
+  title,
+  description,
+  crumbs,
+  children,
+  className,
+  image,
+}: PageHeroProps) {
+  const withImage = Boolean(image);
   return (
-    <section className={cn("relative overflow-hidden border-b border-border", className)}>
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-dotted opacity-50 mask-fade-b"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -top-32 left-1/2 size-[40rem] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
-      />
+    <section
+      className={cn(
+        "relative overflow-hidden border-b border-border",
+        withImage && "dark bg-[#031833]",
+        className,
+      )}
+    >
+      {withImage ? (
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <Image
+            src={image!.src}
+            alt=""
+            fill
+            preload
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#031833]/90 via-[#031833]/70 to-[#031833]/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/70 via-transparent to-[#031833]/30" />
+        </div>
+      ) : (
+        <>
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 bg-dotted opacity-50 mask-fade-b"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-32 left-1/2 size-[40rem] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
+          />
+        </>
+      )}
       <Container className="relative py-14 md:py-20 lg:py-24">
         {crumbs ? <Breadcrumb items={crumbs} className="mb-6" /> : null}
-        {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-        <h1 className="mt-3 max-w-3xl text-balance text-4xl font-semibold tracking-tight md:text-5xl">
+        {eyebrow ? (
+          <Eyebrow className={withImage ? "text-[#f8d509]" : undefined}>{eyebrow}</Eyebrow>
+        ) : null}
+        <h1
+          className={cn(
+            "mt-3 max-w-3xl text-balance text-4xl font-semibold tracking-tight md:text-5xl",
+            withImage && "text-white",
+          )}
+        >
           {title}
         </h1>
         {description ? (
-          <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p
+            className={cn(
+              "mt-5 max-w-2xl text-pretty text-lg leading-relaxed",
+              withImage ? "text-white/80" : "text-muted-foreground",
+            )}
+          >
             {description}
           </p>
         ) : null}

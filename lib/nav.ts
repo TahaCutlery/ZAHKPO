@@ -108,18 +108,6 @@ export const serviceGroups: MegaGroup[] = [
   },
 ];
 
-/**
- * Balanced columns for the desktop Services mega menu. Compliance is the tallest
- * group, so the short CFO & Advisory and Audit Support groups share a column to
- * keep the panel height even and prevent overflow.
- */
-export const serviceMenuColumns: MegaGroup[][] = [
-  serviceGroups.filter((g) => g.label === "Core Finance & Accounting"),
-  serviceGroups.filter((g) => g.label === "Compliance"),
-  serviceGroups.filter((g) => g.label === "CFO & Advisory" || g.label === "Audit Support"),
-  serviceGroups.filter((g) => g.label === "Company Secretarial"),
-];
-
 export const specialtyLinks: NavLink[] = [
   {
     label: "Cloud Accounting",
@@ -143,6 +131,24 @@ export const specialtyLinks: NavLink[] = [
   },
 ];
 
+/** Specialties presented as a group inside the Services mega menu. */
+export const specialtiesGroup: MegaGroup = {
+  label: "Specialties",
+  items: specialtyLinks,
+};
+
+/**
+ * Balanced columns for the desktop Services mega menu. Compliance is the tallest
+ * group, so the short CFO & Advisory and Audit Support groups share a column —
+ * and Specialties pairs with Company Secretarial — to keep the panel height even.
+ */
+export const serviceMenuColumns: MegaGroup[][] = [
+  serviceGroups.filter((g) => g.label === "Core Finance & Accounting"),
+  serviceGroups.filter((g) => g.label === "Compliance"),
+  serviceGroups.filter((g) => g.label === "CFO & Advisory" || g.label === "Audit Support"),
+  [...serviceGroups.filter((g) => g.label === "Company Secretarial"), specialtiesGroup],
+];
+
 export const resourceLinks: NavLink[] = [
   { label: "Blog", href: "/blog", description: "Guides on outsourcing, tax and cloud." },
   { label: "FAQ", href: "/faq", description: "Answers to common outsourcing questions." },
@@ -151,7 +157,7 @@ export const resourceLinks: NavLink[] = [
 export const primaryNav: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Specialties", href: "/specialties" },
+  { label: "Why LedgerBridge", href: "/why-ledgerbridge" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -176,6 +182,7 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
     title: "Company",
     links: [
       { label: "About", href: "/about" },
+      { label: "Why LedgerBridge", href: "/why-ledgerbridge" },
       { label: "Careers", href: "/careers" },
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },

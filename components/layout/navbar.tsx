@@ -17,7 +17,7 @@ import {
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
-import { resourceLinks, serviceGroups, serviceMenuColumns, specialtyLinks } from "@/lib/nav";
+import { resourceLinks, serviceGroups, serviceMenuColumns, specialtiesGroup } from "@/lib/nav";
 
 const triggerClass =
   "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-foreground";
@@ -118,33 +118,15 @@ export function Navbar() {
               </NavigationMenu.Content>
             </NavigationMenu.Item>
 
-            <NavigationMenu.Item className="relative">
-              <NavigationMenu.Trigger className={triggerClass}>
-                Specialties
-                <ChevronDown
-                  className="size-4 transition-transform duration-200 group-data-[state=open]:rotate-180"
-                  aria-hidden="true"
-                />
-              </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
-                <div className="grid w-[34rem] grid-cols-2 gap-2 p-5">
-                  {specialtyLinks.map((item) => (
-                    <NavigationMenu.Link asChild key={item.href}>
-                      <Link
-                        href={item.href}
-                        className="block rounded-lg p-3 transition-colors hover:bg-surface"
-                      >
-                        <span className="block text-sm font-medium text-foreground">
-                          {item.label}
-                        </span>
-                        <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
-                          {item.description}
-                        </span>
-                      </Link>
-                    </NavigationMenu.Link>
-                  ))}
-                </div>
-              </NavigationMenu.Content>
+            <NavigationMenu.Item>
+              <NavigationMenu.Link asChild>
+                <Link
+                  href="/why-ledgerbridge"
+                  className={navLinkClass(pathname === "/why-ledgerbridge")}
+                >
+                  Why LedgerBridge
+                </Link>
+              </NavigationMenu.Link>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item className="relative">
@@ -189,7 +171,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <ThemeToggle className="hidden sm:grid" />
           <Button asChild size="sm" className="hidden sm:inline-flex">
-            <Link href="/contact">Get in touch</Link>
+            <Link href="/contact">Book a Discovery Call</Link>
           </Button>
 
           <Sheet open={open} onOpenChange={setOpen}>
@@ -217,7 +199,7 @@ export function Navbar() {
                     <AccordionTrigger>Services</AccordionTrigger>
                     <AccordionContent>
                       <div className="space-y-4">
-                        {serviceGroups.map((group) => (
+                        {[...serviceGroups, specialtiesGroup].map((group) => (
                           <div key={group.label}>
                             <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                               {group.label}
@@ -239,23 +221,6 @@ export function Navbar() {
                       </div>
                     </AccordionContent>
                   </AccordionItem>
-                  <AccordionItem value="specialties">
-                    <AccordionTrigger>Specialties</AccordionTrigger>
-                    <AccordionContent>
-                      <ul className="space-y-0.5">
-                        {specialtyLinks.map((item) => (
-                          <li key={item.href}>
-                            <Link
-                              href={item.href}
-                              className="block rounded-md py-1.5 text-sm text-foreground/90 hover:text-primary"
-                            >
-                              {item.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </AccordionContent>
-                  </AccordionItem>
                   <AccordionItem value="resources">
                     <AccordionTrigger>Resources</AccordionTrigger>
                     <AccordionContent>
@@ -275,6 +240,12 @@ export function Navbar() {
                   </AccordionItem>
                 </Accordion>
                 <Link
+                  href="/why-ledgerbridge"
+                  className="block border-b border-border py-3.5 text-base font-medium"
+                >
+                  Why LedgerBridge
+                </Link>
+                <Link
                   href="/careers"
                   className="block border-b border-border py-3.5 text-base font-medium"
                 >
@@ -288,7 +259,7 @@ export function Navbar() {
                 <ThemeToggle />
                 <SheetClose asChild>
                   <Button asChild className="flex-1">
-                    <Link href="/contact">Get in touch</Link>
+                    <Link href="/contact">Book a Discovery Call</Link>
                   </Button>
                 </SheetClose>
               </div>

@@ -55,6 +55,7 @@ export default async function SearchPage({
         title="Find what you need"
         description="Search across our services, specialties and articles."
         crumbs={crumbs}
+        image={{ src: "/images/team-meeting-bright.jpg" }}
       />
       <Section>
         <Container>

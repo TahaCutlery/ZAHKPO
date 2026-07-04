@@ -37,8 +37,9 @@ export default function CareersPage() {
         title="Build your career with LedgerBridge"
         description="A talent-focused team where you'll work directly with UK accounting firms, learn modern cloud and AI tools, and grow with people who have your back."
         crumbs={crumbs}
+        image={{ src: "/images/office-cabin.jpg" }}
       >
-        <Button asChild size="lg">
+        <Button asChild size="lg" variant="accent">
           <a href={applyHref}>
             View open roles
             <ArrowRight className="size-4" aria-hidden="true" />

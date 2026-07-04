@@ -24,6 +24,7 @@ export default function PrivacyPage() {
         title="Privacy Policy"
         description="Last updated 25 March 2026. This policy explains what personal data we collect, why, and the rights you have over it."
         crumbs={crumbs}
+        image={{ src: "/images/city-skyline.jpg" }}
       />
 
       <Section>

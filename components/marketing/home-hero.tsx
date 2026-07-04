@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { ArrowRight, Award, Clock, ShieldCheck } from "lucide-react";
+import { ArrowRight, Award, CalendarCheck, Clock, ShieldCheck, Timer } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/section";
@@ -17,80 +18,113 @@ const item: Variants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
+const trustSignals = [
+  { icon: Timer, value: "5000+", label: "Hours Delivered" },
+  { icon: Clock, value: "99%", label: "On-Time Delivery" },
+  { icon: ShieldCheck, value: "GDPR", label: "Secure" },
+  { icon: Award, value: "CA & ACCA", label: "Qualified" },
+];
+
 export function HomeHero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative overflow-hidden">
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-grid opacity-40 mask-fade-b" />
+    <section className="relative isolate overflow-hidden bg-[#031833]">
+      {/* Real office backdrop with a navy wash that keeps copy readable */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10">
+        <Image
+          src="/images/office-team.jpg"
+          alt=""
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover object-[center_60%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#031833] via-[#031833]/80 to-[#031833]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/90 via-transparent to-[#031833]/40" />
+      </div>
       <div
         aria-hidden="true"
-        className="absolute left-1/2 top-[-12%] -z-10 size-[44rem] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl"
+        className="absolute right-[-10%] top-[-20%] -z-10 size-[36rem] rounded-full bg-[#f8d509]/10 blur-3xl"
       />
-      <div
-        aria-hidden="true"
-        className="absolute right-[-8%] top-[18%] -z-10 size-[26rem] rounded-full bg-accent/10 blur-3xl"
-      />
+
       <Container>
         <motion.div
           variants={reduce ? undefined : container}
           initial={reduce ? false : "hidden"}
           animate={reduce ? false : "show"}
-          className="flex flex-col items-center py-20 text-center md:py-28 lg:py-32"
+          className="flex max-w-3xl flex-col items-start py-24 md:py-32 lg:py-36"
         >
           <motion.span
             variants={reduce ? undefined : item}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-3.5 py-1.5 text-sm text-muted-foreground backdrop-blur"
+            className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 text-sm font-semibold tracking-wide text-[#f8d509] backdrop-blur"
           >
-            <span className="size-1.5 rounded-full bg-success" aria-hidden="true" />
-            The trusted outsourcing partner for UK accounting firms
+            <span className="size-1.5 rounded-full bg-[#f8d509]" aria-hidden="true" />
+            Think Outsourcing. Think LedgerBridge.
           </motion.span>
 
           <motion.h1
             variants={reduce ? undefined : item}
-            className="mt-6 max-w-4xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
+            className="mt-6 text-balance text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
-            The outsourced back office <span className="text-gradient">UK accounting firms</span>{" "}
-            rely on
+            Trusted Outsourcing Partner for{" "}
+            <span className="bg-[linear-gradient(120deg,#f8d509,#f5a800)] bg-clip-text text-transparent">
+              UK Accounting Firms
+            </span>
           </motion.h1>
 
           <motion.p
             variants={reduce ? undefined : item}
-            className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground"
+            className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-white/80"
           >
-            Bookkeeping, year-end, tax, payroll, audit support and CFO advisory — handled by skilled
-            people on secure systems, delivered on time. People first, process driven, technology
-            enabled, so your team can focus on growing the practice.
+            We help UK accounting firms save time, reduce costs and scale with confidence —
+            through accurate, compliant and reliable back-office support.
+          </motion.p>
+
+          <motion.p
+            variants={reduce ? undefined : item}
+            className="mt-4 text-sm font-medium uppercase tracking-[0.14em] text-white/50"
+          >
+            Bookkeeping · Accounts · Tax · Payroll · Audit Support · CFO Advisory
           </motion.p>
 
           <motion.div
             variants={reduce ? undefined : item}
-            className="mt-8 flex flex-wrap items-center justify-center gap-3"
+            className="mt-9 flex flex-wrap items-center gap-3"
           >
-            <Button asChild size="lg">
+            <Button asChild size="lg" variant="accent">
               <Link href="/contact">
-                Get in touch
+                <CalendarCheck className="size-4" aria-hidden="true" />
+                Book a Discovery Call
                 <ArrowRight className="size-4" aria-hidden="true" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/services">Explore services</Link>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/30 bg-white/5 text-white backdrop-blur hover:bg-white/10"
+            >
+              <Link href="/services">Explore Services</Link>
             </Button>
           </motion.div>
 
           <motion.ul
             variants={reduce ? undefined : item}
-            className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground"
+            className="mt-12 grid w-full grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/12 bg-white/10 backdrop-blur-sm sm:grid-cols-4"
           >
-            <li className="inline-flex items-center gap-2">
-              <ShieldCheck className="size-4 text-primary" aria-hidden="true" /> GDPR-aligned security
-            </li>
-            <li className="inline-flex items-center gap-2">
-              <Award className="size-4 text-primary" aria-hidden="true" /> CA &amp; ACCA-qualified founders
-            </li>
-            <li className="inline-flex items-center gap-2">
-              <Clock className="size-4 text-primary" aria-hidden="true" /> SOP-driven, on-time delivery
-            </li>
+            {trustSignals.map((signal) => (
+              <li
+                key={signal.label}
+                className="flex items-center gap-3 bg-[#051a37]/80 px-4 py-4 sm:px-5"
+              >
+                <signal.icon className="size-5 shrink-0 text-[#f8d509]" aria-hidden="true" />
+                <div>
+                  <p className="text-base font-semibold leading-tight text-white">{signal.value}</p>
+                  <p className="text-xs leading-tight text-white/60">{signal.label}</p>
+                </div>
+              </li>
+            ))}
           </motion.ul>
         </motion.div>
       </Container>

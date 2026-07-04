@@ -32,8 +32,9 @@ export const caseStudy = {
     "Maintained regular coordination with the UK team",
   ],
   results: [
-    { value: 100, suffix: "%", label: "On-time VAT submissions" },
-    { value: 0, label: "Penalty instances" },
-    { value: 35, suffix: "%", label: "Reduction in processing time" },
+    { value: 1000, suffix: "+", label: "Hours Delivered" },
+    { value: 99, suffix: "%", label: "On-Time Delivery" },
+    { value: 2, label: "Countries Served" },
+    { value: 70, prefix: "Up to ", suffix: "%", label: "Cost Reduction" },
   ] as Stat[],
 };
