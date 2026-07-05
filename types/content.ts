@@ -75,6 +75,13 @@ export interface Testimonial {
 
 export interface Tool {
   name: string;
+  /** brand logo under /public, SVG preferred */
+  logo: string;
+  /** intrinsic dimensions for next/image */
+  width: number;
+  height: number;
+  /** show the name beside icon-only logos (e.g. Power BI) */
+  showName?: boolean;
 }
 
 export interface BlogMeta {
