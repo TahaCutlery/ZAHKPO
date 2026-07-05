@@ -31,7 +31,7 @@ export default function SpecialtiesPage() {
         title="Modernise and grow, beyond the compliance basics"
         description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy firms — the work that moves a practice forward."
         crumbs={crumbs}
-        image={{ src: "/images/boardroom-meeting.jpg" }}
+        image={{ src: "/images/boardroom-meeting.jpg", mobileSrc: "/images/mobile/boardroom-meeting-mobile.jpg" }}
       >
         <Button asChild size="lg" variant="accent">
           <Link href="/contact">

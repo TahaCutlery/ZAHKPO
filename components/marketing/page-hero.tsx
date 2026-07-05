@@ -13,8 +13,10 @@ interface PageHeroProps {
   crumbs?: Crumb[];
   children?: React.ReactNode;
   className?: string;
-  /** Optional photographic backdrop; switches the hero to a dark navy treatment. */
-  image?: { src: string };
+  /** Optional photographic backdrop; switches the hero to a dark navy treatment.
+   *  `mobileSrc` is a portrait crop shown below the `sm` breakpoint, where wide
+   *  landscape shots degrade into unrecognisable centre crops. */
+  image?: { src: string; mobileSrc?: string };
 }
 
 export function PageHero({
@@ -43,8 +45,18 @@ export function PageHero({
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className={cn("object-cover object-center", image!.mobileSrc && "hidden sm:block")}
           />
+          {image!.mobileSrc ? (
+            <Image
+              src={image!.mobileSrc}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center sm:hidden"
+            />
+          ) : null}
           <div className="absolute inset-0 bg-gradient-to-r from-[#031833]/90 via-[#031833]/70 to-[#031833]/25" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/70 via-transparent to-[#031833]/30" />
         </div>

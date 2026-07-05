@@ -40,7 +40,7 @@ export default function WhyLedgerBridgePage() {
         title="What differentiates us"
         description="Plenty of providers can process work. We built LedgerBridge around the four things UK firms told us actually matter: proactivity, consistent quality, documented process and growth for your practice."
         crumbs={crumbs}
-        image={{ src: "/images/city-skyline.jpg" }}
+        image={{ src: "/images/city-skyline.jpg", mobileSrc: "/images/mobile/city-skyline-mobile.jpg" }}
       >
         <Button asChild size="lg" variant="accent">
           <Link href="/contact">

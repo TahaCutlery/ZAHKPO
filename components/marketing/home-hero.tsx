@@ -39,7 +39,16 @@ export function HomeHero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_72%]"
+          className="hidden object-cover object-[center_72%] sm:block"
+        />
+        {/* Portrait crop for phones — the landscape shot crops to nothing at 390px */}
+        <Image
+          src="/images/mobile/hero-team-mobile.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center sm:hidden"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#031833] via-[#031833]/80 to-[#031833]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/90 via-transparent to-[#031833]/40" />

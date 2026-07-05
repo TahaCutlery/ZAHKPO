@@ -32,7 +32,7 @@ export default function ContactPage() {
         title="Let's grow together"
         description="Tell us what's on your plate and we'll show you how LedgerBridge can help. We typically reply within one business day."
         crumbs={crumbs}
-        image={{ src: "/images/handshake.jpg" }}
+        image={{ src: "/images/handshake.jpg", mobileSrc: "/images/mobile/handshake-mobile.jpg" }}
       />
 
       <Section>

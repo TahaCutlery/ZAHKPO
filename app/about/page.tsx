@@ -45,7 +45,7 @@ export default function AboutPage() {
         title="The back office UK accounting firms count on"
         description="LedgerBridge is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
-        image={{ src: "/images/office-discussion.jpg" }}
+        image={{ src: "/images/office-discussion.jpg", mobileSrc: "/images/mobile/office-discussion-mobile.jpg" }}
       >
         <Button asChild size="lg" variant="accent">
           <Link href="/contact">

@@ -40,7 +40,7 @@ export default function ServicesPage() {
         title="Accounting, compliance, advisory & audit support"
         description="Pick the services your practice needs and plug them straight in. Every job is delivered by skilled people, SOP-driven, multi-level reviewed and handled on secure systems."
         crumbs={crumbs}
-        image={{ src: "/images/desk-planning.jpg" }}
+        image={{ src: "/images/desk-planning.jpg", mobileSrc: "/images/mobile/desk-planning-mobile.jpg" }}
       >
         <Button asChild size="lg" variant="accent">
           <Link href="/contact">

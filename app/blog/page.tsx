@@ -31,7 +31,7 @@ export default function BlogPage() {
         title="Insights for modern accountancy firms"
         description="Practical, no-fluff guidance on outsourcing, compliance, cloud and tax — written by the people who do the work."
         crumbs={crumbs}
-        image={{ src: "/images/laptop-analytics.jpg" }}
+        image={{ src: "/images/laptop-analytics.jpg", mobileSrc: "/images/mobile/laptop-analytics-mobile.jpg" }}
       />
 
       <Section>
