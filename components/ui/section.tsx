@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { BrandHighlight } from "@/components/ui/brand";
 import { cn } from "@/lib/utils";
 
 export function Container({
@@ -58,7 +59,7 @@ export function SectionHeading({
     >
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <Heading className="text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-        {title}
+        <BrandHighlight>{title}</BrandHighlight>
       </Heading>
       {description ? (
         <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{description}</p>

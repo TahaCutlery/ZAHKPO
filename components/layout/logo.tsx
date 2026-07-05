@@ -28,7 +28,7 @@ export function Logo({ className }: { className?: string }) {
       />
       <span className="flex flex-col leading-none">
         <span className="text-[1.05rem] font-bold tracking-tight text-foreground">
-          Ledger<span className="text-primary">Bridge</span>
+          Ledger<span className="text-accent">Bridge</span>
         </span>
         <span className="mt-1 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           Growth Beyond Limits

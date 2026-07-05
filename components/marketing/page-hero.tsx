@@ -1,6 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 
+import { BrandHighlight } from "@/components/ui/brand";
 import { Container, Eyebrow } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 import { Breadcrumb, type Crumb } from "./breadcrumb";
@@ -70,7 +71,7 @@ export function PageHero({
             withImage && "text-white",
           )}
         >
-          {title}
+          <BrandHighlight>{title}</BrandHighlight>
         </h1>
         {description ? (
           <p

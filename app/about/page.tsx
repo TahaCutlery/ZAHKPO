@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Eye, Leaf, Target } from "lucide-react";
 
@@ -152,64 +151,6 @@ export default function AboutPage() {
               </ol>
             </Reveal>
           </div>
-        </Container>
-      </Section>
-
-      <Section>
-        <Container>
-          <Reveal>
-            <SectionHeading
-              eyebrow="Our vibrant office"
-              title="Inside LedgerBridge"
-              description="Our delivery centre in Khargone — a modern, secure workspace purpose-built for focused, confidential client work."
-            />
-          </Reveal>
-          <Stagger className="mt-12 grid grid-cols-2 auto-rows-[9rem] gap-4 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
-            <StaggerItem className="col-span-2">
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/office-entrance.jpg"
-                  alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 66vw"
-                  className="object-cover"
-                />
-              </div>
-            </StaggerItem>
-            <StaggerItem className="row-span-2">
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/office-workstations.jpg"
-                  alt="Two team members working side by side at LedgerBridge workstations"
-                  fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-            </StaggerItem>
-            <StaggerItem>
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/office-team.jpg"
-                  alt="The LedgerBridge team at work in the open-plan office"
-                  fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-            </StaggerItem>
-            <StaggerItem>
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/office-cabin.jpg"
-                  alt="A LedgerBridge accountant working at a dual-screen desk in a private cabin"
-                  fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-            </StaggerItem>
-          </Stagger>
         </Container>
       </Section>
 
