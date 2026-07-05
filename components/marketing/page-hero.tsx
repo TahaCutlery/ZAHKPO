@@ -40,7 +40,7 @@ export function PageHero({
             src={image!.src}
             alt=""
             fill
-            preload
+            priority
             sizes="100vw"
             className="object-cover object-center"
           />

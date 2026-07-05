@@ -46,7 +46,7 @@ export default function AboutPage() {
         title="The back office UK accounting firms count on"
         description="LedgerBridge is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
-        image={{ src: "/images/office-entrance.jpg" }}
+        image={{ src: "/images/office-discussion.jpg" }}
       >
         <Button asChild size="lg" variant="accent">
           <Link href="/contact">
@@ -159,9 +159,9 @@ export default function AboutPage() {
         <Container>
           <Reveal>
             <SectionHeading
-              eyebrow="Our office"
+              eyebrow="Our vibrant office"
               title="Inside LedgerBridge"
-              description="Our delivery centre in Vadodara — a modern, secure workspace purpose-built for focused, confidential client work."
+              description="Our delivery centre in Khargone — a modern, secure workspace purpose-built for focused, confidential client work."
             />
           </Reveal>
           <Stagger className="mt-12 grid grid-cols-2 auto-rows-[9rem] gap-4 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">

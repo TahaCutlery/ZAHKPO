@@ -30,15 +30,16 @@ export function HomeHero() {
 
   return (
     <section className="relative isolate overflow-hidden bg-[#031833]">
-      {/* Real office backdrop with a navy wash that keeps copy readable */}
+      {/* Office meeting backdrop with a navy wash that keeps copy readable */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
+        {/* Swap this file for an AI-generated photo of the founders with the team when ready */}
         <Image
-          src="/images/office-team.jpg"
+          src="/images/hero-team.jpg"
           alt=""
           fill
-          preload
+          priority
           sizes="100vw"
-          className="object-cover object-[center_60%]"
+          className="object-cover object-[center_72%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#031833] via-[#031833]/80 to-[#031833]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/90 via-transparent to-[#031833]/40" />
