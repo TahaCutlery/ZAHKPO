@@ -156,9 +156,9 @@ export default function HomePage() {
               description="Our delivery centre in Khargone — a modern, secure workspace purpose-built for focused, confidential client work."
             />
           </Reveal>
-          <Stagger className="mt-12 grid grid-cols-2 auto-rows-[9rem] gap-4 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
-            <StaggerItem className="col-span-2">
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+          <Stagger className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
+            <StaggerItem className="sm:col-span-2">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-entrance.jpg"
                   alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
@@ -168,35 +168,35 @@ export default function HomePage() {
                 />
               </div>
             </StaggerItem>
-            <StaggerItem className="row-span-2">
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+            <StaggerItem className="sm:row-span-2">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-workstations.jpg"
                   alt="Two team members working side by side at LedgerBridge workstations"
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
             </StaggerItem>
             <StaggerItem>
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-team.jpg"
                   alt="The LedgerBridge team at work in the open-plan office"
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
             </StaggerItem>
             <StaggerItem>
-              <div className="relative h-full overflow-hidden rounded-2xl border border-border">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-cabin.jpg"
                   alt="A LedgerBridge accountant working at a dual-screen desk in a private cabin"
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
