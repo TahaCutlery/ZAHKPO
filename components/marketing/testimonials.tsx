@@ -26,7 +26,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
               <span className="font-semibold text-foreground">{t.author}</span>
               <span className="text-muted-foreground">
                 {" "}
-                — {t.role}
+                - {t.role}
                 {t.company ? `, ${t.company}` : ""}
               </span>
             </figcaption>

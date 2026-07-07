@@ -97,7 +97,7 @@ export const serviceGroups: MegaGroup[] = [
       {
         label: "Tax Registrations",
         href: "/services/tax-registrations",
-        description: "VAT, PAYE, SA and CIS — right first time.",
+        description: "VAT, PAYE, SA and CIS - right first time.",
       },
       {
         label: "Corporate Due Diligence",
@@ -139,8 +139,8 @@ export const specialtiesGroup: MegaGroup = {
 
 /**
  * Balanced columns for the desktop Services mega menu. Compliance is the tallest
- * group, so the short CFO & Advisory and Audit Support groups share a column —
- * and Specialties pairs with Company Secretarial — to keep the panel height even.
+ * group, so the short CFO & Advisory and Audit Support groups share a column -
+ * and Specialties pairs with Company Secretarial - to keep the panel height even.
  */
 export const serviceMenuColumns: MegaGroup[][] = [
   serviceGroups.filter((g) => g.label === "Core Finance & Accounting"),

@@ -36,7 +36,7 @@ export const differentiators: IconItem[] = [
   { title: "Helps grow client practice", description: "We handle the back office so you can focus on advice, relationships and growth.", icon: TrendingUp },
 ];
 
-/** Our commitment to data security — straight from the company profile. */
+/** Our commitment to data security - straight from the company profile. */
 export const securityFeatures: IconItem[] = [
   { title: "Confidentiality agreements", description: "All team members and associates are bound by strict NDA and confidentiality agreements.", icon: FileLock2 },
   { title: "Password protection", description: "Every device and system is password protected, with credentials rotated at regular intervals.", icon: KeyRound },
@@ -50,7 +50,7 @@ export const whoWeAre =
   "LedgerBridge is a trusted outsourcing partner for UK accounting firms, delivering accurate, scalable and high-quality accounting support. Acting as an extension of our clients' teams, we combine skilled professionals, efficient processes and modern technology to improve turnaround times, maintain quality and support sustainable growth.";
 
 export const vision =
-  "To become the most trusted outsourcing partner for accounting firms by combining skilled professionals, structured processes, modern technology and AI-driven efficiencies — delivering exceptional value while creating a positive impact on businesses, people and the environment.";
+  "To become the most trusted outsourcing partner for accounting firms by combining skilled professionals, structured processes, modern technology and AI-driven efficiencies - delivering exceptional value while creating a positive impact on businesses, people and the environment.";
 
 export const mission =
   "To help accounting firms scale efficiently through accurate delivery, SOP-driven operations, continuous process improvement and responsible use of technology and AI. We are committed to reliable support, meaningful business insights, sustainable growth, and contributing to society through initiatives that promote environmental and community well-being.";
@@ -59,7 +59,7 @@ export const sustainability = {
   icon: Leaf,
   title: "A tree for every engagement",
   description:
-    "For every new engagement, LedgerBridge plants a tree — supporting environmental sustainability and responsible growth.",
+    "For every new engagement, LedgerBridge plants a tree - supporting environmental sustainability and responsible growth.",
 };
 
 export const timeline: { year: string; title: string; description: string }[] = [
@@ -67,7 +67,7 @@ export const timeline: { year: string; title: string; description: string }[] = 
     year: "2025",
     title: "Founded",
     description:
-      "Zah Professional Services Private Limited launches LedgerBridge in Khargone, India — a technology-driven KPO built to give UK accounting firms a back office they can rely on.",
+      "Zah Professional Services Private Limited launches LedgerBridge in Khargone, India - a technology-driven KPO built to give UK accounting firms a back office they can rely on.",
   },
   {
     year: "Built on experience",
@@ -85,6 +85,6 @@ export const timeline: { year: string; title: string; description: string }[] = 
     year: "Growth beyond limits",
     title: "Responsible scaling",
     description:
-      "From bookkeeping to CFO advisory — plus a commitment to GDPR-aligned security and planting a tree for every new engagement.",
+      "From bookkeeping to CFO advisory - plus a commitment to GDPR-aligned security and planting a tree for every new engagement.",
   },
 ];

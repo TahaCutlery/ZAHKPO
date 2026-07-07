@@ -6,7 +6,7 @@ export const siteConfig = {
   founded: 2025,
   tagline: "Growth Beyond Limits",
   description:
-    "LedgerBridge is a technology-driven KPO and trusted outsourcing partner for UK accounting firms — bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
+    "LedgerBridge is a technology-driven KPO and trusted outsourcing partner for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   contact: {
     phone: "+91 88899 84419",
     phoneHref: "+918889984419",

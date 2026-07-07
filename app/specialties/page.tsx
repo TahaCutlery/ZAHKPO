@@ -15,7 +15,7 @@ import { specialties } from "@/content/specialties";
 export const metadata: Metadata = buildMetadata({
   title: "Specialties: Cloud, MTD, AI & Digital Marketing",
   description:
-    "Beyond compliance — cloud accounting migration, Making Tax Digital, AI-assisted automation and digital marketing that help your UK practice modernise and grow.",
+    "Beyond compliance - cloud accounting migration, Making Tax Digital, AI-assisted automation and digital marketing that help your UK practice modernise and grow.",
   path: "/specialties",
   keywords: ["cloud accounting", "making tax digital", "AI accounting", "accountancy marketing"],
 });
@@ -29,7 +29,7 @@ export default function SpecialtiesPage() {
       <PageHero
         eyebrow="Specialties"
         title="Modernise and grow, beyond the compliance basics"
-        description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy firms — the work that moves a practice forward."
+        description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy firms - the work that moves a practice forward."
         crumbs={crumbs}
         image={{ src: "/images/boardroom-meeting.jpg", mobileSrc: "/images/mobile/boardroom-meeting-mobile.jpg" }}
       >

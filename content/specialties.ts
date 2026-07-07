@@ -27,12 +27,12 @@ export const specialties: Specialty[] = [
     summary: "Migrate to modern cloud accounting without disruption.",
     metaTitle: "Cloud Accounting Migration",
     metaDescription:
-      "Move from legacy systems to modern cloud accounting without disruption — secure data migration, system setup, integration and ongoing support.",
+      "Move from legacy systems to modern cloud accounting without disruption - secure data migration, system setup, integration and ongoing support.",
     hero: {
       eyebrow: "Specialty",
       heading: "Move to the cloud without the disruption",
       subheading:
-        "Migrate from legacy systems to modern cloud accounting — data moved safely, systems set up properly, and reporting accurate from day one.",
+        "Migrate from legacy systems to modern cloud accounting - data moved safely, systems set up properly, and reporting accurate from day one.",
     },
     deliverables: [
       { title: "Safe data migration", description: "Financial history moved across with nothing lost." },
@@ -67,12 +67,12 @@ export const specialties: Specialty[] = [
     summary: "Stress-free digital tax compliance and timely HMRC submissions.",
     metaTitle: "Making Tax Digital (MTD) Support",
     metaDescription:
-      "Stress-free Making Tax Digital — compliant digital record-keeping, MTD-ready software setup and timely HMRC submissions for businesses and their accountants.",
+      "Stress-free Making Tax Digital - compliant digital record-keeping, MTD-ready software setup and timely HMRC submissions for businesses and their accountants.",
     hero: {
       eyebrow: "Specialty",
       heading: "Making Tax Digital, made simple",
       subheading:
-        "Help clients move to digital tax reporting with compliant record-keeping, MTD-ready software and timely HMRC submissions — without the disruption.",
+        "Help clients move to digital tax reporting with compliant record-keeping, MTD-ready software and timely HMRC submissions - without the disruption.",
     },
     deliverables: [
       { title: "MTD setup & assessment", description: "Readiness review and a clear path to compliance." },
@@ -89,7 +89,7 @@ export const specialties: Specialty[] = [
     ],
     faqs: [
       { question: "Who does MTD apply to?", answer: "Making Tax Digital affects a growing range of VAT-registered and self-employed taxpayers. We assess each client's obligations and get them ready ahead of time." },
-      { question: "Do you set up the software?", answer: "Yes — we put MTD-compatible record-keeping in place and handle the regular submissions so the transition is painless." },
+      { question: "Do you set up the software?", answer: "Yes - we put MTD-compatible record-keeping in place and handle the regular submissions so the transition is painless." },
     ],
     related: ["cloud-accounting", "ai-accounting"],
   },
@@ -101,12 +101,12 @@ export const specialties: Specialty[] = [
     summary: "Automation with human quality control for faster, cleaner books.",
     metaTitle: "AI Accounting & Automation",
     metaDescription:
-      "Intelligent automation for bookkeeping, invoice processing and reconciliation — faster, more accurate workflows with real-time insight and human quality control.",
+      "Intelligent automation for bookkeeping, invoice processing and reconciliation - faster, more accurate workflows with real-time insight and human quality control.",
     hero: {
       eyebrow: "Specialty",
       heading: "Smarter accounting, powered by automation",
       subheading:
-        "We pair intelligent automation with qualified people — machines handle the repetitive work, experts check the quality, and you get faster, cleaner results.",
+        "We pair intelligent automation with qualified people - machines handle the repetitive work, experts check the quality, and you get faster, cleaner results.",
     },
     deliverables: [
       { title: "Automated bookkeeping", description: "Routine entries captured and coded automatically." },
@@ -123,7 +123,7 @@ export const specialties: Specialty[] = [
       { title: "Human oversight", description: "People review what the machines produce.", icon: Bot },
     ],
     faqs: [
-      { question: "Is AI accounting accurate and safe?", answer: "Automation handles the repetitive work, but qualified accountants review the output through a multi-level check — so you get speed without sacrificing accuracy or control." },
+      { question: "Is AI accounting accurate and safe?", answer: "Automation handles the repetitive work, but qualified accountants review the output through a multi-level check - so you get speed without sacrificing accuracy or control." },
       { question: "Is it suitable for smaller firms?", answer: "Yes. Automation helps smaller practices manage more work efficiently and gain real-time visibility without expanding the team." },
     ],
     related: ["cloud-accounting", "mtd"],
@@ -136,12 +136,12 @@ export const specialties: Specialty[] = [
     summary: "Personal branding, AI content and lead generation for accountancy firms.",
     metaTitle: "Digital Marketing & Growth Services for Accountants",
     metaDescription:
-      "Digital marketing built for accountancy firms — personal branding, AI content creation, social media management, lead generation and growth & authority building.",
+      "Digital marketing built for accountancy firms - personal branding, AI content creation, social media management, lead generation and growth & authority building.",
     hero: {
       eyebrow: "Specialty",
       heading: "Build authority. Generate leads. Grow.",
       subheading:
-        "Personal branding, AI-assisted content, social media and lead generation — designed to build your authority and turn visibility into a steady pipeline of clients.",
+        "Personal branding, AI-assisted content, social media and lead generation - designed to build your authority and turn visibility into a steady pipeline of clients.",
     },
     deliverables: [
       { title: "Digital marketing", description: "A multi-channel plan tailored to your firm's goals and market." },
@@ -158,7 +158,7 @@ export const specialties: Specialty[] = [
       { title: "Measurable growth", description: "Clear reporting tied to real outcomes.", icon: TrendingUp },
     ],
     faqs: [
-      { question: "Do you understand accountancy marketing?", answer: "Yes — our work is built around professional services and the way accountancy firms win and retain clients." },
+      { question: "Do you understand accountancy marketing?", answer: "Yes - our work is built around professional services and the way accountancy firms win and retain clients." },
       { question: "How does AI fit into content creation?", answer: "We use AI to produce content efficiently and consistently, with human review so it stays accurate, on-brand and genuinely useful." },
     ],
     related: ["cloud-accounting", "ai-accounting"],

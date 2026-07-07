@@ -13,7 +13,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Contact LedgerBridge",
   description:
-    "Talk to LedgerBridge about outsourcing your accounting. Call +91 88899 84419, email info@theledgerbridge.com, or send us a message — we reply fast.",
+    "Talk to LedgerBridge about outsourcing your accounting. Call +91 88899 84419, email info@theledgerbridge.com, or send us a message - we reply fast.",
   path: "/contact",
   keywords: ["contact LedgerBridge", "accounting outsourcing enquiry", "book a call"],
 });

@@ -6,7 +6,7 @@ export const meta: BlogMeta = {
   slug: "how-to-choose-bookkeeping-support",
   title: "How to choose the right bookkeeping support",
   description:
-    "Not all bookkeeping support is equal. Five things to weigh up — from transaction volume to security — before you outsource your books.",
+    "Not all bookkeeping support is equal. Five things to weigh up - from transaction volume to security - before you outsource your books.",
   category: "Bookkeeping",
   date: "2026-04-22",
   readingTime: 5,
@@ -17,7 +17,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Outsourcing bookkeeping can free up real capacity — but the right partner depends on your
+        Outsourcing bookkeeping can free up real capacity - but the right partner depends on your
         clients, your tools and your standards. Here&apos;s how to choose well.
       </p>
 
@@ -44,7 +44,7 @@ export default function Body() {
       <h2>4. Pricing that scales with you</h2>
       <p>
         A fixed in-house cost is hard to flex. A pay-as-you-use model tied to transaction volume
-        tends to fit a growing practice better — you pay for the work, not for idle capacity.
+        tends to fit a growing practice better - you pay for the work, not for idle capacity.
       </p>
 
       <h2>5. Make sure it feeds your reporting</h2>
@@ -56,7 +56,7 @@ export default function Body() {
 
       <p>
         Our <Link href="/services/bookkeeping">bookkeeping</Link> service is built around exactly
-        these points — accurate, secure and scalable — and flows straight into{" "}
+        these points - accurate, secure and scalable - and flows straight into{" "}
         <Link href="/services/management-accounts">management accounts</Link> when you need the
         insight on top.
       </p>

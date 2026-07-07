@@ -9,7 +9,7 @@ export const faqs: Faq[] = [
     category: "Getting started",
     question: "What does LedgerBridge actually do?",
     answer:
-      "We're a technology-driven KPO and the outsourced back office for UK accounting firms. We handle bookkeeping, year-end accounts, management accounts, VAT, payroll, CIS, corporation tax, audit support, CFO advisory and company secretarial work — so your team can focus on advice, relationships and growth.",
+      "We're a technology-driven KPO and the outsourced back office for UK accounting firms. We handle bookkeeping, year-end accounts, management accounts, VAT, payroll, CIS, corporation tax, audit support, CFO advisory and company secretarial work - so your team can focus on advice, relationships and growth.",
   },
   {
     category: "Getting started",
@@ -21,7 +21,7 @@ export const faqs: Faq[] = [
     category: "Getting started",
     question: "Who do you work with?",
     answer:
-      "We specialise in supporting UK accounting firms — acting as an extension of their team and working remotely through secure, cloud-based digital systems to UK standards.",
+      "We specialise in supporting UK accounting firms - acting as an extension of their team and working remotely through secure, cloud-based digital systems to UK standards.",
   },
   {
     category: "Security",
@@ -33,7 +33,7 @@ export const faqs: Faq[] = [
     category: "Services",
     question: "What are management accounts and why do they matter?",
     answer:
-      "Management accounts are regular financial reports — usually monthly or quarterly — that track performance, monitor cash flow and surface the insight a business needs to plan and make confident decisions.",
+      "Management accounts are regular financial reports - usually monthly or quarterly - that track performance, monitor cash flow and surface the insight a business needs to plan and make confident decisions.",
   },
   {
     category: "Services",
@@ -63,19 +63,19 @@ export const faqs: Faq[] = [
     category: "AI & technology",
     question: "Can AI help with financial forecasting?",
     answer:
-      "Yes. AI analyses historical data to model forecasts that support budgeting, trend prediction and informed financial planning — always with human review of the assumptions.",
+      "Yes. AI analyses historical data to model forecasts that support budgeting, trend prediction and informed financial planning - always with human review of the assumptions.",
   },
   {
     category: "Marketing",
     question: "Why would an accountancy firm need digital marketing?",
     answer:
-      "Digital marketing builds brand awareness, reaches the right clients online and generates qualified leads through SEO, paid, social and content — turning visibility into measurable growth.",
+      "Digital marketing builds brand awareness, reaches the right clients online and generates qualified leads through SEO, paid, social and content - turning visibility into measurable growth.",
   },
   {
     category: "Marketing",
     question: "Why combine accounting and marketing support?",
     answer:
-      "Together they fuel growth: organised, accurate finances on one side and a steady pipeline of new clients and revenue on the other — both managed by one partner.",
+      "Together they fuel growth: organised, accurate finances on one side and a steady pipeline of new clients and revenue on the other - both managed by one partner.",
   },
 ];
 

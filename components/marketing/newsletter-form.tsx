@@ -37,7 +37,7 @@ export function NewsletterForm() {
         className="flex w-full max-w-sm items-center gap-2 rounded-lg border border-success/30 bg-success/10 px-3.5 py-3 text-sm font-medium text-success"
       >
         <CheckCircle2 className="size-4 shrink-0" aria-hidden="true" />
-        Thanks — you&apos;re on the list.
+        Thanks - you&apos;re on the list.
       </div>
     );
   }

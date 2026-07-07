@@ -42,7 +42,7 @@ export function SearchClient({
         <Input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search services, specialties and articles…"
+          placeholder="Search services, specialties and articles..."
           aria-label="Search the site"
           className="pl-10"
         />

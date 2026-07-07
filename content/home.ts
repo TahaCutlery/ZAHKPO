@@ -1,6 +1,6 @@
 import type { Stat } from "@/types/content";
 
-/** "Challenges We Understand. Solutions We Deliver." — from the company profile. */
+/** "Challenges We Understand. Solutions We Deliver." - from the company profile. */
 export const challenges: { challenge: string; solution: string }[] = [
   { challenge: "Talent shortages", solution: "Skilled accounting team" },
   { challenge: "Peak-season workload", solution: "Flexible staff support" },

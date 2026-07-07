@@ -23,7 +23,7 @@ export const cultureValues: IconItem[] = [
   { title: "Supportive & collaborative", description: "Leadership that creates a positive, motivating place to do your best work.", icon: Heart },
   { title: "Always learning", description: "Hands-on exposure to modern platforms, automation and AI tools.", icon: GraduationCap },
   { title: "UK client exposure", description: "Work directly with UK accounting firms on real, end-to-end engagements.", icon: Globe },
-  { title: "Recognition that's real", description: "Effort is seen and rewarded — not lost in the noise.", icon: TrendingUp },
+  { title: "Recognition that's real", description: "Effort is seen and rewarded - not lost in the noise.", icon: TrendingUp },
 ];
 
 export const perks: IconItem[] = [

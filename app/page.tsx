@@ -23,7 +23,7 @@ import { deliveryMetrics, deliveryStandards } from "@/content/stats";
 export const metadata: Metadata = buildMetadata({
   title: "Accounting Outsourcing for UK Accounting Firms",
   description:
-    "LedgerBridge is a technology-driven KPO and the outsourced back office for UK accounting firms — bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
+    "LedgerBridge is a technology-driven KPO and the outsourced back office for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   path: "/",
   keywords: [
     "accounting outsourcing UK",
@@ -48,7 +48,7 @@ export default function HomePage() {
       <HomeHero />
 
       <Container className="pb-8 pt-12">
-        <LogoCloud label="Trusted by accounting firms across the UK — on the platforms your clients already use" />
+        <LogoCloud label="Trusted by accounting firms across the UK - on the platforms your clients already use" />
       </Container>
 
       <Section className="pt-16 md:pt-20">
@@ -57,7 +57,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="What we do"
               title="One partner for the whole back office"
-              description="From day-to-day bookkeeping to year-end, audit support and CFO advisory — pick the services you need and add them seamlessly to your practice."
+              description="From day-to-day bookkeeping to year-end, audit support and CFO advisory - pick the services you need and add more as your practice grows."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -117,7 +117,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Why firms trust LedgerBridge"
               title="Our Delivery in Numbers"
-              description="Real metrics from live engagements — measured on every job, not promised in a pitch."
+              description="Real metrics from live engagements - measured on every job, not promised in a pitch."
             />
           </Reveal>
           <Stagger className="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-3">
@@ -153,7 +153,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Our vibrant office"
               title="Inside LedgerBridge"
-              description="Our delivery centre in Khargone — a modern, secure workspace purpose-built for focused, confidential client work."
+              description="Our delivery centre in Khargone - a modern, secure workspace purpose-built for focused, confidential client work."
             />
           </Reveal>
           <Stagger className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
@@ -235,7 +235,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Security first"
               title="Your clients' data, protected"
-              description="Security isn't a feature — it's the foundation. Here's how we keep every file you share safe."
+              description="Security isn't a feature - it's the foundation. Here's how we keep every file you share safe."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

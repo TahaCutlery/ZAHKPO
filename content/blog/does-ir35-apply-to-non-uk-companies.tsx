@@ -6,7 +6,7 @@ export const meta: BlogMeta = {
   slug: "does-ir35-apply-to-non-uk-companies",
   title: "Does IR35 apply to non-UK companies?",
   description:
-    "IR35 and the overseas question explained in plain terms — when the off-payroll rules bite, when they don't, and where it gets complicated.",
+    "IR35 and the overseas question explained in plain terms - when the off-payroll rules bite, when they don't, and where it gets complicated.",
   category: "IR35",
   date: "2025-08-21",
   readingTime: 5,
@@ -17,7 +17,7 @@ export default function Body() {
   return (
     <>
       <p>
-        IR35 — the off-payroll working rules — is one of the most misunderstood areas of UK tax,
+        IR35 - the off-payroll working rules - is one of the most misunderstood areas of UK tax,
         especially when there&apos;s a cross-border element. This is general guidance, not advice on
         a specific arrangement, but it should help frame the question.
       </p>
@@ -34,7 +34,7 @@ export default function Body() {
         Where the end client is based matters. Broadly, the responsibility for assessing status and
         operating the rules sits with the UK-based party in the chain. When the end client is wholly
         overseas with no UK presence, the obligation to make a status determination may not fall on
-        them in the same way — which can shift responsibility back to the worker&apos;s own company.
+        them in the same way - which can shift responsibility back to the worker&apos;s own company.
       </p>
       <p>
         That is not the same as &ldquo;IR35 doesn&apos;t apply&rdquo;. It changes <em>who</em> is
@@ -57,7 +57,7 @@ export default function Body() {
       <p>
         Our team can help with the personal and corporate side of this through our{" "}
         <Link href="/services/personal-tax">personal tax</Link> and{" "}
-        <Link href="/services/corporation-tax">corporation tax</Link> services — and point you to
+        <Link href="/services/corporation-tax">corporation tax</Link> services - and point you to
         specialist status advice where a determination is needed.
       </p>
     </>

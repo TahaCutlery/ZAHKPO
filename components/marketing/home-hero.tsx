@@ -41,7 +41,7 @@ export function HomeHero() {
           sizes="100vw"
           className="hidden object-cover object-[center_72%] sm:block"
         />
-        {/* Portrait crop for phones — the landscape shot crops to nothing at 390px */}
+        {/* Portrait crop for phones - the landscape shot crops to nothing at 390px */}
         <Image
           src="/images/mobile/hero-team-mobile.jpg"
           alt=""
@@ -87,7 +87,7 @@ export function HomeHero() {
             variants={reduce ? undefined : item}
             className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-white/80"
           >
-            We help UK accounting firms save time, reduce costs and scale with confidence —
+            We help UK accounting firms save time, reduce costs and scale with confidence -
             through accurate, compliant and reliable back-office support.
           </motion.p>
 

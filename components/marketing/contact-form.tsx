@@ -140,7 +140,7 @@ export function ContactForm() {
         <Textarea
           id="message"
           rows={5}
-          placeholder="Tell us what's on your plate and how we can help…"
+          placeholder="Tell us what's on your plate and how we can help..."
           invalid={!!errors.message}
           aria-describedby={describedBy("message", !!errors.message)}
           {...register("message")}
@@ -170,7 +170,7 @@ export function ContactForm() {
         </FieldError>
       </div>
 
-      {/* Honeypot field — hidden from users, catches bots */}
+      {/* Honeypot field - hidden from users, catches bots */}
       <input
         type="text"
         tabIndex={-1}

@@ -18,7 +18,7 @@ export interface Differentiator {
   icon: LucideIcon;
 }
 
-/** "What differentiates us?" — expanded from the company profile deck. */
+/** "What differentiates us?" - expanded from the company profile deck. */
 export const whyDifferentiators: Differentiator[] = [
   {
     title: "Proactive approach of working",
@@ -36,7 +36,7 @@ export const whyDifferentiators: Differentiator[] = [
     title: "Quality & consistency guaranteed",
     tagline: "Review-ready work, every time",
     description:
-      "Every deliverable passes multi-level review before it reaches you. Preparer, reviewer and final quality check — so the file you open is accurate, complete and consistent with the last one.",
+      "Every deliverable passes multi-level review before it reaches you. Preparer, reviewer and final quality check - so the file you open is accurate, complete and consistent with the last one.",
     points: [
       "Multi-level review on every job",
       "Standardised working papers and file structure",
@@ -60,7 +60,7 @@ export const whyDifferentiators: Differentiator[] = [
     title: "Helps grow your client practice",
     tagline: "Your time back, for advisory and growth",
     description:
-      "With the back office handled, your qualified people stop doing low-margin compliance work and start doing what grows the firm — advising clients, winning new work and deepening relationships.",
+      "With the back office handled, your qualified people stop doing low-margin compliance work and start doing what grows the firm - advising clients, winning new work and deepening relationships.",
     points: [
       "Partner time freed for advisory and business development",
       "Capacity to onboard new clients without hiring",
@@ -76,12 +76,12 @@ export interface CsrInitiative {
   icon: LucideIcon;
 }
 
-/** Corporate social responsibility — growth that gives back. */
+/** Corporate social responsibility - growth that gives back. */
 export const csrInitiatives: CsrInitiative[] = [
   {
     title: "A tree for every engagement",
     description:
-      "For every new engagement we win, we plant a tree — a small, permanent thank-you to the environment for every firm that trusts us.",
+      "For every new engagement we win, we plant a tree - a small, permanent thank-you to the environment for every firm that trusts us.",
     icon: Leaf,
   },
   {
@@ -99,7 +99,7 @@ export const csrInitiatives: CsrInitiative[] = [
   {
     title: "Low-footprint operations",
     description:
-      "Cloud-first, paperless delivery keeps our environmental footprint small — modern technology working for the planet as well as your practice.",
+      "Cloud-first, paperless delivery keeps our environmental footprint small - modern technology working for the planet as well as your practice.",
     icon: Recycle,
   },
 ];

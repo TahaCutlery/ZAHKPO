@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-/** Newsletter — email + honeypot. */
+/** Newsletter - email + honeypot. */
 export const newsletterSchema = z.object({
   email: z.string().min(1, "Email is required").email("Enter a valid email address"),
   // honeypot: real users never fill this

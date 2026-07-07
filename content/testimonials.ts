@@ -1,7 +1,7 @@
 import type { Testimonial } from "@/types/content";
 
 /**
- * Founder voices on what LedgerBridge is building — used on the Careers page.
+ * Founder voices on what LedgerBridge is building - used on the Careers page.
  */
 export const testimonials: Testimonial[] = [
   {
@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
 
 /**
  * Client reviews for the home-page testimonials section.
- * NOTE: sample placeholder reviews — replace with real client quotes,
+ * NOTE: sample placeholder reviews - replace with real client quotes,
  * names and firm logos as they come in.
  */
 export const clientTestimonials: Testimonial[] = [
@@ -59,7 +59,7 @@ export const clientTestimonials: Testimonial[] = [
 ];
 
 /**
- * Featured video review. Sample stock video for now — swap `src` for a real
+ * Featured video review. Sample stock video for now - swap `src` for a real
  * client recording when available.
  */
 export const videoTestimonial = {

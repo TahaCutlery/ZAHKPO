@@ -8,7 +8,7 @@ export const stats: Stat[] = [
   { value: 1, label: "Tree planted per new engagement" },
 ];
 
-/** "Our Delivery in Numbers" — headline metrics for the "Why firms trust LedgerBridge" section. */
+/** "Our Delivery in Numbers" - headline metrics for the "Why firms trust LedgerBridge" section. */
 export const deliveryMetrics: Stat[] = [
   { value: 100, suffix: "%", label: "On-time VAT submissions" },
   { value: 0, label: "Penalty instances" },

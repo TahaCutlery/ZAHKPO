@@ -32,8 +32,8 @@ export default function PrivacyPage() {
           <Prose>
             <h2>Information we collect</h2>
             <p>
-              We collect information you give us directly — such as your name, company, email and
-              phone number when you contact us or request a service — along with technical data like
+              We collect information you give us directly - such as your name, company, email and
+              phone number when you contact us or request a service - along with technical data like
               usage information and cookies gathered automatically when you visit this website.
             </p>
 

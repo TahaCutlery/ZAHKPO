@@ -20,7 +20,7 @@ export function Footer() {
             <Logo />
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
               The trusted outsourcing partner for UK accounting firms. Skilled people, SOP-driven
-              processes, modern technology — work delivered accurately and on time.
+              processes, modern technology - work delivered accurately and on time.
             </p>
             <NewsletterForm />
             <SocialLinks />

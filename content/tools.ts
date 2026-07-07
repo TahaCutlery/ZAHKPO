@@ -1,7 +1,7 @@
 import type { Tool } from "@/types/content";
 
 /**
- * The software stack LedgerBridge works across — core bookkeeping platforms,
+ * The software stack LedgerBridge works across - core bookkeeping platforms,
  * data-capture & automation tools, and the analytics & AI we use in delivery.
  * Logos live in /public/logos; width/height are intrinsic SVG/PNG dimensions.
  */

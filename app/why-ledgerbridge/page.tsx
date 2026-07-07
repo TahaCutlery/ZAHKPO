@@ -20,7 +20,7 @@ import { stats } from "@/content/stats";
 export const metadata: Metadata = buildMetadata({
   title: "Why LedgerBridge",
   description:
-    "What differentiates LedgerBridge — a proactive way of working, guaranteed quality and consistency, SOP-driven delivery and a model built to grow your client practice.",
+    "What differentiates LedgerBridge - a proactive way of working, guaranteed quality and consistency, SOP-driven delivery and a model built to grow your client practice.",
   path: "/why-ledgerbridge",
   keywords: [
     "why outsource accounting",
@@ -99,7 +99,7 @@ export default function WhyLedgerBridgePage() {
             <SectionHeading
               eyebrow="How we work"
               title="People first. Process driven. Technology enabled. Value focused."
-              description="Four principles behind every engagement — and the reason firms stay with us."
+              description="Four principles behind every engagement - and the reason firms stay with us."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -157,7 +157,7 @@ export default function WhyLedgerBridgePage() {
             <SectionHeading
               eyebrow="Corporate social responsibility"
               title="Growth that gives back"
-              description="Our mission goes beyond accurate delivery — we're committed to creating a positive impact on businesses, people and the environment."
+              description="Our mission goes beyond accurate delivery - we're committed to creating a positive impact on businesses, people and the environment."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

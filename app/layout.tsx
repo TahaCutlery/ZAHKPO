@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Accounting Outsourcing for Accountancy Firms`,
+    default: `${siteConfig.name} - Accounting Outsourcing for Accountancy Firms`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Accounting Outsourcing for Accountancy Firms`,
+    title: `${siteConfig.name} - Accounting Outsourcing for Accountancy Firms`,
     description: siteConfig.description,
   },
   twitter: {

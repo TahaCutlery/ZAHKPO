@@ -20,7 +20,7 @@ export default function ThankYouPage() {
         <CheckCircle2 className="size-8" aria-hidden="true" />
       </span>
       <h1 className="mt-6 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-        Thank you — message received
+        Thank you - message received
       </h1>
       <p className="mt-4 max-w-md text-pretty text-muted-foreground">
         We&apos;ve got your enquiry and the right person will be in touch within one business day. In

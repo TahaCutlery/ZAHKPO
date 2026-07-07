@@ -16,7 +16,7 @@ import { specialties } from "@/content/specialties";
 export const metadata: Metadata = buildMetadata({
   title: "Outsourced Accounting Services",
   description:
-    "Explore LedgerBridge's full range of outsourced services for UK firms — core accounting, compliance, CFO advisory, audit support and company secretarial — built to add capacity without adding headcount.",
+    "Explore LedgerBridge's full range of outsourced services for UK firms - core accounting, compliance, CFO advisory, audit support and company secretarial - built to add capacity without adding headcount.",
   path: "/services",
   keywords: ["outsourced accounting services", "audit support outsourcing", "virtual CFO services"],
 });
@@ -25,7 +25,7 @@ const crumbs = [{ label: "Home", href: "/" }, { label: "Services" }];
 
 const categoryCopy: Record<string, string> = {
   "Core Finance & Accounting": "Keep the books accurate and every report on time.",
-  Compliance: "VAT, payroll, CIS and tax — prepared, reviewed and filed on time.",
+  Compliance: "VAT, payroll, CIS and tax - prepared, reviewed and filed on time.",
   "CFO & Advisory": "Forecasting, modelling and KPI insight that drive decisions.",
   "Audit Support": "Working papers and file preparation, ready for your review.",
   "Company Secretarial": "Stay compliant across the whole company lifecycle.",
@@ -84,7 +84,7 @@ export default function ServicesPage() {
             <SectionHeading
               align="left"
               eyebrow="Specialties"
-              title="Beyond compliance — modernise and grow"
+              title="Beyond compliance - modernise and grow"
               description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy practices."
             />
           </Reveal>

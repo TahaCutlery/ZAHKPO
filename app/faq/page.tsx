@@ -12,7 +12,7 @@ import { faqCategories, faqs } from "@/content/faqs";
 export const metadata: Metadata = buildMetadata({
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about outsourcing your accounting to LedgerBridge — security, scope, pricing model, technology and more.",
+    "Answers to common questions about outsourcing your accounting to LedgerBridge - security, scope, pricing model, technology and more.",
   path: "/faq",
   keywords: ["accounting outsourcing FAQ", "is outsourcing safe", "outsourcing questions"],
 });
@@ -31,7 +31,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="FAQ"
         title="Questions, answered"
-        description="Everything firms usually want to know before outsourcing. Can't find what you're after? Get in touch — we're happy to talk it through."
+        description="Everything firms usually want to know before outsourcing. Can't find what you're after? Get in touch - we're happy to talk it through."
         crumbs={crumbs}
         image={{ src: "/images/finance-desk.jpg", mobileSrc: "/images/mobile/finance-desk-mobile.jpg" }}
       />

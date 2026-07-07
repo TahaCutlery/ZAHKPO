@@ -6,7 +6,7 @@ export const meta: BlogMeta = {
   slug: "why-cloud-accounting-beats-spreadsheets",
   title: "Why cloud accounting beats spreadsheets (and desktop software)",
   description:
-    "Real-time numbers, fewer errors and easier collaboration — here's why moving clients to the cloud is worth the effort, and how to do it without disruption.",
+    "Real-time numbers, fewer errors and easier collaboration - here's why moving clients to the cloud is worth the effort, and how to do it without disruption.",
   category: "Cloud Accounting",
   date: "2026-03-06",
   readingTime: 4,
@@ -19,7 +19,7 @@ export default function Body() {
       <p>
         Spreadsheets and desktop software got a lot of businesses a long way. But as a practice
         grows, manual files and version-control headaches quietly become a tax on everyone&apos;s
-        time. Cloud accounting removes most of that friction — and it changes what you can offer
+        time. Cloud accounting removes most of that friction - and it changes what you can offer
         clients.
       </p>
 
@@ -41,13 +41,13 @@ export default function Body() {
         <li>Reconciliations flag mismatches early, before they reach year-end.</li>
       </ul>
       <p>
-        The result is cleaner data and a much smoother close — both monthly and at year-end.
+        The result is cleaner data and a much smoother close - both monthly and at year-end.
       </p>
 
       <h2>Access, security and collaboration</h2>
       <p>
         Because the data lives in one place, your team and the client can work from the same source
-        of truth at the same time — no emailing files back and forth. Reputable platforms also back
+        of truth at the same time - no emailing files back and forth. Reputable platforms also back
         data up and encrypt it, which is usually safer than a spreadsheet sitting on a single laptop.
       </p>
 
@@ -61,7 +61,7 @@ export default function Body() {
       <p>
         If you&apos;re planning a move, our{" "}
         <Link href="/specialties/cloud-accounting">cloud accounting migration</Link> service handles
-        it end to end — and if Making Tax Digital is driving the change, our{" "}
+        it end to end - and if Making Tax Digital is driving the change, our{" "}
         <Link href="/specialties/mtd">MTD support</Link> gets clients compliant at the same time.
       </p>
     </>
