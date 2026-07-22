@@ -57,7 +57,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="What we do"
-              title="One partner for the whole back office"
+              title="One Partner for The Whole Back Office"
               description="From day-to-day bookkeeping to year-end, audit support and CFO advisory - pick the services you need and add more as your practice grows."
             />
           </Reveal>
