@@ -22,10 +22,10 @@ interface IconItem {
 
 /** LedgerBridge's guiding principle: "People First. Process Driven. Technology Enabled. Value Focused." */
 export const aboutValues: IconItem[] = [
-  { title: "People first", description: "Skilled, qualified professionals who work as a genuine extension of your team.", icon: Users },
-  { title: "Process driven", description: "SOP-led delivery and multi-level checks keep quality consistent on every job.", icon: ListChecks },
-  { title: "Technology enabled", description: "Modern cloud tools, automation and AI-driven efficiencies built into how we work.", icon: Sparkles },
-  { title: "Value focused", description: "We take ownership of your operational workload so you can grow your practice.", icon: TrendingUp },
+  { title: "People first", description: "Skilled accounting professionals who work as an extension of your team.", icon: Users },
+  { title: "Process driven", description: "SOP-led workflows and multi-level quality control on every engagement.", icon: ListChecks },
+  { title: "Technology enabled", description: "Xero, QuickBooks, Sage, Dext, Hubdoc and cloud-based collaboration.", icon: Sparkles },
+  { title: "Value focused", description: "Reduce operational workload and improve practice efficiency.", icon: TrendingUp },
 ];
 
 /** From the profile: "What differentiates us?" */

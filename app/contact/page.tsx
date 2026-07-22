@@ -22,7 +22,7 @@ const crumbs = [{ label: "Home", href: "/" }, { label: "Contact" }];
 
 export default function ContactPage() {
   const { contact } = siteConfig;
-  const offices = [{ label: contact.ukOffice.label, lines: contact.ukOffice.lines }, ...contact.deliveryOffices];
+  const offices = [{ label: contact.khOffice.label, lines: contact.khOffice.address }, ...contact.deliveryOffices];
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div className="space-y-3">
                 <a
-                  href={`tel:${contact.phoneHref}`}
+                  href={`tel:${contact.khOffice.phoneHref}`}
                   className="flex items-center gap-3 text-foreground transition-colors hover:text-primary"
                 >
                   <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
@@ -59,12 +59,12 @@ export default function ContactPage() {
                   </span>
                   <span>
                     <span className="block text-xs text-muted-foreground">Call us</span>
-                    <span className="font-medium">{contact.phone}</span>
+                    <span className="font-medium">{contact.khOffice.phone}</span>
                     <span className="block font-medium">{contact.phoneAlt}</span>
                   </span>
                 </a>
                 <a
-                  href={`mailto:${contact.email}`}
+                  href={`mailto:${contact.khOffice.email}`}
                   className="flex items-center gap-3 text-foreground transition-colors hover:text-primary"
                 >
                   <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
@@ -72,7 +72,7 @@ export default function ContactPage() {
                   </span>
                   <span>
                     <span className="block text-xs text-muted-foreground">Email us</span>
-                    <span className="font-medium">{contact.email}</span>
+                    <span className="font-medium">{contact.khOffice.email}</span>
                   </span>
                 </a>
               </div>

@@ -51,9 +51,9 @@ export function CTASection({
                 variant="outline"
                 className="border-white/35 bg-transparent text-white hover:bg-white/10 hover:text-white"
               >
-                <a href={`tel:${siteConfig.contact.phoneHref}`}>
+                <a href={`tel:${siteConfig.contact.khOffice.phoneHref}`}>
                   <Phone className="size-4" aria-hidden="true" />
-                  {siteConfig.contact.phone}
+                  {siteConfig.contact.khOffice.phone}
                 </a>
               </Button>
             </div>

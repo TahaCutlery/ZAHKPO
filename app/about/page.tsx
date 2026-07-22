@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Container, Section, SectionHeading } from "@/components/ui/section";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import { PageHero } from "@/components/marketing/page-hero";
-import { StatStrip } from "@/components/marketing/stat-strip";
+// import { StatStrip } from "@/components/marketing/stat-strip";
 import { CTASection } from "@/components/marketing/cta-section";
 import { FounderCard } from "@/components/marketing/founder-card";
 import { IconTile } from "@/components/marketing/icon-tile";
@@ -18,13 +18,13 @@ import {
   differentiators,
   mission,
   securityFeatures,
-  sustainability,
+  // sustainability,
   timeline,
   vision,
   whoWeAre,
 } from "@/content/about";
 import { founders } from "@/content/team";
-import { stats } from "@/content/stats";
+// import { stats } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
   title: "About LedgerBridge",
@@ -55,7 +55,7 @@ export default function AboutPage() {
         </Button>
       </PageHero>
 
-      <Section>
+      {/* <Section>
         <Container>
           <Reveal className="mx-auto max-w-2xl text-center">
             <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{whoWeAre}</p>
@@ -66,6 +66,25 @@ export default function AboutPage() {
           <Reveal delay={0.05} className="mt-12">
             <StatStrip stats={stats} />
           </Reveal>
+        </Container>
+      </Section> */}
+
+      <Section>
+        <Container>
+          <Reveal>
+            <SectionHeading
+              eyebrow="Founders"
+              title="Led by qualified accountants"
+              description="LedgerBridge is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
+            />
+          </Reveal>
+          <Stagger className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
+            {founders.map((f) => (
+              <StaggerItem key={f.name}>
+                <FounderCard founder={f} />
+              </StaggerItem>
+            ))}
+          </Stagger>
         </Container>
       </Section>
 
@@ -91,25 +110,6 @@ export default function AboutPage() {
               </Card>
             </Reveal>
           </div>
-        </Container>
-      </Section>
-
-      <Section>
-        <Container>
-          <Reveal>
-            <SectionHeading
-              eyebrow="Founders"
-              title="Led by qualified accountants"
-              description="LedgerBridge is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
-            />
-          </Reveal>
-          <Stagger className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
-            {founders.map((f) => (
-              <StaggerItem key={f.name}>
-                <FounderCard founder={f} />
-              </StaggerItem>
-            ))}
-          </Stagger>
         </Container>
       </Section>
 
@@ -154,7 +154,7 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section>
+      {/* <Section>
         <Container>
           <Reveal>
             <SectionHeading eyebrow="What we stand for" title="The values behind the work" />
@@ -194,7 +194,7 @@ export default function AboutPage() {
             ))}
           </Stagger>
         </Container>
-      </Section>
+      </Section> */}
 
       <Section>
         <Container>
@@ -221,7 +221,7 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section className="border-t border-border bg-surface">
+      {/* <Section className="border-t border-border bg-surface">
         <Container>
           <Reveal className="mx-auto max-w-2xl text-center">
             <span className="inline-grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
@@ -235,7 +235,7 @@ export default function AboutPage() {
             </p>
           </Reveal>
         </Container>
-      </Section>
+      </Section> */}
 
       <CTASection />
     </>

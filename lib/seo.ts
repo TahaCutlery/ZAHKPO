@@ -43,8 +43,8 @@ export function organizationSchema() {
     name: siteConfig.name,
     url: siteConfig.url,
     description: siteConfig.description,
-    email: contact.email,
-    telephone: contact.phone,
+    email: contact.khOffice.email,
+    telephone: contact.khOffice.phone,
     foundingDate: String(siteConfig.founded),
     legalName: siteConfig.legalName,
     address: {

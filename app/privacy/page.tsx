@@ -99,8 +99,8 @@ export default function PrivacyPage() {
             <h2>Contact us</h2>
             <p>
               For any privacy question or to exercise your rights, email{" "}
-              <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a> or call{" "}
-              <a href={`tel:${siteConfig.contact.phoneHref}`}>{siteConfig.contact.phone}</a>.
+              <a href={`mailto:${siteConfig.contact.khOffice.email}`}>{siteConfig.contact.khOffice.email}</a> or call{" "}
+              <a href={`tel:${siteConfig.contact.khOffice.phoneHref}`}>{siteConfig.contact.khOffice.phone}</a>.
             </p>
           </Prose>
         </Container>

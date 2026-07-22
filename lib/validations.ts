@@ -13,7 +13,7 @@ export const contactTopics = [
   "Accounting",
   "Tax",
   "Company secretarial",
-  "Specialties (cloud, AI, MTD)",
+  "Industries (cloud, AI, MTD)",
   "Careers",
 ] as const;
 

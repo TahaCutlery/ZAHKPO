@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 
 type Platform = "LinkedIn" | "Facebook" | "Instagram" | "X";
 
-function Icon({ platform }: { platform: Platform }) {
+export function Icon({ platform }: { platform: Platform }) {
   const common = { viewBox: "0 0 24 24", fill: "currentColor", "aria-hidden": true as const };
   switch (platform) {
     case "LinkedIn":

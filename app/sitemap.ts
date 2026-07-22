@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/lib/site";
 import { services } from "@/content/services";
-import { specialties } from "@/content/specialties";
+// import { specialties } from "@/content/specialties";
 import { posts } from "@/content/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const offeringEntries: MetadataRoute.Sitemap = [
     ...services.map((s) => `/services/${s.slug}`),
-    ...specialties.map((s) => `/specialties/${s.slug}`),
+    // ...specialties.map((s) => `/specialties/${s.slug}`),
   ].map((path) => ({
     url: `${base}${path}`,
     lastModified: now,

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Quote, Star } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -15,9 +15,10 @@ import { IconTile } from "@/components/marketing/icon-tile";
 // import { TestimonialsSection } from "@/components/marketing/testimonials-section";
 import { buildMetadata } from "@/lib/seo";
 import { servicesBySlug } from "@/content/services";
-import { specialties } from "@/content/specialties";
+// import { specialties } from "@/content/specialties";
 import { securityFeatures } from "@/content/about";
 import { challenges } from "@/content/home";
+import { clientTestimonials } from "@/content/testimonials";
 import { deliveryMetrics, deliveryStandards } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
@@ -205,30 +206,6 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section className="border-y border-border bg-surface">
-        <Container>
-          <Reveal>
-            <SectionHeading
-              eyebrow="Specialties"
-              title="Beyond compliance"
-              description="Modernise and grow with cloud migration, Making Tax Digital, AI-assisted automation and digital marketing built for accountants."
-            />
-          </Reveal>
-          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {specialties.map((s) => (
-              <StaggerItem key={s.slug}>
-                <OfferingCard
-                  href={`/specialties/${s.slug}`}
-                  title={s.title}
-                  summary={s.summary}
-                  icon={s.icon}
-                />
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </Container>
-      </Section>
-
       <Section>
         <Container>
           <Reveal>
@@ -250,6 +227,76 @@ export default function HomePage() {
                 </Card>
               </StaggerItem>
             ))}
+          </Stagger>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-border bg-surface">
+        <Container>
+          <Reveal>
+            <SectionHeading
+              // eyebrow="Message"
+              title="Founder Message"
+              description="Founded with a passion for helping ambitious businesses thrive, LedgerBridge was created to bring clarity, confidence, and control to financial operations."
+            />
+          </Reveal>
+          <Stagger className="mt-12 gap-6 sm:grid-cols-2 lg:grid-cols-4 bg-gray-200 rounded-2xl min-h-96 flex justify-center items-center font-extrabold text-7xl">
+            <div className="h-full w-full flex justify-center align-middle">Coming soon....</div>
+          </Stagger>
+        </Container>
+      </Section>
+
+      <Section className="border-y border-border bg-surface">
+        <Container>
+          <Reveal>
+            <SectionHeading
+              eyebrow="Client voices"
+              title="Client testimonies"
+              description="Client testimonials reflect the trust, reliability, and measurable impact of our work. They capture the real experiences of businesses that have benefited from clear guidance, responsive support, and financial clarity that helped them move forward with confidence."
+            />
+          </Reveal>
+          <Stagger className="mt-12 grid gap-6 lg:grid-cols-2 justify-center">
+            {clientTestimonials.slice(0, 2).map((testimonial, index) => {
+              const initials = testimonial.author
+                .split(/\s+/)
+                .filter(Boolean)
+                .slice(0, 2)
+                .map((word) => word[0]?.toUpperCase())
+                .join("");
+
+              return (
+                <StaggerItem key={testimonial.author}>
+                  <Card className="group relative h-full overflow-hidden border border-border/80 bg-gradient-to-br from-background via-background to-slate-50 p-8 shadow-[0_20px_60px_-24px_rgba(3,24,51,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_-24px_rgba(3,24,51,0.45)] dark:to-slate-950 w-[22rem] sm:w-fit">
+                    <div className="absolute right-6 top-6 rounded-full bg-primary/10 p-3">
+                      <Quote className="size-6 text-primary" aria-hidden="true" />
+                    </div>
+                    <div className="flex items-center gap-1" aria-label={`${testimonial.rating || 5} out of 5 stars`}>
+                      {Array.from({ length: testimonial.rating || 5 }, (_, starIndex) => (
+                        <Star key={`${testimonial.author}-${starIndex}`} className="size-4 fill-[#f5c100] text-[#f5c100]" aria-hidden="true" />
+                      ))}
+                    </div>
+                    <blockquote className="mt-6 text-lg font-medium leading-relaxed text-foreground">
+                      “{testimonial.quote}”
+                    </blockquote>
+                    <div className="mt-8 flex items-center gap-3">
+                      <div className="grid size-12 shrink-0 place-items-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
+                        {initials}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="truncate font-semibold text-foreground">{testimonial.author}</p>
+                        <p className="truncate text-sm text-muted-foreground">
+                          {testimonial.role}
+                          {testimonial.company ? ` • ${testimonial.company}` : ""}
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      className={`absolute inset-x-0 bottom-0 h-1 ${index === 0 ? "bg-gradient-to-r from-primary via-[#f5c100] to-primary" : "bg-gradient-to-r from-[#031833] via-primary to-[#f5c100]"}`}
+                    />
+                  </Card>
+                </StaggerItem>
+              );
+            })}
           </Stagger>
         </Container>
       </Section>

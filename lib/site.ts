@@ -8,15 +8,27 @@ export const siteConfig = {
   description:
     "LedgerBridge is a technology-driven KPO and trusted outsourcing partner for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   contact: {
-    phone: "+91 88899 84419",
-    phoneHref: "+918889984419",
     phoneAlt: "+91 79999 83500",
     phoneAltHref: "+917999983500",
-    email: "info@theledgerbridge.com",
     careersEmail: "info@theledgerbridge.com",
     ukOffice: {
       label: "Head Office",
-      lines: [
+      phone: "+44 XXX XXX XXXX",
+      email: "info@theledgerbridge.com",
+      phoneHref: "+44XXXXXXXXXX",
+      address: [
+        "5 Ruslip Road",
+        "Greenford",
+        "England",
+        "UB6 9QD",
+      ],
+    },
+    khOffice: {
+      label: "Head Office",
+      phone: "+91 88899 84419",
+      email: "info@theledgerbridge.com",
+      phoneHref: "+918889984419",
+      address: [
         "GF 178, New Radhavallabh Market",
         "Khargone",
         "Madhya Pradesh 451001",

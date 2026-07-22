@@ -48,7 +48,7 @@ components/
   layout/            # Navbar, Footer, ThemeToggle, Logo, SocialLinks
   motion/            # Framer Motion wrappers (Reveal, Stagger, Counter)
   seo/               # JSON-LD helper
-content/             # Typed content: services, specialties, faqs, blog, …
+content/             # Typed content: services, industries, faqs, blog, …
 lib/                 # site config, nav, seo helpers, utils, validations
 types/               # Shared content types
 docs/                # Discovery + strategy + design system docs
@@ -56,16 +56,13 @@ docs/                # Discovery + strategy + design system docs
 
 See **`docs/project-structure.md`** for the full tree and **`docs/component-library.md`** for the component inventory.
 
-## Content model — how to edit
+Service and industry pages are data-driven: each renders from a typed object through a shared `ServiceDetail` template.
 
-The 12 service pages and 4 specialty pages are **data-driven**: each renders from a typed object through one shared `ServiceDetail` template.
-
-- **Add/edit a service** → `content/services.ts` (route, mega menu, sitemap and detail page update automatically).
-- **Add/edit a specialty** → `content/specialties.ts`.
-- **FAQs** → `content/faqs.ts` (drives `/faq` and the `FAQPage` JSON-LD).
-- **Blog posts** → add a `content/blog/<slug>.tsx` module (`export const meta` + a default body component) and register it in `content/blog/index.ts`.
-- **Stats / values / careers / tools** → the matching file in `content/`.
-- **Navigation & footer** → `lib/nav.ts`. **Contact details / socials** → `lib/site.ts`.
+- **Services** → `content/services.ts` (route, mega menu, sitemap and detail page update automatically)
+- **Industries** → `content/specialties.ts`
+- **FAQs** → `content/faqs.ts` (drives `/faq` and the `FAQPage` JSON-LD)
+- **Blog posts** → add a `content/blog/<slug>.tsx` module and register it in `content/blog/index.ts`
+- **Navigation & footer** → `lib/nav.ts` · **Contact details / socials** → `lib/site.ts`
 
 ## Theming
 

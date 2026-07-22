@@ -45,7 +45,7 @@ export function PageHero({
             fill
             priority
             sizes="100vw"
-            className={cn("object-cover object-center", image!.mobileSrc && "hidden sm:block")}
+            className={cn("object-cover object-top", image!.mobileSrc && "hidden sm:block")}
           />
           {image!.mobileSrc ? (
             <Image
@@ -53,7 +53,7 @@ export function PageHero({
               alt=""
               fill
               priority
-              sizes="100vw"
+              sizes="50vw"
               className="object-cover object-center sm:hidden"
             />
           ) : null}

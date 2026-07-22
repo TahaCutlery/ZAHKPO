@@ -48,7 +48,7 @@ export function ServiceDetail({
           </Link>
         </Button>
         <Button asChild size="lg" variant="outline">
-          <a href={`tel:${siteConfig.contact.phoneHref}`}>
+          <a href={`tel:${siteConfig.contact.khOffice.phoneHref}`}>
             <Phone className="size-4" aria-hidden="true" />
             Call us now
           </a>

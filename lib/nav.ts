@@ -108,34 +108,33 @@ export const serviceGroups: MegaGroup[] = [
   },
 ];
 
-export const specialtyLinks: NavLink[] = [
-  {
-    label: "Cloud Accounting",
-    href: "/specialties/cloud-accounting",
-    description: "Migrate to the cloud without disruption.",
-  },
-  {
-    label: "Making Tax Digital",
-    href: "/specialties/mtd",
-    description: "Stress-free digital tax compliance.",
-  },
-  {
-    label: "AI Accounting",
-    href: "/specialties/ai-accounting",
-    description: "Automation with human quality control.",
-  },
-  {
-    label: "Digital Marketing",
-    href: "/specialties/marketing-services",
-    description: "Branding, content and lead generation.",
-  },
-];
+// export const specialtyLinks: NavLink[] = [
+//   {
+//     label: "Dental",
+//     href: "/specialties/cloud-accounting",
+//     description: "Migrate to the cloud without disruption.",
+//   },
+//   {
+//     label: "Hospitality",
+//     href: "/specialties/mtd",
+//     description: "Stress-free digital tax compliance.",
+//   },
+//   {
+//     label: "Construction",
+//     href: "/specialties/ai-accounting",
+//     description: "Automation with human quality control.",
+//   },
+//   {
+//     label: "Pharma",
+//     href: "/specialties/marketing-services",
+//     description: "Branding, content and lead generation.",
+//   },
+// ];
 
-/** Specialties presented as a group inside the Services mega menu. */
-export const specialtiesGroup: MegaGroup = {
-  label: "Specialties",
-  items: specialtyLinks,
-};
+// export const specialtiesGroup: MegaGroup = {
+//   label: "Industries",
+//   items: specialtyLinks,
+// };
 
 /**
  * Balanced columns for the desktop Services mega menu. Compliance is the tallest
@@ -146,7 +145,9 @@ export const serviceMenuColumns: MegaGroup[][] = [
   serviceGroups.filter((g) => g.label === "Core Finance & Accounting"),
   serviceGroups.filter((g) => g.label === "Compliance"),
   serviceGroups.filter((g) => g.label === "CFO & Advisory" || g.label === "Audit Support"),
-  [...serviceGroups.filter((g) => g.label === "Company Secretarial"), specialtiesGroup],
+  [...serviceGroups.filter((g) => g.label === "Company Secretarial")
+    // , specialtiesGroup
+    ],
 ];
 
 export const resourceLinks: NavLink[] = [
@@ -174,10 +175,10 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
       { label: "Audit Support", href: "/services/audit-support" },
     ],
   },
-  {
-    title: "Specialties",
-    links: specialtyLinks.map(({ label, href }) => ({ label, href })),
-  },
+  // {
+  //   title: "Industries",
+  //   links: specialtyLinks.map(({ label, href }) => ({ label, href })),
+  // },
   {
     title: "Company",
     links: [

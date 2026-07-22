@@ -1,4 +1,6 @@
 import {
+    BracesIcon,
+    Briefcase,
   ClipboardCheck,
   GraduationCap,
   HeartHandshake,
@@ -81,25 +83,25 @@ export const csrInitiatives: CsrInitiative[] = [
   {
     title: "A tree for every engagement",
     description:
-      "For every new engagement we win, we plant a tree - a small, permanent thank-you to the environment for every firm that trusts us.",
+      "For every new client engagement, we contribute to tree-planting initiatives that support a greener future.",
     icon: Leaf,
   },
   {
     title: "Developing local talent",
     description:
-      "We train and mentor young accounting professionals in our community, creating skilled career paths in UK accounting, audit and compliance.",
+      "We mentor and support aspiring accounting professionals, helping build valuable skills and career opportunities.",
     icon: GraduationCap,
   },
   {
     title: "Community well-being",
     description:
-      "A share of our growth goes back into local education and community initiatives, in line with our mission to create a positive impact on people and society.",
+      "We support initiatives that promote education, opportunity, and positive community development.",
     icon: HeartHandshake,
   },
   {
-    title: "Low-footprint operations",
+    title: "Creating Meaningful Careers",
     description:
-      "Cloud-first, paperless delivery keeps our environmental footprint small - modern technology working for the planet as well as your practice.",
-    icon: Recycle,
+      "We provide a supportive environment where individuals can learn, grow, and build rewarding long-term careers.",
+    icon: Briefcase,
   },
 ];

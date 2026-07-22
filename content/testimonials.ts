@@ -35,7 +35,7 @@ export const clientTestimonials: Testimonial[] = [
   {
     quote:
       "The quality of year-end files is consistently review-ready. Our partners now spend their time on advisory work instead of chasing compliance deadlines.",
-    author: "Sarah Patel",
+    author: "Suraj Patel",
     role: "Practice Director",
     company: "Meridian Accounting Group",
     rating: 5,

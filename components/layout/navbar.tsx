@@ -17,7 +17,9 @@ import {
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
-import { resourceLinks, serviceGroups, serviceMenuColumns, specialtiesGroup } from "@/lib/nav";
+import { resourceLinks, serviceGroups, serviceMenuColumns }
+  from "@/lib/nav";
+// , specialtiesGroup } 
 
 const triggerClass =
   "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-foreground";
@@ -59,7 +61,7 @@ export function Navbar() {
           : "border-transparent bg-background/60 backdrop-blur-sm",
       )}
     >
-      <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
+      <div className="container-page flex h-16 items-center justify-between gap-4 md:h-4.5rem">
         <Logo />
 
         <NavigationMenu.Root className="relative hidden lg:flex" delayDuration={80}>
@@ -137,7 +139,7 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-var(--shadow-lg) data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="w-[20rem] p-3">
                   {resourceLinks.map((item) => (
                     <NavigationMenu.Link asChild key={item.href}>
@@ -199,7 +201,9 @@ export function Navbar() {
                     <AccordionTrigger>Services</AccordionTrigger>
                     <AccordionContent>
                       <div className="space-y-4">
-                        {[...serviceGroups, specialtiesGroup].map((group) => (
+                        {[...serviceGroups, 
+                        // specialtiesGroup
+                        ].map((group) => (
                           <div key={group.label}>
                             <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                               {group.label}

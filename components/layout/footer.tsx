@@ -47,25 +47,56 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 border-t border-border pt-8 sm:grid-cols-3">
-          <a
-            href={`tel:${contact.phoneHref}`}
-            className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
-          >
-            <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-            {contact.phone}
-          </a>
-          <a
-            href={`mailto:${contact.email}`}
-            className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
-          >
-            <Mail className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-            {contact.email}
-          </a>
-          <p className="flex items-start gap-3 text-sm text-muted-foreground">
-            <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-            <span>{contact.ukOffice.lines.slice(0, 3).join(", ")}</span>
-          </p>
+        <div className="mt-12">
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+            Khargone Office
+          </div>
+          <div className="mt-5 grid gap-6 md:grid-cols-3">
+            <a
+              href={`tel:${contact.khOffice.phoneHref}`}
+              className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              {contact.khOffice.phone}
+            </a>
+            <a
+              href={`mailto:${contact.khOffice.email}`}
+              className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <Mail className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              {contact.khOffice.email}
+            </a>
+            <p className="flex items-start gap-3 text-sm text-muted-foreground">
+              <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              <span>{contact.khOffice.address.slice(0, 3).join(", ")}</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+            UK Office
+          </div>
+          <div className="mt-5 grid gap-6 md:grid-cols-3">
+            <a
+              href={`tel:${contact.ukOffice.phoneHref}`}
+              className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              {contact.ukOffice.phone}
+            </a>
+            <a
+              href={`mailto:${contact.ukOffice.email}`}
+              className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
+            >
+              <Mail className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              {contact.ukOffice.email}
+            </a>
+            <p className="flex items-start gap-3 text-sm text-muted-foreground">
+              <MapPin className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+              <span>{contact.ukOffice.address.slice(0).join(", ")}</span>
+            </p>
+          </div>
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground sm:flex-row">

@@ -38,7 +38,7 @@ export function HomeHero() {
           alt=""
           fill
           priority
-          sizes="100vw"
+          sizes="50vw"
           className="hidden object-cover object-[center_72%] sm:block"
         />
         {/* Portrait crop for phones - the landscape shot crops to nothing at 390px */}
@@ -47,7 +47,7 @@ export function HomeHero() {
           alt=""
           fill
           priority
-          sizes="100vw"
+          sizes="50vw"
           className="object-cover object-center sm:hidden"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#031833] via-[#031833]/80 to-[#031833]/20" />
@@ -55,7 +55,7 @@ export function HomeHero() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute right-[-10%] top-[-20%] -z-10 size-[36rem] rounded-full bg-[#f8d509]/10 blur-3xl"
+        className="absolute right-[-10%] top-[-20%] -z-10 size-36rem rounded-full bg-[#f8d509]/10 blur-3xl"
       />
 
       <Container>
@@ -67,9 +67,8 @@ export function HomeHero() {
         >
           <motion.span
             variants={reduce ? undefined : item}
-            className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 text-sm font-semibold tracking-wide text-[#f8d509] backdrop-blur"
+            className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 text-md font-bold tracking-wide text-[#f8d509] backdrop-blur"
           >
-            <span className="size-1.5 rounded-full bg-[#f8d509]" aria-hidden="true" />
             Think Outsourcing. Think LedgerBridge.
           </motion.span>
 

@@ -11,7 +11,7 @@ import { CTASection } from "@/components/marketing/cta-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { serviceCategories, services } from "@/content/services";
-import { specialties } from "@/content/specialties";
+// import { specialties } from "@/content/specialties";
 
 export const metadata: Metadata = buildMetadata({
   title: "Outsourced Accounting Services",
@@ -83,12 +83,12 @@ export default function ServicesPage() {
           <Reveal>
             <SectionHeading
               align="left"
-              eyebrow="Specialties"
-              title="Beyond compliance - modernise and grow"
+              eyebrow="Industry expertise"
+              title="Beyond compliance — modernise and grow"
               description="Cloud migration, Making Tax Digital, AI-assisted automation and marketing built specifically for accountancy practices."
             />
           </Reveal>
-          <Stagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {/* <Stagger className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {specialties.map((s) => (
               <StaggerItem key={s.slug}>
                 <OfferingCard
@@ -99,7 +99,7 @@ export default function ServicesPage() {
                 />
               </StaggerItem>
             ))}
-          </Stagger>
+          </Stagger> */}
         </Container>
       </Section>
 

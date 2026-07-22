@@ -37,8 +37,8 @@ export default function WhyLedgerBridgePage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Why LedgerBridge"
-        title="What differentiates us"
-        description="Plenty of providers can process work. We built LedgerBridge around the four things UK firms told us actually matter: proactivity, consistent quality, documented process and growth for your practice."
+        title="What Differentiates Us"
+        description="Plenty of providers can process work. We built LedgerBridge around the four things UK firms told us actually matter: Proactivity, Consistent Quality, Documented Process and Growth for your Practice."
         crumbs={crumbs}
         image={{ src: "/images/city-skyline.jpg", mobileSrc: "/images/mobile/city-skyline-mobile.jpg" }}
       >
@@ -98,8 +98,10 @@ export default function WhyLedgerBridgePage() {
           <Reveal>
             <SectionHeading
               eyebrow="How we work"
-              title="People first. Process driven. Technology enabled. Value focused."
-              description="Four principles behind every engagement - and the reason firms stay with us."
+              title="Built for UK Accounting Firms."
+              // title="People first. Process driven. Technology enabled. Value focused."
+              description="Qualified professionals, proven processes and modern technology working together to deliver reliable, scalable accounting support."
+              // description="Four principles behind every engagement — and the reason firms stay with us."
             />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

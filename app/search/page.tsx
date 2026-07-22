@@ -5,12 +5,12 @@ import { PageHero } from "@/components/marketing/page-hero";
 import { SearchClient, type SearchDoc } from "@/components/search/search-client";
 import { buildMetadata } from "@/lib/seo";
 import { services } from "@/content/services";
-import { specialties } from "@/content/specialties";
+// import { specialties } from "@/content/specialties";
 import { posts } from "@/content/blog";
 
 export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description: "Search the LedgerBridge website for services, specialties and articles.",
+  description: "Search the LedgerBridge website for services, industries and articles.",
   path: "/search",
   noindex: true,
 });
@@ -22,12 +22,12 @@ const index: SearchDoc[] = [
     href: `/services/${s.slug}`,
     type: "Service",
   })),
-  ...specialties.map((s) => ({
-    title: s.title,
-    description: s.summary,
-    href: `/specialties/${s.slug}`,
-    type: "Specialty",
-  })),
+  // ...specialties.map((s) => ({
+  //   title: s.title,
+  //   description: s.summary,
+  //   href: `/specialties/${s.slug}`,
+  //   type: "Industry",
+  // })),
   ...posts.map((p) => ({
     title: p.meta.title,
     description: p.meta.description,
@@ -53,7 +53,7 @@ export default async function SearchPage({
       <PageHero
         eyebrow="Search"
         title="Find what you need"
-        description="Search across our services, specialties and articles."
+        description="Search across our services, industries and articles."
         crumbs={crumbs}
         image={{ src: "/images/team-meeting-bright.jpg", mobileSrc: "/images/mobile/team-meeting-bright-mobile.jpg" }}
       />

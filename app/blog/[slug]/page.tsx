@@ -13,7 +13,7 @@ import { buildMetadata, blogPostingSchema, breadcrumbSchema } from "@/lib/seo";
 import { formatDate } from "@/lib/format";
 import { getPost, posts } from "@/content/blog";
 import { servicesBySlug } from "@/content/services";
-import { specialtiesBySlug } from "@/content/specialties";
+// import { specialtiesBySlug } from "@/content/specialties";
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.meta.slug }));
@@ -38,7 +38,8 @@ export async function generateMetadata({
 function resolveRelated(href: string): RelatedItem | null {
   const [, type, slug] = href.split("/");
   const offering =
-    type === "services" ? servicesBySlug[slug] : type === "specialties" ? specialtiesBySlug[slug] : undefined;
+    type === "services" ? servicesBySlug[slug] : undefined;
+    //  type === "specialties" ? specialtiesBySlug[slug] :
   return offering ? { href, title: offering.title, summary: offering.summary, icon: offering.icon } : null;
 }
 
