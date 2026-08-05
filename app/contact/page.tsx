@@ -22,7 +22,7 @@ const crumbs = [{ label: "Home", href: "/" }, { label: "Contact" }];
 
 export default function ContactPage() {
   const { contact } = siteConfig;
-  const offices = [{ label: contact.khOffice.label, lines: contact.khOffice.address }, ...contact.deliveryOffices];
+  const offices = [{ label: contact.ukOffice.label, lines: contact.ukOffice.address }, ...contact.deliveryOffices];
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function ContactPage() {
             <div className="space-y-8">
               <div className="space-y-3">
                 <a
-                  href={`tel:${contact.khOffice.phoneHref}`}
+                  href={`tel:${contact.ukOffice.phoneHref}`}
                   className="flex items-center gap-3 text-foreground transition-colors hover:text-primary"
                 >
                   <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
@@ -59,8 +59,8 @@ export default function ContactPage() {
                   </span>
                   <span>
                     <span className="block text-xs text-muted-foreground">Call us</span>
-                    <span className="font-medium">{contact.khOffice.phone}</span>
-                    <span className="block font-medium">{contact.phoneAlt}</span>
+                    <span className="font-medium">{contact.ukOffice.phone}</span>
+                    {/* <span className="block font-medium">{contact.phoneAlt}</span> */}
                   </span>
                 </a>
                 <a
@@ -103,12 +103,12 @@ export default function ContactPage() {
                 </div>
               ) : null}
 
-              <iframe
+              <iframe 
                 title="LedgerBridge head office location"
-                src="https://www.google.com/maps?q=New%20Radhavallabh%20Market%2C%20Khargone%2C%20Madhya%20Pradesh%20451001%2C%20India&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.17706230506!2d-0.3595827234556403!3d51.528312171818094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487612bc4fefde6f%3A0x309f7b635830f489!2s5%20Ruislip%20Rd%2C%20Greenford%20UB6%209QD%2C%20UK!5e0!3m2!1sen!2sin!4v1785865089630!5m2!1sen!2sin" 
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-56 w-full rounded-2xl border border-border"
+                className="h-56 w-full rounded-2xl border border-border" 
               />
             </div>
           </div>

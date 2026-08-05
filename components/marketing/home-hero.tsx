@@ -34,11 +34,11 @@ export function HomeHero() {
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         {/* Swap this file for an AI-generated photo of the founders with the team when ready */}
         <Image
-          src="/images/hero-team.jpg"
+          src="/images/home-hero.jpg"
           alt=""
           fill
           priority
-          sizes="50vw"
+          sizes="100vw"
           className="hidden object-cover object-[center_72%] sm:block"
         />
         {/* Portrait crop for phones - the landscape shot crops to nothing at 390px */}
@@ -67,7 +67,7 @@ export function HomeHero() {
         >
           <motion.span
             variants={reduce ? undefined : item}
-            className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 text-md font-bold tracking-wide text-[#f8d509] backdrop-blur"
+            className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 md:text-lg sm:text-md text-xs font-bold tracking-wide text-[#f8d509] backdrop-blur"
           >
             Think Outsourcing. Think LedgerBridge.
           </motion.span>

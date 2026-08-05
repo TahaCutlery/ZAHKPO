@@ -1,3 +1,5 @@
+import { founders } from "@/content/team";
+
 export const siteConfig = {
   name: "LedgerBridge",
   shortName: "LedgerBridge",
@@ -13,7 +15,7 @@ export const siteConfig = {
     careersEmail: "info@theledgerbridge.com",
     ukOffice: {
       label: "Head Office",
-      phone: "+44 XXX XXX XXXX",
+      phone: "+44 784 842 6766",
       email: "info@theledgerbridge.com",
       phoneHref: "+44XXXXXXXXXX",
       address: [
@@ -37,7 +39,12 @@ export const siteConfig = {
     },
     deliveryOffices: [] as { label: string; lines: string[] }[],
   },
-  social: [] as { platform: "LinkedIn" | "Facebook" | "Instagram" | "X"; url: string }[],
+  social: [
+    {
+      platform: "LinkedIn",
+      url: founders[1].linkedin,
+    },
+  ] as { platform: "LinkedIn" | "Facebook" | "Instagram" | "X"; url: string }[],
   markets: ["United Kingdom"],
 } as const;
 

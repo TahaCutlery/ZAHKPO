@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
@@ -5,6 +6,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/section";
 import { siteConfig } from "@/lib/site";
+import { useState } from "react";
 
 interface CTASectionProps {
   title?: string;
@@ -19,6 +21,8 @@ export function CTASection({
   primaryLabel = "Book a Discovery Call",
   primaryHref = "/contact",
 }: CTASectionProps) {
+  const [UKContactbutton, setUKContactbutton] = useState(false);
+
   return (
     <section className="py-20 md:py-24">
       <Container>
@@ -46,14 +50,16 @@ export function CTASection({
                 </Link>
               </Button>
               <Button
+                onMouseEnter={()=>setUKContactbutton(true)}
+                onMouseLeave={()=>setUKContactbutton(false)}
                 asChild
                 size="lg"
                 variant="outline"
                 className="border-white/35 bg-transparent text-white hover:bg-white/10 hover:text-white"
               >
-                <a href={`tel:${siteConfig.contact.khOffice.phoneHref}`}>
+                <a href={`tel:${siteConfig.contact.ukOffice.phoneHref}`}>
                   <Phone className="size-4" aria-hidden="true" />
-                  {siteConfig.contact.khOffice.phone}
+                  {UKContactbutton ? "Only for WhatsApp" : siteConfig.contact.ukOffice.phone}
                 </a>
               </Button>
             </div>

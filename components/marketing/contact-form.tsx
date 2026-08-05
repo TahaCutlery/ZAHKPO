@@ -3,9 +3,10 @@
 import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Send } from "lucide-react";
+import { useForm as useFormspree, ValidationError } from "@formspree/react";
+import { useForm, type FieldErrors } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,6 +15,8 @@ import { Label } from "@/components/ui/label";
 import { FieldError } from "@/components/ui/field-error";
 import { cn } from "@/lib/utils";
 import { contactSchema, contactTopics, type ContactValues } from "@/lib/validations";
+
+const formspreeFormId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? "xaewwrvn";
 
 function Field({
   id,
@@ -44,6 +47,8 @@ function Field({
 
 export function ContactForm() {
   const router = useRouter();
+  const [submissionState, submitToFormspree] = useFormspree<ContactValues>(formspreeFormId);
+
   const {
     register,
     handleSubmit,
@@ -63,36 +68,66 @@ export function ContactForm() {
     },
   });
 
+  const { name: _first, ...firstNameReg } = register("firstName");
+  const { name: _last, ...lastNameReg } = register("lastName");
+  const { name: _email2, ...emailReg } = register("email");
+  const { name: _phone2, ...phoneReg } = register("phone");
+  const { name: _company2, ...companyReg } = register("company");
+  const { name: _topic2, ...topicReg } = register("topic");
+  const { name: _message2, ...messageReg } = register("message");
+  const { name: _consent2, ...consentReg } = register("consent");
+  const { name: _website2, ...websiteReg } = register("website");
+
+  React.useEffect(() => {
+    if (submissionState.succeeded) {
+      router.push("/thank-you");
+    }
+  }, [router, submissionState.succeeded]);
+
   async function onSubmit(values: ContactValues) {
     if (values.website) return; // honeypot
-    // Client-only flow (no backend by project decision): confirm via the thank-you page.
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    router.push("/thank-you");
+    await submitToFormspree(values);
   }
 
-  const describedBy = (field: keyof ContactValues, hasError: boolean) =>
-    hasError ? `${field}-error` : undefined;
+  const hasFieldError = (field: keyof ContactValues) =>
+    Boolean(errors[field] || submissionState.errors?.getFieldErrors(field)?.length);
+
+  const describedBy = (field: keyof ContactValues) =>
+    hasFieldError(field) ? `${field}-error` : undefined;
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5" action="https://formspree.io/f/xaewwrvn" method="POST">
+      {submissionState.errors?.getFormErrors().length ? (
+        <div className="rounded-2xl border border-danger/20 bg-danger/5 p-4 text-sm text-danger">
+          {submissionState.errors.getFormErrors().map((error) => (
+            <p key={error.message}>{error.message}</p>
+          ))}
+        </div>
+      ) : null}
+
       <div className="grid gap-5 sm:grid-cols-2">
         <Field id="firstName" label="First name" error={errors.firstName?.message}>
           <Input
             id="firstName"
             autoComplete="given-name"
-            invalid={!!errors.firstName}
-            aria-describedby={describedBy("firstName", !!errors.firstName)}
-            {...register("firstName")}
+            invalid={hasFieldError("firstName")}
+            name="firstName"
+            aria-describedby={describedBy("firstName")}
+            {...firstNameReg}
           />
+          <ValidationError prefix="FirstName" field="firstName" errors={submissionState.errors} />
         </Field>
+
         <Field id="lastName" label="Last name" error={errors.lastName?.message}>
           <Input
             id="lastName"
             autoComplete="family-name"
-            invalid={!!errors.lastName}
-            aria-describedby={describedBy("lastName", !!errors.lastName)}
-            {...register("lastName")}
+            invalid={hasFieldError("lastName")}
+            name="lastName"
+            aria-describedby={describedBy("lastName")}
+            {...lastNameReg}
           />
+          <ValidationError prefix="LastName" field="lastName" errors={submissionState.errors} />
         </Field>
       </div>
 
@@ -102,31 +137,50 @@ export function ContactForm() {
             id="email"
             type="email"
             autoComplete="email"
-            invalid={!!errors.email}
-            aria-describedby={describedBy("email", !!errors.email)}
-            {...register("email")}
+            invalid={hasFieldError("email")}
+            name="email"
+            aria-describedby={describedBy("email")}
+            {...emailReg}
           />
+          <ValidationError prefix="Email" field="email" errors={submissionState.errors} />
         </Field>
+
         <Field id="phone" label="Phone" optional error={errors.phone?.message}>
           <Input
             id="phone"
             type="tel"
             autoComplete="tel"
-            invalid={!!errors.phone}
-            {...register("phone")}
+            invalid={hasFieldError("phone")}
+            name="phone"
+            aria-describedby={describedBy("phone")}
+            {...phoneReg}
           />
+          <ValidationError prefix="Phone" field="phone" errors={submissionState.errors} />
         </Field>
       </div>
 
       <Field id="company" label="Company / firm" optional error={errors.company?.message}>
-        <Input id="company" autoComplete="organization" {...register("company")} />
+        <Input
+          id="company"
+          autoComplete="organization"
+          invalid={hasFieldError("company")}
+          name="company"
+          aria-describedby={describedBy("company")}
+          {...companyReg}
+        />
+        <ValidationError prefix="Company" field="company" errors={submissionState.errors} />
       </Field>
 
       <Field id="topic" label="How can we help?" error={errors.topic?.message}>
         <select
           id="topic"
-          className="h-11 w-full rounded-lg border border-input bg-background px-3 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background"
-          {...register("topic")}
+          name="topic"
+          className={cn(
+            "h-11 w-full rounded-lg border bg-background px-3 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background",
+            hasFieldError("topic") ? "border-danger focus-visible:ring-danger" : "border-input",
+          )}
+          aria-describedby={describedBy("topic")}
+          {...topicReg}
         >
           {contactTopics.map((t) => (
             <option key={t} value={t}>
@@ -134,6 +188,7 @@ export function ContactForm() {
             </option>
           ))}
         </select>
+        <ValidationError prefix="Topic" field="topic" errors={submissionState.errors} />
       </Field>
 
       <Field id="message" label="Your message" error={errors.message?.message}>
@@ -141,10 +196,12 @@ export function ContactForm() {
           id="message"
           rows={5}
           placeholder="Tell us what's on your plate and how we can help..."
-          invalid={!!errors.message}
-          aria-describedby={describedBy("message", !!errors.message)}
-          {...register("message")}
+          invalid={hasFieldError("message")}
+          name="message"
+          aria-describedby={describedBy("message")}
+          {...messageReg}
         />
+        <ValidationError prefix="Message" field="message" errors={submissionState.errors} />
       </Field>
 
       <div>
@@ -153,9 +210,10 @@ export function ContactForm() {
             id="consent"
             type="checkbox"
             className="mt-1 size-4 shrink-0 rounded border-input accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            aria-invalid={!!errors.consent}
-            aria-describedby={describedBy("consent", !!errors.consent)}
-            {...register("consent")}
+            aria-invalid={hasFieldError("consent")}
+            aria-describedby={describedBy("consent")}
+            name="consent"
+            {...consentReg}
           />
           <Label htmlFor="consent" className="font-normal text-muted-foreground">
             I agree to the{" "}
@@ -168,6 +226,7 @@ export function ContactForm() {
         <FieldError id="consent-error" className="mt-1.5">
           {errors.consent?.message}
         </FieldError>
+        <ValidationError prefix="Consent" field="consent" errors={submissionState.errors} />
       </div>
 
       {/* Honeypot field - hidden from users, catches bots */}
@@ -177,11 +236,12 @@ export function ContactForm() {
         autoComplete="off"
         aria-hidden="true"
         className="hidden"
-        {...register("website")}
+        name="website"
+        {...websiteReg}
       />
 
-      <Button type="submit" size="lg" loading={isSubmitting} className={cn("w-full sm:w-auto")}>
-        {!isSubmitting ? <Send className="size-4" aria-hidden="true" /> : null}
+      <Button type="submit" size="lg" loading={isSubmitting || submissionState.submitting} className={cn("w-full sm:w-auto")} disabled={isSubmitting || submissionState.submitting}>
+        {!isSubmitting && !submissionState.submitting ? <Send className="size-4" aria-hidden="true" /> : null}
         Send message
       </Button>
     </form>

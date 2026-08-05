@@ -161,7 +161,7 @@ export default function HomePage() {
             <StaggerItem className="sm:col-span-2">
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-entrance.jpg"
+                  src="/images/office-entrance1.jpg"
                   alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
                   fill
                   sizes="(max-width: 768px) 100vw, 66vw"
@@ -235,7 +235,7 @@ export default function HomePage() {
         <Container>
           <Reveal>
             <SectionHeading
-              // eyebrow="Message"
+              eyebrow="Message"
               title="Founder Message"
               description="Founded with a passion for helping ambitious businesses thrive, LedgerBridge was created to bring clarity, confidence, and control to financial operations."
             />

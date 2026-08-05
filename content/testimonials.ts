@@ -27,7 +27,7 @@ export const clientTestimonials: Testimonial[] = [
   {
     quote:
       "LedgerBridge cleared a six-month bookkeeping backlog in weeks and has kept every VAT deadline since. It genuinely feels like an extension of our own team.",
-    author: "James Whitfield",
+    author: "Accounting Practitioner in Greenford",
     role: "Managing Partner",
     company: "Whitfield & Co Accountants",
     rating: 5,
@@ -35,7 +35,7 @@ export const clientTestimonials: Testimonial[] = [
   {
     quote:
       "The quality of year-end files is consistently review-ready. Our partners now spend their time on advisory work instead of chasing compliance deadlines.",
-    author: "Suraj Patel",
+    author: "Account Practitioner in Craven Street, London",
     role: "Practice Director",
     company: "Meridian Accounting Group",
     rating: 5,

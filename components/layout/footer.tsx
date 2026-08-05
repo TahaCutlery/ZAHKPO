@@ -49,7 +49,7 @@ export function Footer() {
 
         <div className="mt-12">
           <div className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
-            Khargone Office
+            India Office
           </div>
           <div className="mt-5 grid gap-6 md:grid-cols-3">
             <a
