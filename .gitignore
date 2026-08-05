@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Local QA screenshots (repo root)
 /*.png
+
+# Claude Code local settings
+.claude/
