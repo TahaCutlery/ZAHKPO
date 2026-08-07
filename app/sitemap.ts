@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/lib/site";
 import { services } from "@/content/services";
+
+export const dynamic = "force-static";
 // import { specialties } from "@/content/specialties";
 import { posts } from "@/content/blog";
 

@@ -42,12 +42,7 @@ const index: SearchDoc[] = [
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Search" }];
 
-export default async function SearchPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ q?: string }>;
-}) {
-  const { q } = await searchParams;
+export default function SearchPage() {
   return (
     <>
       <PageHero
@@ -59,7 +54,7 @@ export default async function SearchPage({
       />
       <Section>
         <Container>
-          <SearchClient docs={index} initialQuery={q ?? ""} />
+          <SearchClient docs={index} initialQuery="" />
         </Container>
       </Section>
     </>
