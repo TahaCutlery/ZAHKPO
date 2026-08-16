@@ -286,7 +286,7 @@ export default function HomePage() {
                         <p className="truncate font-semibold text-foreground">{testimonial.author}</p>
                         <p className="truncate text-sm text-muted-foreground">
                           {testimonial.role}
-                          {testimonial.company ? ` • ${testimonial.company}` : ""}
+                          {/* {testimonial.company ? ` • ${testimonial.company}` : ""} */}
                         </p>
                       </div>
                     </div>
