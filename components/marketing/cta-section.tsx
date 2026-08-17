@@ -28,7 +28,7 @@ export function CTASection({
       <Container>
         <div className="relative overflow-hidden rounded-3xl bg-[#0f2c57] px-6 py-14 text-center text-white md:px-16 md:py-20">
           <Image
-            src="/images/city-skyline.jpg"
+            src="/images/city-skyline.webp"
             alt=""
             aria-hidden="true"
             fill

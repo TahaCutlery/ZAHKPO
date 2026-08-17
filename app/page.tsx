@@ -22,7 +22,7 @@ import { clientTestimonials } from "@/content/testimonials";
 import { deliveryMetrics, deliveryStandards } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Accounting Outsourcing for UK Accounting Firms",
+  title: "LedgerBridge - Accounting Outsourcing for UK Accounting Firms",
   description:
     "LedgerBridge is a technology-driven KPO and the outsourced back office for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   path: "/",
@@ -161,7 +161,7 @@ export default function HomePage() {
             <StaggerItem className="sm:col-span-2">
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-entrance1.jpg"
+                  src="/images/office-entrance1.webp"
                   alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
                   fill
                   sizes="(max-width: 768px) 100vw, 66vw"
@@ -172,7 +172,7 @@ export default function HomePage() {
             <StaggerItem className="sm:row-span-2">
               <div className="relative aspect-[2/3] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-workstations.jpg"
+                  src="/images/office-workstations.webp"
                   alt="Two team members working side by side at LedgerBridge workstations"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -183,7 +183,7 @@ export default function HomePage() {
             <StaggerItem>
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-team.jpg"
+                  src="/images/office-team.webp"
                   alt="The LedgerBridge team at work in the open-plan office"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -194,7 +194,7 @@ export default function HomePage() {
             <StaggerItem>
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-cabin.jpg"
+                  src="/images/office-cabin.webp"
                   alt="A LedgerBridge accountant working at a dual-screen desk in a private cabin"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"

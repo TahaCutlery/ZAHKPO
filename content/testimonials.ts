@@ -67,7 +67,7 @@ export const videoTestimonial = {
   description:
     "How a two-partner UK firm cleared its backlog, hit 100% on-time VAT submissions and freed up partner time for advisory work.",
   src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-  poster: "/images/hero-meeting.jpg",
+  poster: "/images/hero-meeting.webp",
   author: "Whitfield & Co Accountants",
   role: "Client since 2025",
 };

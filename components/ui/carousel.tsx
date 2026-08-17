@@ -57,7 +57,7 @@ export function Carousel({
       className={cn("relative", className)}
       role="region"
       aria-roledescription="carousel"
-      aria-label={ariaLabel}
+      aria-label={ariaLabel ?? "Carousel"}
     >
       <div className="overflow-hidden" ref={viewportRef}>
         <div className="-ml-4 flex">
@@ -66,6 +66,7 @@ export function Carousel({
               key={i}
               role="group"
               aria-roledescription="slide"
+              aria-label={`Slide ${i + 1} of ${slides.length}`}
               className={cn("min-w-0 shrink-0 grow-0 basis-full pl-4", slideClassName)}
             >
               {slide}
@@ -104,7 +105,7 @@ export function Carousel({
               key={i}
               type="button"
               aria-label={`Go to slide ${i + 1}`}
-              aria-current={i === selected}
+              aria-current={i === selected ? "true" : undefined}
               onClick={() => embla?.scrollTo(i)}
               className={cn(
                 "h-2 rounded-full transition-all duration-300",

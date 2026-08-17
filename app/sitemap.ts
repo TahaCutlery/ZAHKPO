@@ -23,8 +23,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy",
   ];
 
+  const formatUrl = (path: string) => {
+    const formatted = path === "/" ? "/" : path.endsWith("/") ? path : `${path}/`;
+    return `${base}${formatted}`;
+  };
+
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
-    url: `${base}${path}`,
+    url: formatUrl(path),
     lastModified: now,
     changeFrequency: "weekly",
     priority: path === "/" ? 1 : 0.7,
@@ -34,14 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...services.map((s) => `/services/${s.slug}`),
     // ...specialties.map((s) => `/specialties/${s.slug}`),
   ].map((path) => ({
-    url: `${base}${path}`,
+    url: formatUrl(path),
     lastModified: now,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((p) => ({
-    url: `${base}/blog/${p.meta.slug}`,
+    url: formatUrl(`/blog/${p.meta.slug}`),
     lastModified: new Date(p.meta.date),
     changeFrequency: "monthly",
     priority: 0.6,

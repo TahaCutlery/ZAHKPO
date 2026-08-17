@@ -25,7 +25,7 @@ function Stars({ rating = 5 }: { rating?: number }) {
         <Star
           key={i}
           className={
-            i < rating ? "size-4 fill-[#f5c100] text-[#f5c100]" : "size-4 text-border"
+            i < rating ? "size-4 fill-[#d97706] text-[#d97706]" : "size-4 text-border"
           }
           aria-hidden="true"
         />

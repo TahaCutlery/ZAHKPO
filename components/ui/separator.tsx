@@ -9,8 +9,8 @@ export function Separator({
 }: React.HTMLAttributes<HTMLDivElement> & { orientation?: "horizontal" | "vertical" }) {
   return (
     <div
-      role="separator"
-      aria-orientation={orientation}
+      role="none"
+      aria-hidden="true"
       className={cn(
         "shrink-0 bg-border",
         orientation === "horizontal" ? "h-px w-full" : "h-full w-px",

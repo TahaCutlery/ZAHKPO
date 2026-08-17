@@ -17,14 +17,15 @@ export function buildMetadata({
   keywords,
   noindex,
 }: BuildMetaArgs): Metadata {
+  const formattedPath = path === "/" ? "/" : path.endsWith("/") ? path : `${path}/`;
   return {
     title,
     description,
     keywords,
-    alternates: { canonical: path },
+    alternates: { canonical: formattedPath },
     openGraph: {
       type: "website",
-      url: path,
+      url: formattedPath,
       siteName: siteConfig.name,
       title,
       description,

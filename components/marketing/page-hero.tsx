@@ -19,6 +19,11 @@ interface PageHeroProps {
   image?: { src: string; mobileSrc?: string };
 }
 
+function toWebpPath(src?: string) {
+  if (!src) return undefined;
+  return src.replace(/\.(jpg|jpeg|png)$/i, ".webp");
+}
+
 export function PageHero({
   eyebrow,
   title,
@@ -39,24 +44,22 @@ export function PageHero({
     >
       {withImage ? (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-          <Image
-            src={image!.src}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className={cn("object-cover object-top", image!.mobileSrc && "hidden sm:block")}
-          />
-          {image!.mobileSrc ? (
-            <Image
-              src={image!.mobileSrc}
+          <picture>
+            {image!.mobileSrc ? (
+              <>
+                <source media="(max-width: 639px)" type="image/webp" srcSet={toWebpPath(image!.mobileSrc)} />
+                <source media="(max-width: 639px)" srcSet={image!.mobileSrc} />
+              </>
+            ) : null}
+            <source media="(min-width: 640px)" type="image/webp" srcSet={toWebpPath(image!.src)} />
+            <img
+              src={image!.src}
               alt=""
-              fill
-              priority
-              sizes="50vw"
-              className="object-cover object-center sm:hidden"
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 size-full object-cover object-top"
             />
-          ) : null}
+          </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-[#031833]/90 via-[#031833]/70 to-[#031833]/25" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/70 via-transparent to-[#031833]/30" />
         </div>

@@ -32,24 +32,18 @@ export function HomeHero() {
     <section className="relative isolate overflow-hidden bg-[#031833]">
       {/* Office meeting backdrop with a navy wash that keeps copy readable */}
       <div aria-hidden="true" className="absolute inset-0 -z-10">
-        {/* Swap this file for an AI-generated photo of the founders with the team when ready */}
-        <Image
-          src="/images/home-hero.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="hidden object-cover object-[center_72%] sm:block"
-        />
-        {/* Portrait crop for phones - the landscape shot crops to nothing at 390px */}
-        <Image
-          src="/images/mobile/hero-team-mobile.jpg"
-          alt=""
-          fill
-          priority
-          sizes="50vw"
-          className="object-cover object-center sm:hidden"
-        />
+        <picture>
+          <source media="(max-width: 639px)" type="image/webp" srcSet="/images/mobile/hero-team-mobile.webp" />
+          <source media="(max-width: 639px)" type="image/jpeg" srcSet="/images/mobile/hero-team-mobile.jpg" />
+          <source media="(min-width: 640px)" type="image/webp" srcSet="/images/home-hero.webp" />
+          <img
+            src="/images/home-hero.jpg"
+            alt=""
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 size-full object-cover object-[center_72%]"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-[#031833] via-[#031833]/80 to-[#031833]/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#031833]/90 via-transparent to-[#031833]/40" />
       </div>

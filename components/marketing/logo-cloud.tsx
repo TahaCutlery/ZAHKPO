@@ -21,6 +21,8 @@ export function LogoCloud({
               alt={`${tool.name} logo`}
               width={tool.width}
               height={tool.height}
+              loading="lazy"
+              decoding="async"
               className={cn(
                 "w-auto opacity-80 saturate-[.85] transition duration-300 group-hover:opacity-100 group-hover:saturate-100",
                 tool.width === tool.height ? "h-9 md:h-10" : "h-6 md:h-7",
