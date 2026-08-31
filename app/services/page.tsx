@@ -15,7 +15,7 @@ import { serviceCategories, services } from "@/content/services";
 export const metadata: Metadata = buildMetadata({
   title: "Outsourced Accounting Services",
   description:
-    "Explore LedgerBridge's full range of outsourced services for UK firms - core accounting, compliance, CFO advisory, audit support and company secretarial - built to add capacity without adding headcount.",
+    "Explore ZAH KPO's full range of outsourced services for UK firms - core accounting, compliance, CFO advisory, audit support and company secretarial - built to add capacity without adding headcount.",
   path: "/services",
   keywords: ["outsourced accounting services", "audit support outsourcing", "virtual CFO services"],
 });

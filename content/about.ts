@@ -20,7 +20,7 @@ interface IconItem {
   icon: LucideIcon;
 }
 
-/** LedgerBridge's guiding principle: "People First. Process Driven. Technology Enabled. Value Focused." */
+/** ZAH KPO's guiding principle: "People First. Process Driven. Technology Enabled. Value Focused." */
 export const aboutValues: IconItem[] = [
   { title: "People first", description: "Skilled accounting professionals who work as an extension of your team.", icon: Users },
   { title: "Process driven", description: "SOP-led workflows and multi-level quality control on every engagement.", icon: ListChecks },
@@ -47,7 +47,7 @@ export const securityFeatures: IconItem[] = [
 ];
 
 export const whoWeAre =
-  "LedgerBridge is a trusted outsourcing partner for UK accounting firms, delivering accurate, scalable and high-quality accounting support. Acting as an extension of our clients' teams, we combine skilled professionals, efficient processes and modern technology to improve turnaround times, maintain quality and support sustainable growth.";
+  "ZAH KPO is a trusted outsourcing partner for UK accounting firms, delivering accurate, scalable and high-quality accounting support. Acting as an extension of our clients' teams, we combine skilled professionals, efficient processes and modern technology to improve turnaround times, maintain quality and support sustainable growth.";
 
 export const vision =
   "To become the most trusted outsourcing partner for accounting firms by combining skilled professionals, structured processes, modern technology and AI-driven efficiencies - delivering exceptional value while creating a positive impact on businesses, people and the environment.";
@@ -59,7 +59,7 @@ export const sustainability = {
   icon: Leaf,
   title: "A tree for every engagement",
   description:
-    "For every new engagement, LedgerBridge plants a tree - supporting environmental sustainability and responsible growth.",
+    "For every new engagement, ZAH KPO plants a tree - supporting environmental sustainability and responsible growth.",
 };
 
 export const timeline: { year: string; title: string; description: string }[] = [
@@ -67,7 +67,7 @@ export const timeline: { year: string; title: string; description: string }[] = 
     year: "2025",
     title: "Founded",
     description:
-      "Zah Professional Services Private Limited launches LedgerBridge in Khargone, India - a technology-driven KPO built to give UK accounting firms a back office they can rely on.",
+      "Zah Professional Services Private Limited launches ZAH KPO in Khargone, India - a technology-driven KPO built to give UK accounting firms a back office they can rely on.",
   },
   {
     year: "Built on experience",

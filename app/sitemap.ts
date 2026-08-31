@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/about",
     "/services",
-    "/why-ledgerbridge",
+    "/why-zah-kpo",
     "/blog",
     "/faq",
     "/careers",

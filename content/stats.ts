@@ -8,7 +8,7 @@ export const stats: Stat[] = [
   { value: 24, suffix: "hr", label: "Response Time" },
 ];
 
-/** "Our Delivery in Numbers" - headline metrics for the "Why firms trust LedgerBridge" section. */
+/** "Our Delivery in Numbers" - headline metrics for the "Why firms trust ZAH KPO" section. */
 export const deliveryMetrics: Stat[] = [
   { value: 100, suffix: "%", label: "On-time VAT submissions" },
   { value: 0, label: "Penalty instances" },

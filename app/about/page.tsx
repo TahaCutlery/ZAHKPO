@@ -27,11 +27,11 @@ import { founders } from "@/content/team";
 // import { stats } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About LedgerBridge",
+  title: "About ZAH KPO | The back office UK accounting firms count on",
   description:
-    "Founded in 2025, LedgerBridge (Zah Professional Services Pvt Ltd) helps UK accounting firms scale with skilled professionals, SOP-driven processes, modern technology and GDPR-aligned security.",
+    "Founded in 2025, ZAH KPO (Zah Professional Services Pvt Ltd) helps UK accounting firms scale with skilled professionals, SOP-driven processes, modern technology and GDPR-aligned security.",
   path: "/about",
-  keywords: ["about LedgerBridge", "accounting outsourcing partner UK", "KPO for accountants"],
+  keywords: ["about ZAH KPO", "accounting outsourcing partner UK", "KPO for accountants"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "About" }];
@@ -43,7 +43,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="The back office UK accounting firms count on"
-        description="LedgerBridge is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
+        description="ZAH KPO is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
         image={{ src: "/images/office-discussion.jpg", mobileSrc: "/images/mobile/office-discussion-mobile.jpg" }}
       >
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Founders"
               title="Led by qualified accountants"
-              description="LedgerBridge is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
+              description="ZAH KPO is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
             />
           </Reveal>
           <Stagger className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">

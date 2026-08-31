@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * LedgerBridge lockup - the LB monogram (gold L, white B on deep navy) from the
+ * ZAH KPO lockup - the ZK monogram (gold Z, white K on deep navy) from the
  * brand artwork, plus the wordmark. The mark is rendered from a high-res source
  * so it stays crisp at display size in both themes.
  */
@@ -12,7 +12,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Link
       href="/"
-      aria-label="LedgerBridge - home"
+      aria-label="ZAH KPO - home"
       className={cn(
         "group inline-flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className,
@@ -28,7 +28,7 @@ export function Logo({ className }: { className?: string }) {
       />
       <span className="flex flex-col leading-none">
         <span className="text-[1.05rem] font-bold tracking-tight text-foreground">
-          Ledger<span className="text-accent">Bridge</span>
+          ZAH<span className="text-accent">KPO</span>
         </span>
         <span className="mt-1 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
           Growth Beyond Limits

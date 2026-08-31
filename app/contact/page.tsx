@@ -11,11 +11,11 @@ import { buildMetadata, breadcrumbSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact LedgerBridge",
+  title: "Contact ZAH KPO | Book a call or send us a message  ",
   description:
-    "Talk to LedgerBridge about outsourcing your accounting. Call +91 88899 84419, email info@theledgerbridge.com, or send us a message - we reply fast.",
+    "Talk to ZAH KPO about outsourcing your accounting. Call +91 88899 84419, email info@theledgerbridge.com, or send us a message - we reply fast.",
   path: "/contact",
-  keywords: ["contact LedgerBridge", "accounting outsourcing enquiry", "book a call"],
+  keywords: ["ZAH KPO", "contact ZAH KPO", "accounting outsourcing enquiry", "book a call", "ZAH KPO Head Office"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Contact" }];
@@ -30,7 +30,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's grow together"
-        description="Tell us what's on your plate and we'll show you how LedgerBridge can help. We typically reply within one business day."
+        description="Tell us what's on your plate and we'll show you how ZAH KPO can help. We typically reply within one business day."
         crumbs={crumbs}
         image={{ src: "/images/handshake.jpg", mobileSrc: "/images/mobile/handshake-mobile.jpg" }}
       />
@@ -104,7 +104,7 @@ export default function ContactPage() {
               ) : null}
 
               <iframe 
-                title="LedgerBridge head office location"
+                title="ZAH KPO head office location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.17706230506!2d-0.3595827234556403!3d51.528312171818094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487612bc4fefde6f%3A0x309f7b635830f489!2s5%20Ruislip%20Rd%2C%20Greenford%20UB6%209QD%2C%20UK!5e0!3m2!1sen!2sin!4v1785865089630!5m2!1sen!2sin" 
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

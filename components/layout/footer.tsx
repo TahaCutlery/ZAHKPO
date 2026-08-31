@@ -9,7 +9,7 @@ import { footerColumns } from "@/lib/nav";
 import { siteConfig } from "@/lib/site";
 
 export function Footer() {
-  const year = 2026;
+  const year = new Date().getFullYear();
   const { contact } = siteConfig;
 
   return (
@@ -74,14 +74,17 @@ export function Footer() {
         </div>
 
         <div className="mt-12">
-          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
+          <div className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground mb-2">
             UK Office
           </div>
+            <div className="text-sm text-muted-foreground">
+              Only For WhatsApp
+            </div>
           <div className="mt-5 grid gap-6 md:grid-cols-3">
             <a
               href={`tel:${contact.ukOffice.phoneHref}`}
               className="flex items-start gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
-            >
+              >
               <Phone className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
               {contact.ukOffice.phone}
             </a>

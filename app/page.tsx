@@ -22,9 +22,9 @@ import { clientTestimonials } from "@/content/testimonials";
 import { deliveryMetrics, deliveryStandards } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
-  title: "LedgerBridge - Accounting Outsourcing for UK Accounting Firms",
+  title: "ZAH KPO - Accounting Outsourcing for UK Accounting Firms",
   description:
-    "LedgerBridge is a technology-driven KPO and the outsourced back office for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
+    "ZAH KPO is a technology-driven KPO and the outsourced back office for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   path: "/",
   keywords: [
     "accounting outsourcing UK",
@@ -91,7 +91,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Challenges we understand"
               title="Your Challenges, Our Solutions"
-              description="UK firms face the same pressures again and again. Here's how LedgerBridge helps with each one."
+              description="UK firms face the same pressures again and again. Here's how ZAH KPO helps with each one."
             />
           </Reveal>
           <Stagger className="mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +116,7 @@ export default function HomePage() {
         <Container>
           <Reveal>
             <SectionHeading
-              eyebrow="Why firms trust LedgerBridge"
+              eyebrow="Why firms trust ZAH KPO"
               title="Our Delivery in Numbers"
               description="Real metrics from live engagements - measured on every job, not promised in a pitch."
             />
@@ -153,7 +153,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our vibrant office"
-              title="Inside LedgerBridge"
+              title="Inside ZAH KPO"
               description="Our delivery centre in Khargone - a modern, secure workspace purpose-built for focused, confidential client work."
             />
           </Reveal>
@@ -162,7 +162,7 @@ export default function HomePage() {
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-entrance1.webp"
-                  alt="The LedgerBridge office entrance in Vadodara, with the LB monogram on frosted glass"
+                  alt="The ZAH KPO office entrance in Vadodara, with the ZAH monogram on frosted glass"
                   fill
                   sizes="(max-width: 768px) 100vw, 66vw"
                   className="object-cover"
@@ -173,7 +173,7 @@ export default function HomePage() {
               <div className="relative aspect-[2/3] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-workstations.webp"
-                  alt="Two team members working side by side at LedgerBridge workstations"
+                  alt="Two team members working side by side at ZAH KPO workstations"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
@@ -184,7 +184,7 @@ export default function HomePage() {
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-team.webp"
-                  alt="The LedgerBridge team at work in the open-plan office"
+                  alt="The ZAH KPO team at work in the open-plan office"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
@@ -195,7 +195,7 @@ export default function HomePage() {
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
                   src="/images/office-cabin.webp"
-                  alt="A LedgerBridge accountant working at a dual-screen desk in a private cabin"
+                  alt="A ZAH KPO accountant working at a dual-screen desk in a private cabin"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   className="object-cover"
@@ -237,7 +237,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Message"
               title="Founder Message"
-              description="Founded with a passion for helping ambitious businesses thrive, LedgerBridge was created to bring clarity, confidence, and control to financial operations."
+              description="Founded with a passion for helping ambitious businesses thrive, ZAH KPO was created to bring clarity, confidence, and control to financial operations."
             />
           </Reveal>
           <Stagger className="mt-12 gap-6 sm:grid-cols-2 lg:grid-cols-4 bg-gray-200 rounded-2xl min-h-96 flex justify-center items-center font-extrabold text-7xl">

@@ -17,11 +17,11 @@ import { testimonials } from "@/content/testimonials";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Careers at LedgerBridge",
+  title: "Careers at ZAH KPO | Accounting jobs with UK client exposure",
   description:
-    "Build an accounting career with UK client exposure, ACCA support and a collaborative, process-driven culture. See life at LedgerBridge and our current openings.",
+    "Build an accounting career with UK client exposure, ACCA support and a collaborative, process-driven culture. See life at ZAH KPO and our current openings.",
   path: "/careers",
-  keywords: ["accounting careers", "ACCA jobs", "LedgerBridge careers", "bookkeeper jobs Khargone"],
+  keywords: ["accounting careers", "ACCA jobs", "ZAH KPO careers", "bookkeeper jobs Khargone", "ZAH KPO job openings"],
 });
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Careers" }];
@@ -34,7 +34,7 @@ export default function CareersPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Careers"
-        title="Build your career with LedgerBridge"
+        title="Build your career with ZAH KPO"
         description="A talent-focused team where you'll work directly with UK accounting firms, learn modern cloud and AI tools, and grow with people who have your back."
         crumbs={crumbs}
         image={{ src: "/images/team-collab.jpg", mobileSrc: "/images/mobile/team-collab-mobile.jpg" }}

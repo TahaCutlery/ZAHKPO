@@ -10,7 +10,7 @@ import { posts } from "@/content/blog";
 
 export const metadata: Metadata = buildMetadata({
   title: "Search",
-  description: "Search the LedgerBridge website for services, industries and articles.",
+  description: "Search the ZAH KPO website for services, industries and articles.",
   path: "/search",
   noindex: true,
 });
@@ -37,7 +37,7 @@ const index: SearchDoc[] = [
   { title: "About", description: "Our story, values and security.", href: "/about", type: "Page" },
   { title: "Contact", description: "Get in touch with the team.", href: "/contact", type: "Page" },
   { title: "FAQ", description: "Common questions about outsourcing.", href: "/faq", type: "Page" },
-  { title: "Careers", description: "Careers and culture at LedgerBridge.", href: "/careers", type: "Page" },
+  { title: "Careers", description: "Careers and culture at ZAH KPO.", href: "/careers", type: "Page" },
 ];
 
 const crumbs = [{ label: "Home", href: "/" }, { label: "Search" }];

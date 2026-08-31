@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
-    "How LedgerBridge collects, uses and protects your personal data, your rights under UK GDPR, and how to contact us about privacy.",
+    "How ZAH KPO collects, uses and protects your personal data, your rights under UK GDPR, and how to contact us about privacy.",
   path: "/privacy",
   keywords: ["privacy policy", "data protection", "UK GDPR"],
 });

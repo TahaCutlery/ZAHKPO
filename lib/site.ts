@@ -1,14 +1,14 @@
 import { founders } from "@/content/team";
 
 export const siteConfig = {
-  name: "LedgerBridge",
-  shortName: "LedgerBridge",
+  name: "ZAH KPO",
+  shortName: "ZAH KPO",
   legalName: "Zah Professional Services Private Limited",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.theledgerbridge.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.zahkpo.com",
   founded: 2025,
   tagline: "Growth Beyond Limits",
   description:
-    "LedgerBridge is a technology-driven KPO and trusted outsourcing partner for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
+    "ZAH KPO is a technology-driven KPO and trusted outsourcing partner for UK accounting firms - bookkeeping, year-end accounts, tax, payroll, audit support and CFO advisory, delivered accurately and on time.",
   contact: {
     phoneAlt: "+91 79999 83500",
     phoneAltHref: "+917999983500",

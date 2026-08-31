@@ -18,10 +18,10 @@ import { challenges } from "@/content/home";
 import { stats } from "@/content/stats";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Why LedgerBridge",
+  title: "Why ZAH KPO | The accounting outsourcing partner UK firms trust",
   description:
-    "What differentiates LedgerBridge - a proactive way of working, guaranteed quality and consistency, SOP-driven delivery and a model built to grow your client practice.",
-  path: "/why-ledgerbridge",
+    "What differentiates ZAH KPO - a proactive way of working, guaranteed quality and consistency, SOP-driven delivery and a model built to grow your client practice.",
+  path: "/why-zah-kpo",
   keywords: [
     "why outsource accounting",
     "accounting outsourcing partner",
@@ -29,16 +29,16 @@ export const metadata: Metadata = buildMetadata({
   ],
 });
 
-const crumbs = [{ label: "Home", href: "/" }, { label: "Why LedgerBridge" }];
+const crumbs = [{ label: "Home", href: "/" }, { label: "Why ZAH KPO" }];
 
-export default function WhyLedgerBridgePage() {
+export default function WhyZAHKPOPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
-        eyebrow="Why LedgerBridge"
+        eyebrow="Why ZAH KPO"
         title="What Differentiates Us"
-        description="Plenty of providers can process work. We built LedgerBridge around the four things UK firms told us actually matter: Proactivity, Consistent Quality, Documented Process and Growth for your Practice."
+        description="Plenty of providers can process work. We built ZAH KPO around the four things UK firms told us actually matter: Proactivity, Consistent Quality, Documented Process and Growth for your Practice."
         crumbs={crumbs}
         image={{ src: "/images/city-skyline.jpg", mobileSrc: "/images/mobile/city-skyline-mobile.jpg" }}
       >

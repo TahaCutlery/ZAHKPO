@@ -123,10 +123,10 @@ export function Navbar() {
             <NavigationMenu.Item>
               <NavigationMenu.Link asChild>
                 <Link
-                  href="/why-ledgerbridge"
-                  className={navLinkClass(pathname === "/why-ledgerbridge")}
+                  href="/why-zah-kpo"
+                  className={navLinkClass(pathname === "/why-zah-kpo")}
                 >
-                  Why LedgerBridge
+                  Why ZAH KPO
                 </Link>
               </NavigationMenu.Link>
             </NavigationMenu.Item>
@@ -244,10 +244,10 @@ export function Navbar() {
                   </AccordionItem>
                 </Accordion>
                 <Link
-                  href="/why-ledgerbridge"
+                  href="/why-zah-kpo"
                   className="block border-b border-border py-3.5 text-base font-medium"
                 >
-                  Why LedgerBridge
+                  Why ZAH KPO
                 </Link>
                 <Link
                   href="/careers"

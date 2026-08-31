@@ -130,7 +130,7 @@ export function TestimonialsSection() {
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by growing UK practices"
-            description="Partners and practice managers on what changed after they moved their back office to LedgerBridge."
+            description="Partners and practice managers on what changed after they moved their back office to ZAH KPO."
           />
         </Reveal>
 
@@ -149,7 +149,7 @@ export function TestimonialsSection() {
 
         <Reveal delay={0.1} className="mt-12">
           <p className="text-center text-sm text-muted-foreground">
-            Firms across the UK rely on LedgerBridge
+            Firms across the UK rely on ZAH KPO
           </p>
           <ul className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             {clientTestimonials.map((t) => (

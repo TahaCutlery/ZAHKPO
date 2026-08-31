@@ -158,7 +158,7 @@ export const resourceLinks: NavLink[] = [
 export const primaryNav: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Why LedgerBridge", href: "/why-ledgerbridge" },
+  { label: "Why ZAH KPO", href: "/why-zah-kpo" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -183,7 +183,7 @@ export const footerColumns: { title: string; links: NavLink[] }[] = [
     title: "Company",
     links: [
       { label: "About", href: "/about" },
-      { label: "Why LedgerBridge", href: "/why-ledgerbridge" },
+      { label: "Why ZAH KPO", href: "/why-zah-kpo" },
       { label: "Careers", href: "/careers" },
       { label: "Blog", href: "/blog" },
       { label: "FAQ", href: "/faq" },

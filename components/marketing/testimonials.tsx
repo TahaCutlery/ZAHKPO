@@ -10,7 +10,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const multiple = items.length > 1;
   return (
     <Carousel
-      ariaLabel="What people say about LedgerBridge"
+      ariaLabel="What people say about ZAH KPO"
       slideClassName="sm:basis-full"
       showArrows={multiple}
       showDots={multiple}
