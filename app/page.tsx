@@ -91,7 +91,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Challenges we understand"
               title="Your Challenges, Our Solutions"
-              description="UK firms face the same pressures again and again. Here's how ZAH KPO helps with each one."
+              description="UK firms face the same pressures again and again. Here's how ZAH helps with each one."
             />
           </Reveal>
           <Stagger className="mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -116,7 +116,7 @@ export default function HomePage() {
         <Container>
           <Reveal>
             <SectionHeading
-              eyebrow="Why firms trust ZAH KPO"
+              eyebrow="Why firms trust ZAH"
               title="Our Delivery in Numbers"
               description="Real metrics from live engagements - measured on every job, not promised in a pitch."
             />
@@ -153,7 +153,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our vibrant office"
-              title="Inside ZAH KPO"
+              title="Inside ZAH"
               description="Our delivery centre in Khargone - a modern, secure workspace purpose-built for focused, confidential client work."
             />
           </Reveal>
@@ -237,7 +237,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Message"
               title="Founder Message"
-              description="Founded with a passion for helping ambitious businesses thrive, ZAH KPO was created to bring clarity, confidence, and control to financial operations."
+              description="Founded with a passion for helping ambitious businesses thrive, ZAH was created to bring clarity, confidence, and control to financial operations."
             />
           </Reveal>
           <Stagger className="mt-12 gap-6 sm:grid-cols-2 lg:grid-cols-4 bg-gray-200 rounded-2xl min-h-96 flex justify-center items-center font-extrabold text-7xl">

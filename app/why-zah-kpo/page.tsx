@@ -29,16 +29,16 @@ export const metadata: Metadata = buildMetadata({
   ],
 });
 
-const crumbs = [{ label: "Home", href: "/" }, { label: "Why ZAH KPO" }];
+const crumbs = [{ label: "Home", href: "/" }, { label: "Why ZAH" }];
 
 export default function WhyZAHKPOPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
-        eyebrow="Why ZAH KPO"
+        eyebrow="Why ZAH"
         title="What Differentiates Us"
-        description="Plenty of providers can process work. We built ZAH KPO around the four things UK firms told us actually matter: Proactivity, Consistent Quality, Documented Process and Growth for your Practice."
+        description="Plenty of providers can process work. We built ZAH around the four things UK firms told us actually matter: Proactivity, Consistent Quality, Documented Process and Growth for your Practice."
         crumbs={crumbs}
         image={{ src: "/images/city-skyline.jpg", mobileSrc: "/images/mobile/city-skyline-mobile.jpg" }}
       >

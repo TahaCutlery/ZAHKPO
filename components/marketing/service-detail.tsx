@@ -94,7 +94,7 @@ export function ServiceDetail({
       <Section>
         <Container>
           <Reveal>
-            <SectionHeading eyebrow="Why ZAH KPO" title="Built to make your practice stronger" />
+            <SectionHeading eyebrow="Why ZAH " title="Built to make your practice stronger" />
           </Reveal>
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {offering.benefits.map((b) => (

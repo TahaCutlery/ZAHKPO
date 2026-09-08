@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
 export const clientTestimonials: Testimonial[] = [
   {
     quote:
-      "ZAH KPO cleared a six-month bookkeeping backlog in weeks and has kept every VAT deadline since. It genuinely feels like an extension of our own team.",
+      "ZAH cleared a six-month bookkeeping backlog in weeks and has kept every VAT deadline since. It genuinely feels like an extension of our own team.",
     author: "Accounting Practitioner in Greenford",
     role: "Managing Partner",
     company: "Whitfield & Co Accountants",

@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
+import WhatsAppIcon from "@/components/marketing/whatsApp-icon";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main id="main" className="flex-1">
             {children}
           </main>
+          <WhatsAppIcon />
           <Footer />
         </ThemeProvider>
       </body>

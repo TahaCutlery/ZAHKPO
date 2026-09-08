@@ -20,7 +20,7 @@ export function Logo({ className }: { className?: string }) {
     >
       <Image
         src="/logo-mark.png"
-        alt=""
+        alt="Logo"
         width={40}
         height={40}
         priority

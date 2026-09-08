@@ -130,7 +130,7 @@ export function TestimonialsSection() {
           <SectionHeading
             eyebrow="Testimonials"
             title="Trusted by growing UK practices"
-            description="Partners and practice managers on what changed after they moved their back office to ZAH KPO."
+            description="Partners and practice managers on what changed after they moved their back office to ZAH."
           />
         </Reveal>
 

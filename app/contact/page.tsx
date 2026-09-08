@@ -30,7 +30,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's grow together"
-        description="Tell us what's on your plate and we'll show you how ZAH KPO can help. We typically reply within one business day."
+        description="Tell us what's on your plate and we'll show you how ZAH can help. We typically reply within one business day."
         crumbs={crumbs}
         image={{ src: "/images/handshake.jpg", mobileSrc: "/images/mobile/handshake-mobile.jpg" }}
       />

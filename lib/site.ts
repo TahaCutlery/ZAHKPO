@@ -17,7 +17,7 @@ export const siteConfig = {
       label: "Head Office",
       phone: "+44 784 842 6766",
       email: "info@theledgerbridge.com",
-      phoneHref: "+44XXXXXXXXXX",
+      phoneHref: "+447848426766",
       address: [
         "5 Ruslip Road",
         "Greenford",

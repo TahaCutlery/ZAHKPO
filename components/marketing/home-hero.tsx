@@ -7,6 +7,7 @@ import { ArrowRight, Award, CalendarCheck, Clock, ShieldCheck, Timer } from "luc
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/section";
+import { WaveTextAnimation } from "../text-animation/wave-text";
 
 const container: Variants = {
   hidden: {},
@@ -63,7 +64,7 @@ export function HomeHero() {
             variants={reduce ? undefined : item}
             className="inline-flex items-center gap-2.5 rounded-full border border-[#f8d509]/30 bg-[#f8d509]/10 px-4 py-1.5 md:text-lg sm:text-md text-xs font-bold tracking-wide text-[#f8d509] backdrop-blur"
           >
-            Think Outsourcing. Think ZAH KPO.
+            <WaveTextAnimation content="Think Outsourcing. Think ZAH." />
           </motion.span>
 
           <motion.h1

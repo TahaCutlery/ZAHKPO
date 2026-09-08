@@ -43,7 +43,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="The back office UK accounting firms count on"
-        description="ZAH KPO is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
+        description="ZAH is a technology-driven KPO, founded in 2025, built on a simple belief: firms do their best work when the routine compliance load is handled by people they can trust."
         crumbs={crumbs}
         image={{ src: "/images/office-discussion.jpg", mobileSrc: "/images/mobile/office-discussion-mobile.jpg" }}
       >
@@ -75,13 +75,13 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Founders"
               title="Led by qualified accountants"
-              description="ZAH KPO is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
+              description="ZAH is founder-led, combining 12+ years of UK accounting, audit and compliance experience."
             />
           </Reveal>
           <Stagger className="mx-auto mt-12 grid max-w-4xl gap-8 md:grid-cols-2">
-            {founders.map((f) => (
-              <StaggerItem key={f.name}>
-                <FounderCard founder={f} />
+            {founders.map((founder) => (
+              <StaggerItem key={founder.name}>
+                <FounderCard founder={founder} />
               </StaggerItem>
             ))}
           </Stagger>

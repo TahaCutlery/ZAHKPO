@@ -34,7 +34,7 @@ export default function CareersPage() {
       <JsonLd data={breadcrumbSchema(crumbs)} />
       <PageHero
         eyebrow="Careers"
-        title="Build your career with ZAH KPO"
+        title="Build your career with ZAH"
         description="A talent-focused team where you'll work directly with UK accounting firms, learn modern cloud and AI tools, and grow with people who have your back."
         crumbs={crumbs}
         image={{ src: "/images/team-collab.jpg", mobileSrc: "/images/mobile/team-collab-mobile.jpg" }}

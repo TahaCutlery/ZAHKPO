@@ -7,7 +7,7 @@ export interface Faq {
 export const faqs: Faq[] = [
   {
     category: "Getting started",
-    question: "What does ZAH KPO actually do?",
+    question: "What does ZAH actually do?",
     answer:
       "We're a technology-driven KPO and the outsourced back office for UK accounting firms. We handle bookkeeping, year-end accounts, management accounts, VAT, payroll, CIS, corporation tax, audit support, CFO advisory and company secretarial work - so your team can focus on advice, relationships and growth.",
   },

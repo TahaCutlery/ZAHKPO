@@ -126,7 +126,7 @@ export function Navbar() {
                   href="/why-zah-kpo"
                   className={navLinkClass(pathname === "/why-zah-kpo")}
                 >
-                  Why ZAH KPO
+                  Why ZAH
                 </Link>
               </NavigationMenu.Link>
             </NavigationMenu.Item>
@@ -247,7 +247,7 @@ export function Navbar() {
                   href="/why-zah-kpo"
                   className="block border-b border-border py-3.5 text-base font-medium"
                 >
-                  Why ZAH KPO
+                  Why ZAH
                 </Link>
                 <Link
                   href="/careers"

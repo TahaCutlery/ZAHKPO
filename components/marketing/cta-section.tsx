@@ -17,7 +17,7 @@ interface CTASectionProps {
 
 export function CTASection({
   title = "Add capacity without adding headcount",
-  description = "Tell us what's on your plate. We'll show you exactly how ZAH KPO can take it on - accurately, securely and on time.",
+  description = "Tell us what's on your plate. We'll show you exactly how ZAH can take it on - accurately, securely and on time.",
   primaryLabel = "Book a Discovery Call",
   primaryHref = "/contact",
 }: CTASectionProps) {
@@ -62,6 +62,7 @@ export function CTASection({
                   {UKContactbutton ? "Only for WhatsApp" : siteConfig.contact.ukOffice.phone}
                 </a>
               </Button>
+              <div className="sm:hidden">Only for WhatsApp</div>
             </div>
           </div>
         </div>
