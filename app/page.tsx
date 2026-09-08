@@ -158,17 +158,6 @@ export default function HomePage() {
             />
           </Reveal>
           <Stagger className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:auto-rows-[12rem] md:grid-cols-3 md:auto-rows-[15rem] md:gap-6">
-            <StaggerItem className="sm:col-span-2">
-              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
-                <Image
-                  src="/images/office-entrance1.png"
-                  alt="The ZAH KPO office entrance in Vadodara, with the ZAH monogram on frosted glass"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 66vw"
-                  className="object-cover"
-                />
-              </div>
-            </StaggerItem>
             <StaggerItem className="sm:row-span-2">
               <div className="relative aspect-[2/3] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
