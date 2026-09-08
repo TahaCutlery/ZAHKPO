@@ -22,12 +22,12 @@ import { resourceLinks, serviceGroups, serviceMenuColumns }
 // , specialtiesGroup } 
 
 const triggerClass =
-  "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-foreground/80 transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-foreground";
+  "group inline-flex h-9 items-center gap-1 rounded-md px-3 text-sm font-medium text-white/80 transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[state=open]:text-white";
 
 function navLinkClass(active: boolean) {
   return cn(
-    "inline-flex h-9 items-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-surface hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-    active ? "text-foreground" : "text-foreground/80",
+    "inline-flex h-9 items-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+    active ? "text-white" : "text-white/80",
   );
 }
 
@@ -55,10 +55,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full border-b transition-colors duration-300",
-        scrolled
-          ? "border-border bg-background/80 backdrop-blur-xl"
-          : "border-transparent bg-background/60 backdrop-blur-sm",
+        "sticky top-0 z-50 w-full border-b border-white/10 bg-[#051a37] text-white transition-colors duration-300 backdrop-blur-xl",
+        scrolled ? "shadow-[0_12px_30px_rgba(3,24,51,0.18)]" : "",
       )}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 md:h-4.5rem">
@@ -82,13 +80,13 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-[var(--shadow-lg)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-white/10 bg-[#0a2243] shadow-[0_18px_48px_rgba(3,24,51,0.35)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="grid max-h-[calc(100vh-6rem)] w-[52rem] grid-cols-4 gap-x-6 gap-y-6 overflow-y-auto p-6">
                   {serviceMenuColumns.map((column, i) => (
                     <div key={i} className="space-y-6">
                       {column.map((group) => (
                         <div key={group.label}>
-                          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-300">
                             {group.label}
                           </p>
                           <ul className="space-y-1">
@@ -97,13 +95,13 @@ export function Navbar() {
                                 <NavigationMenu.Link asChild>
                                   <Link
                                     href={item.href}
-                                    className="block rounded-lg p-2.5 transition-colors hover:bg-surface"
+                                    className="block rounded-lg p-2.5 transition-colors hover:bg-white/5"
                                   >
-                                    <span className="block text-sm font-medium text-foreground">
+                                    <span className="block text-sm font-medium text-white">
                                       {item.label}
                                     </span>
                                     {item.description ? (
-                                      <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                                      <span className="mt-0.5 block text-xs leading-snug text-slate-300">
                                         {item.description}
                                       </span>
                                     ) : null}
@@ -139,18 +137,18 @@ export function Navbar() {
                   aria-hidden="true"
                 />
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-border bg-card shadow-var(--shadow-lg) data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
+              <NavigationMenu.Content className="absolute left-0 top-full z-50 mt-2.5 rounded-2xl border border-white/10 bg-[#0a2243] shadow-[0_18px_48px_rgba(3,24,51,0.35)] data-[state=closed]:animate-fade-out data-[state=open]:animate-fade-in">
                 <div className="w-[20rem] p-3">
                   {resourceLinks.map((item) => (
                     <NavigationMenu.Link asChild key={item.href}>
                       <Link
                         href={item.href}
-                        className="block rounded-lg p-3 transition-colors hover:bg-surface"
+                        className="block rounded-lg p-3 transition-colors hover:bg-white/5"
                       >
-                        <span className="block text-sm font-medium text-foreground">
+                        <span className="block text-sm font-medium text-white">
                           {item.label}
                         </span>
-                        <span className="mt-0.5 block text-xs leading-snug text-muted-foreground">
+                        <span className="mt-0.5 block text-xs leading-snug text-slate-300">
                           {item.description}
                         </span>
                       </Link>
@@ -181,18 +179,18 @@ export function Navbar() {
               <button
                 type="button"
                 aria-label="Open menu"
-                className="grid size-10 place-items-center rounded-lg border border-border text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
+                className="grid size-10 place-items-center rounded-lg border border-white/10 bg-white/5 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
               >
                 <Menu className="size-5" aria-hidden="true" />
               </button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="bg-[#051a37] text-white">
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
               <Logo />
-              <nav className="-mx-1 flex-1 overflow-y-auto px-1">
+              <nav className="-mx-1 flex-1 overflow-y-auto px-1 text-white">
                 <Link
                   href="/about"
-                  className="block border-b border-border py-3.5 text-base font-medium"
+                  className="block border-b border-white/10 py-3.5 text-base font-medium text-white"
                 >
                   About
                 </Link>
@@ -201,8 +199,8 @@ export function Navbar() {
                     <AccordionTrigger>Services</AccordionTrigger>
                     <AccordionContent>
                       <div className="space-y-4">
-                        {[...serviceGroups, 
-                        // specialtiesGroup
+                        {[...serviceGroups,
+                          // specialtiesGroup
                         ].map((group) => (
                           <div key={group.label}>
                             <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -245,17 +243,17 @@ export function Navbar() {
                 </Accordion>
                 <Link
                   href="/why-zah-kpo"
-                  className="block border-b border-border py-3.5 text-base font-medium"
+                  className="block border-b border-white/10 py-3.5 text-base font-medium text-white"
                 >
                   Why ZAH
                 </Link>
                 <Link
                   href="/careers"
-                  className="block border-b border-border py-3.5 text-base font-medium"
+                  className="block border-b border-white/10 py-3.5 text-base font-medium text-white"
                 >
                   Careers
                 </Link>
-                <Link href="/contact" className="block py-3.5 text-base font-medium">
+                <Link href="/contact" className="block py-3.5 text-base font-medium text-white">
                   Contact
                 </Link>
               </nav>

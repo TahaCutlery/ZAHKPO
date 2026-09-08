@@ -161,7 +161,7 @@ export default function HomePage() {
             <StaggerItem className="sm:col-span-2">
               <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border sm:aspect-auto sm:h-full">
                 <Image
-                  src="/images/office-entrance1.webp"
+                  src="/images/office-entrance1.png"
                   alt="The ZAH KPO office entrance in Vadodara, with the ZAH monogram on frosted glass"
                   fill
                   sizes="(max-width: 768px) 100vw, 66vw"
