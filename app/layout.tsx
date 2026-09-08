@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           <WhatsAppIcon />
-          <Footer />
+          <Footer /> 
         </ThemeProvider>
       </body>
     </html>
