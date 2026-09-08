@@ -12,11 +12,11 @@ export const siteConfig = {
   contact: {
     phoneAlt: "+91 79999 83500",
     phoneAltHref: "+917999983500",
-    careersEmail: "info@theledgerbridge.com",
+    careersEmail: "info@zahkpo.com",
     ukOffice: {
       label: "Head Office",
       phone: "+44 784 842 6766",
-      email: "info@theledgerbridge.com",
+      email: "info@zahkpo.com",
       phoneHref: "+447848426766",
       address: [
         "5 Ruslip Road",
@@ -28,7 +28,7 @@ export const siteConfig = {
     khOffice: {
       label: "Head Office",
       phone: "+91 88899 84419",
-      email: "info@theledgerbridge.com",
+      email: "info@zahkpo.com",
       phoneHref: "+918889984419",
       address: [
         "GF 178, New Radhavallabh Market",
