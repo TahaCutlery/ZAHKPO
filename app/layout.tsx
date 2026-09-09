@@ -86,6 +86,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Script>
           </>
         ) : null}
+        <Script src="https://cdn.botpress.cloud/webchat/v3.7/inject.js" strategy="afterInteractive" />
+        <Script src="https://files.bpcontent.cloud/2026/09/09/09/20260909094715-V501IO0Q.js" strategy="afterInteractive" />
       </head>
       <body className="flex min-h-dvh flex-col bg-background font-sans text-foreground antialiased">
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
